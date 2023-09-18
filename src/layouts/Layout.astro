@@ -1,51 +1,103 @@
 ---
+import "../assets/scss/globals.scss";
+import Header from "../components/Header.astro";
+
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- MetaComponent -->
+    <!-- <meta name="generator" content={Astro.generator} /> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=raleway:300,400,500,600,700|rubik:300,400,500,600,700"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <Header />
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <style lang="scss" is:global>
+      :root {
+        --radius-default: 5px;
+        --radius-small: 2px;
+        --font-family-default: "Raleway", sans-serif;
+        --font-family-heading: "Rubik", sans-serif;
+
+        // Light Theme
+        --font-color: var(--color-rich-black);
+        --second-font-color: var(--color-chinese-dark);
+        --action-color: var(--color-emerald);
+        --action-color-state: var(--color-emerald);
+        --background-color: var(--color-white-smoke);
+        --hero-background-color: var(--color-white-smoke);
+        --card-background-color: var(--color-dark-jungle-green);
+        --emphasis-color: var(--color-moonstone);
+        --grey: var(--color-light-silver);
+        --theme-color: var(--color-icon-light);
+        --theme-color-state: var(--color-icon-light-hover);
+      }
+
+      // darkmode overrides
+      .darkmode {
+        --font-color: var(--color-mint-cream);
+        --second-font-color: var(--color-mint-cream);
+        --hero-background-color: radial-gradient(
+          100% 100% at 50% 0%,
+          rgba(230, 230, 230, 0.2) 0%,
+          rgba(2, 183, 63, 0.2) 42.77%,
+          rgba(14, 19, 31, 0.2) 100%
+        );
+        --theme-color: var(--color-icon-dark);
+        --theme-color-state: var(--color-icon-dark-hover);
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        color: var(--font-color);
+        background-color: var(--background-color);
+
+        main {
+          flex: 1 0 auto;
+        }
+
+        footer {
+          flex-shrink: 0;
+        }
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .items-center {
+        align-items: center;
+      }
+
+      .no-underline {
+        text-decoration: none;
+      }
+    </style>
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
