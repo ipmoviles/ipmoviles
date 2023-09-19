@@ -1,0 +1,32 @@
+---
+interface Props {
+	title: string;
+	href: string;
+}
+
+const { href, title} = Astro.props;
+import "../assets/scss/base/_breakpoint.scss"
+---
+<li>
+    <a href={href}>{title}</a>
+</li>
+
+
+<style>
+    a{
+        text-decoration: underline;
+        color: var(--color-white);
+        font-size:10px;
+    }
+    li{
+        font-size: 5px;
+    }
+    @media screen and (min-width: 768px) {
+   a{
+    font-size:18px;
+   }
+   li{
+    font-size:10px;
+   }
+  }
+</style>

@@ -1,13 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<Hero />
-	<!-- Sections -->
+  <Hero />
+  <Card
+    href="www.google.com"
+    title="Google"
+    body="Google es el mejor buscador"
+  />
+  <Footer />
+  <!-- Sections -->
 </Layout>
 
-<style>
-	
-</style>
+<style></style>
