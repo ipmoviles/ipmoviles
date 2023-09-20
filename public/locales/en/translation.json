@@ -1,0 +1,158 @@
+{
+  "translation": {
+    "encabezado": {
+      "boton_contacto": "Contact Button"
+    },
+    "pie_de_Pagina": {
+      "trabajemos_juntos": "Let's Work Together",
+      "boton_contactar": "Contact Us",
+      "enlaces_rapidos": "Quick Links",
+      "enlaces": [
+        "About Us",
+        "Gallery",
+        "Our Services",
+        "Contact Us",
+        "Careers"
+      ],
+      "titulo_Colombia": "Colombia Office",
+      "direccion_Colombia": "Cra 1st # 11-34Q Chía - Cundinamarca",
+      "titulo_USA": "USA Office",
+      "direccion_USA": "210 NE 45th St. Oakland Park, Florida 33334",
+      "aIng": "English Link",
+      "aLinkedIn": "LinkedIn Link",
+      "derechos_autor": "All rights reserved by IPMovies.com"
+    },
+    "pagina_inicio": {
+      "nombre_empresa": "IP MOVILES Ltda.",
+      "lema_negrilla": "Your trusted partner in connectivity and telecommunications services.",
+      "lema2": "Technology solutions tailored to our clients' needs.",
+      "servicio1": "Reliable Connectivity",
+      "servicio2": "Effective Technology",
+      "servicio3": "Customized Solutions",
+      "calidad": "Quality Services",
+      "tarjeta1": "Remote Connectivity: Installation of equipment to bring internet to remote areas",
+      "link_servicios": "Learn more about our services",
+      "sobre_Nosotros1": "IPmoviles is a telecommunications company with over 15 years of experience, partnered with INSPUR to provide cutting-edge cloud solutions. They have worked in sectors such as education, finance, and oil, and have received positive ratings in the past 5 years.",
+      "ver_Mas": "More about us",
+      "Clientes": "We work with experts",
+      "sobre_clientes": "",
+      "ver_expertos": "Meet our experts",
+      "titulo_productos": "Quality Products",
+      "texto_producto": ""
+    },
+    "pagina_sobreNosotros": {
+      "titulo_SobreNosotros": "About us",
+      "descripcion": "IPmoviles is a",
+      "descripcionN": "company with over 15 years",
+      "descripcion2": "of unparalleled excellence in the fields of Telecommunications and Information and Communication Technology (ICT). At",
+      "ipMoviles": "IPMoviles",
+      "descripcion3": ", we are dedicated to providing high-quality services and cutting-edge cloud solutions, strictly adhering to industry regulations. We have formed strong strategic alliances with industry leaders such as INSPUR.{{Spacer}}{{Spacer}}Since our foundation in 2008, we have earned trust as the go-to experts, tackling a wide range of projects across multiple sectors, from education, telecommunications, finance, and oil.",
+      "prioridad": "As a customer-centric company,",
+      "prioridazamos": "we prioritize your needs,",
+      "prioridad2": "focusing primarily on ICT solutions. Over the last 5 years, we have consistently received positive ratings, including recognitions from evaluators like",
+      "colombia_credit": "Colombia Credit Report.",
+      "prioridad3": "These results shape our quality system, fostering continuous improvement.{{Spacer}}{{Spacer}}Our commitment to staying at the forefront of network technology drives us to continually update our active staff. Additionally, we actively participated in the Andicom 2015 conference.",
+      "titulo_Mision": "Our Mission",
+      "mision": "We contribute",
+      "necesidades": "to society's technological needs",
+      "mision2": "by providing comprehensive solutions tailored to our clients' needs. This is achieved through the availability and performance of our infrastructure, environment, quality, management, and personnel.",
+      "titulo_vision": "Our Vision",
+      "vision": "By",
+      "año": "2035,",
+      "nuetra_vision": "our vision is to become a leading company, firmly established in the international market for high-quality technology and services, recognized as a reliable and innovative company, complying with current regulations and technological trends and solutions. We will continue to strive for excellence in our field, contributing to the technological progress of society and the performance of our clients' businesses.",
+      "titulo_valores": "Our Corporate Values",
+      "valores_corporativos": "Our company's philosophy centers around loyalty, responsibility, honesty, respect, and competitiveness. We emphasize individual responsibilities to strengthen our institutional image and carry out tasks with a commitment to quality.",
+      "acciones": "Our actions are guided by ethical discernment and respect for both individuals and the organization. We prioritize efficiency, service-oriented commitment, and a culture of quality to exceed customer expectations while respecting the environment."
+    },
+    "Pagina_Servicios": {
+      "titulo_servicios": "Our Services",
+      "secciones": [
+        {
+          "numero": 1,
+          "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "numero": 2,
+          "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "numero": 3,
+          "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "numero": 4,
+          "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "numero": 5,
+          "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "numero": 6,
+          "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+      ],
+      "titulo_experiencia": "Our Experience",
+      "experiencia": "We have 15 years of experience with highly qualified personnel in the execution of various projects in the telecommunications sector, such as:",
+      "tarjetas": [
+        {
+          "título": "Contract",
+          "detalles": {
+            "servicio": "Provision of installation and/or de-installation services for cellular solutions",
+            "cliente": "Comcel S.A.",
+            "duración": "XXXXX",
+            "service_provisto": "Installation of equipment and expansion according to network and service standards of existing sites, and work orders with assigned compliance."
+          }
+        },
+        {
+          "título": "Contract",
+          "detalles": {
+            "servicio": "Provision of installation and/or de-installation services for cellular solutions",
+            "cliente": "Comcel S.A.",
+            "duración": "XXXXX",
+            "service_provisto": "Installation of equipment and expansion according to network and service standards of existing sites, and work orders with assigned compliance."
+          }
+        }
+      ],
+      "titulo": "We are ready to work",
+      "personal": "HSEQ certified personnel with system responsibility license.",
+      "logística": "Logistics and transportation fleet.",
+      "equipo": "Testing equipment for adjustment and quality review"
+    },
+    "pagina_contacto": {
+      "Titulo_contacto": "Contact Us",
+      "formulario": [
+        {
+          "como_contactar": "You can contact us by filling out the form",
+          "nombre": "Your name",
+          "correo_electronico": "Your email",
+          "telefono": "Your phone",
+          "mensaje": "Your message",
+          "boton_enviar": "Send Request"
+        }
+      ],
+      "cuadro_contactos": [
+        {
+          "informacion_contacto": "Contact Information",
+          "telefonos_USA": "Phones in the USA",
+          "tel1": "(+1) (954) 770-4449",
+          "tel2": "(954) 770-6061",
+          "telefonos_Colombia": "Phones in Colombia",
+          "tel3": "+57 320 8542698",
+          "tel4": "+57 313 2723646",
+          "correos": "Our emails",
+          "correo1": "andres.morales@ipmoviles.net",
+          "correo2": "karina.otalora@ipmoviles.net",
+          "correo3": "info@ipmoviles.com"
+        }
+      ],
+      "ubicación_Florida": "Find us in Florida, USA",
+      "ubicación_Colombia": "Find us in Colombia"
+    },
+    "pagina_galeria": {
+      "titulo_galeria": "Gallery",
+      "texto_galeria": "",
+      "mirar_mas": "Check out more on our social media:"
+    }
+  }
+}
