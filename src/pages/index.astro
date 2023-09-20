@@ -2,18 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Home/Hero.astro";
 import Footer from "../components/Footer.astro";
-import Card from "../components/Card.astro";
+import CardServices from "../components/Home/CardServices.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <Hero />
-  <Card
-    href="www.google.com"
-    title="Google"
-    body="Google es el mejor buscador"
-  />
   <Footer />
   <!-- Sections -->
+  <CardServices
+    number={1}
+    icon="mdi:account-sync-outline"
+    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  />
 </Layout>
 
 <style></style>
