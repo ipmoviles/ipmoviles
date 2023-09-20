@@ -1,0 +1,74 @@
+---
+import { Icon } from "astro-icon";
+interface Props {
+  icon: string;
+  body: string;
+  number: string;
+}
+
+const { icon, body, number } = Astro.props;
+---
+
+<div class="contenedor">
+  <div class="number">{number}</div>
+  <div class="icon"><Icon name={icon} /></div>
+  <p class="body">{body}</p>
+</div>
+
+<style lang="scss">
+  @use "../assets/scss/base/_breakpoint.scss" as *;
+
+  .contenedor {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 259px;
+    height: 150px;
+    background-color: var(--services-card-background);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 16px;
+    gap: 10px;
+
+    @include breakpoint(md) {
+      width: 299px;
+      height: 194px;
+    }
+  }
+
+  .body {
+    font-family: var(--font-family-default);
+    font-size: 14px;
+    font-weight: 500;
+
+    @include breakpoint(md) {
+      font-size: 20px;
+    }
+  }
+
+  .number {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: -15px;
+    left: 16px;
+    background-color: var(--color-emerald);
+    color: var(--color-white);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    font-family: var(--font-family-heading);
+    font-weight: 600;
+  }
+
+  .contenedor [astro-icon] {
+    width: 26px;
+    height: 26px;
+    color: var(--action-color);
+  }
+</style>
