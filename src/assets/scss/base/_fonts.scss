@@ -2,7 +2,7 @@
 // | Font
 // | -------------------------------------------------------------
 
-@use 'breakpoint' as *;
+@use "breakpoint" as *;
 
 body {
   font-family: var(--font-family-default);
@@ -20,12 +20,12 @@ body {
     text-decoration: none;
 
     &:visited {
-      color: var(--second-font-color);
+      color: var(--second-font-color); // @todo
     }
 
     &:hover,
     &:focus {
-      color: var(--action-color-state);
+      color: var(--action-color-state); // @todo
       text-decoration: none;
     }
   }
@@ -39,9 +39,12 @@ body {
     font-family: var(--font-family-special);
   }
 
-  h1,
+  h1 {
+    font-weight: 700;
+  }
+
   h2 {
-    font-weight: 800;
+    font-weight: 600;
   }
 
   h3,
@@ -52,62 +55,52 @@ body {
   }
 
   h1 {
-    font-size: 2.25rem;
-    line-height: 3.375rem;
+    font-size: 5.8rem;
+    line-height: normal;
 
     @include breakpoint(sm) {
-      font-size: 3rem;
-      line-height: 3.625rem;
+      font-size: 9.6rem;
+      line-height: normal;
     }
   }
 
-  h2 {
-    font-size: 1.875rem;
-    line-height: 2.8125rem;
+  // h2 {
+  //   font-size: 2.4rem;
+  //   line-height: normal;
 
-    @include breakpoint(sm) {
-      font-size: 2.25rem;
-      line-height: 3.375rem;
-    }
-  }
+  //   @include breakpoint('md') {
+  //     font-size: 3.2rem;
+  //     line-height: normal;
+  //   }
+  // }
 
-  h3 {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
+  // h3 {
+  //   font-size: 1.8rem;
+  //   line-height: normal;
 
-    @include breakpoint(sm) {
-      font-size: 1.875rem;
-      line-height: 2.8125rem;
-    }
-  }
+  //   @include breakpoint('md') {
+  //     font-size: 2rem;
+  //     line-height: normal;
+  //   }
+  // }
 
-  h4 {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
+  // h4 {
+  //   font-size: 1.2rem;
+  //   line-height: normal;
 
-    @include breakpoint(sm) {
-      font-size: 1.5rem;
-      line-height: 2.25rem;
-    }
-  }
+  //   @include breakpoint('md') {
+  //     font-size: 1.5rem;
+  //     line-height: normal;
+  //   }
+  // }
 
-  h5 {
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
+  // h5 {
+  //   font-size: 1rem;
+  //   line-height: normal;
 
-    @include breakpoint(sm) {
-      font-size: 1.25rem;
-      line-height: 1.875rem;
-      h6 {
-        font-size: 1rem;
-      }
-    }
-
-    line-height: 1.5rem;
-
-    @include breakpoint(sm) {
-      font-size: 1.125rem;
-      line-height: 1.6875rem;
-    }
-  }
+  //   @include breakpoint('md') {
+  //     font-size: 1.25rem;
+  //     line-height: normal;
+  //   }
+  // }
 }

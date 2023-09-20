@@ -20,7 +20,6 @@ import ContactNavButton from "./ContactNavButton.astro";
           <DarkMode />
         </ul>
       </nav>
-      
       <ContactNavButton />
       <ResponsiveToggle />
     </div>
@@ -90,7 +89,6 @@ import ContactNavButton from "./ContactNavButton.astro";
     const dropdownList = dropDownMenu.parentNode?.querySelector(
       "ul"
     ) as HTMLElement;
-
     dropDownMenu.classList.add("show");
     dropDownMenu.setAttribute("aria-expanded", "true");
 
@@ -129,6 +127,7 @@ import ContactNavButton from "./ContactNavButton.astro";
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      padding: 20px;
     }
 
     &.is-desktop {
@@ -136,13 +135,17 @@ import ContactNavButton from "./ContactNavButton.astro";
         visibility: visible;
         position: static;
       }
+       nav > ul {
+        align-items: center;
+       }
 
-      .mobile-menu {
+      .mobile-menu,
+      .menu-cta {
         display: none;
       }
 
       .darkmode-toggle {
-        margin-top: -6px;
+        // margin-top: -6px;
       }
     }
 
@@ -167,12 +170,16 @@ import ContactNavButton from "./ContactNavButton.astro";
       .responsive-toggle {
         display: block;
       }
+
+      .menu-cta{
+        display: block;
+      }
     }
 
     .wrapper {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 1.6rem;
     }
 
     nav {
@@ -184,15 +191,15 @@ import ContactNavButton from "./ContactNavButton.astro";
         a,
         button {
           text-decoration: none;
-          font-size: 1.2rem;
-          line-height: 1.6rem;
+          font-size: 1.6rem;
+          line-height: normal;
           transition: color 0.15s ease-in-out;
         }
 
         /* has-dropdown is not used */
         a:hover,
         a:focus,
-        .is-active{
+        .is-active {
           text-decoration: underline;
           text-decoration-thickness: 1px;
         }
@@ -228,6 +235,7 @@ import ContactNavButton from "./ContactNavButton.astro";
   .darkmode-toggle {
     padding: 0;
     border: none;
+    background-color: inherit;
 
     svg {
       width: 30px;

@@ -2,17 +2,24 @@
 
 ---
 
-<li>
-  <a class="menu-cta button" href="/contact"> Contact Us</a>
-</li>
+<a class="menu-cta" href="/contact">Contact Us</a>
 
 <style>
   .menu-cta {
+    display: inline-block;
     width: 80px;
-    height: 23px;
-    padding: 10px 5px;
+    padding: 10px;
+    font-size: 1.2rem;
     border-radius: var(--radius-default);
     background-color: var(--action-color);
     text-decoration: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+
+
+    &:hover {
+      background-color: var(--action-color-state);
+    }
   }
 </style>
