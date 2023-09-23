@@ -4,7 +4,7 @@ import { DarkMode } from "accessible-astro-components";
 import { Image } from "astro:assets";
 import logo from "../assets/Logo.png";
 import ContactNavButton from "./ContactNavButton.astro";
-import LangSwitch from "./LangSwitch.astro";
+import { LanguageSelector } from "astro-i18next/components";
 ---
 
 <div id="main-navigation" class="is-desktop">
@@ -18,16 +18,17 @@ import LangSwitch from "./LangSwitch.astro";
         <ul class="menu">
           <!-- Slot for the desktop menu -->
           <slot />
+          <LanguageSelector class="lang-switch" />
           <DarkMode />
         </ul>
       </nav>
       <ContactNavButton />
-      <LangSwitch />
       <ResponsiveToggle />
     </div>
     <nav class="mobile-menu dropdown-menu" aria-label="Main navigation mobile">
       <ul class="menu">
         <slot />
+        <LanguageSelector class="lang-switch" />
         <DarkMode />
       </ul>
     </nav>
@@ -137,9 +138,9 @@ import LangSwitch from "./LangSwitch.astro";
         visibility: visible;
         position: static;
       }
-       nav > ul {
+      nav > ul {
         align-items: center;
-       }
+      }
 
       .mobile-menu,
       .menu-cta {
@@ -173,7 +174,7 @@ import LangSwitch from "./LangSwitch.astro";
         display: block;
       }
 
-      .menu-cta{
+      .menu-cta {
         display: block;
       }
     }
@@ -254,5 +255,16 @@ import LangSwitch from "./LangSwitch.astro";
         fill: var(--theme-color-state);
       }
     }
+  }
+
+  .lang-switch {
+    appearance: none;
+    width: max-content;
+    color: var(--switch-font-color);
+    background-color: var(--switch-bg-color);
+    font-size: 1.6rem;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
 </style>

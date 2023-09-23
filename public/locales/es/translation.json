@@ -1,43 +1,43 @@
 {
-  "encabezado": {
-    "boton_contacto": "Botón de Contacto"
+  "header": {
+    "contact_button": "Contáctanos"
   },
-  "pie_de_Pagina": {
-    "trabajemos_juntos": "Trabajemos juntos",
-    "boton_contactar": "Contáctanos",
-    "enlaces_rapidos": "Enlaces rápidos",
-    "enlaces": [
+  "footer": {
+    "together": "Trabajemos juntos",
+    "contactus": "Contáctanos",
+    "quick_links": "Enlaces rápidos",
+    "links": [
       "Acerca de nosotros",
       "Galería",
       "Nuestros servicios",
       "Contáctanos",
       "Carreras"
     ],
-    "titulo_Colombia": "Sede en Colombia",
-    "direccion_Colombia": "Cra 1ª # 11-34Q Chía - Cundinamarca",
-    "titulo_USA": "Sede en Estados Unidos",
-    "direccion_USA": "210 NE 45th St. Oakland Park, Florida 33334",
-    "aIng": "Enlace en inglés",
-    "aLinkedIn": "Enlace a LinkedIn",
-    "derechos_autor": "Todos los derechos reservados por IPMovies.com"
+    "title_colombia": "Sede en Colombia",
+    "address_colombia": "Cra 1ª # 11-34Q Chía - Cundinamarca",
+    "title_usa": "Sede en Estados Unidos",
+    "address_usa": "210 NE 45th St. Oakland Park, Florida 33334",
+    "a_ig": "Enlace en Instagram",
+    "a_linkedIn": "Enlace a LinkedIn",
+    "rights": "Todos los derechos reservados por IPMoviles.com"
   },
-  "pagina_inicio": {
-    "nombre_empresa": "IP MOVILES Ltda.",
-    "lema_negrilla": "Su socio de confianza en conectividad y servicios de telecomunicaciones.",
-    "lema2": "Soluciones tecnológicas adaptadas a las necesidades de nuestros clientes.",
-    "servicio1": "Conectividad confiable",
-    "servicio2": "Tecnología efectiva",
-    "servicio3": "Soluciones personalizadas",
-    "calidad": "Servicios de calidad",
-    "tarjeta1": "Conectividad remota: Instalación de equipos para llevar internet a áreas remotas",
-    "link_servicios": "Conoce más sobre nuestros servicios",
-    "sobre_Nosotros1": "IPmoviles es una empresa de telecomunicaciones con más de 15 años de experiencia, aliada con INSPUR para ofrecer soluciones en la nube. Han trabajado en sectores como educación, finanzas y petróleo, y han recibido calificaciones positivas en los últimos 5 años.",
+  "site_home": {
+    "company_name": "IP MOVILES Ltda.",
+    "header_text01": "Su socio de confianza en conectividad y servicios de telecomunicaciones.",
+    "header_text02": "Soluciones tecnológicas adaptadas a las necesidades de nuestros clientes.",
+    "service01": "Conectividad confiable",
+    "service02": "Tecnología efectiva",
+    "service03": "Soluciones personalizadas",
+    "quality": "Servicios de calidad",
+    "card01": "Conectividad remota: Instalación de equipos para llevar internet a áreas remotas",
+    "link_services": "Conoce más sobre nuestros servicios",
+    "about_us": "IPmoviles es una empresa de telecomunicaciones con más de 15 años de experiencia, aliada con INSPUR para ofrecer soluciones en la nube. Han trabajado en sectores como educación, finanzas y petróleo, y han recibido calificaciones positivas en los últimos 5 años.",
     "ver_Mas": "Más sobre nosotros",
-    "clientes": "Trabajamos con expertos",
-    "sobre_clientes": "",
-    "ver_expertos": "Conoce a nuestros expertos",
-    "titulo_productos": "Productos de calidad",
-    "texto_producto": ""
+    "clients": "Trabajamos con expertos",
+    "about_clients": "",
+    "clients_button": "Conoce a nuestros expertos",
+    "title_products": "Productos de calidad",
+    "text_products": ""
   },
   "pagina_sobreNosotros": {
     "titulo_SobreNosotros": "Acerca de nosotros",
