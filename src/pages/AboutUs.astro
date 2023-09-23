@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Home IP Moviles">
+  <section class="contenedor">
+    <h1 class="h1">About Us</h1>
+    <div class="experiencia">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="52"
+        height="52"
+        viewBox="0 0 52 52"
+        fill="none"
+        style="display: flex; justify-content: center; align-items: center; position: relative;"
+      >
+        <circle cx="26" cy="26" r="26" fill="#020015"></circle>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          x="8"
+          y="10"
+        >
+          <path
+            d="M21.7144 8H30.8572V17.1429"
+            stroke="#71CE28"
+            stroke-width="2.28571"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M30.8571 8L17.9428 20.9143C17.7292 21.1237 17.442 21.241 17.1428 21.241C16.8437 21.241 16.5565 21.1237 16.3428 20.9143L11.0857 15.6571C10.872 15.4477 10.5848 15.3304 10.2857 15.3304C9.98653 15.3304 9.69931 15.4477 9.48568 15.6571L1.14282 24"
+            stroke="#71CE28"
+            stroke-width="2.28571"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </svg>
+
+      <p>
+        With <span class="xp">over 15 years</span> of unmatched excellence in
+        the Telecom and ICT fields. In IPMoviles we are dedicated to providing
+        high-quality services and cutting-edge cloud solutions while strictly
+        adhering to industry regulations, Forming strong strategic alliances
+        with industry leaders like INSPUR.
+      </p>
+      <p>
+        Since our establishment in 2008, We've gained your trust as the go-to
+        experts, tackling a wide range of projects across multiple sectors, from
+        telecommunications to education, finance, and oil.
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .xp {
+    color: var(--color-emerald);
+  }
+  .contenedor {
+    box-sizing: border-box;
+    padding: 30px 65px 30px 65px;
+  }
+  .h1 {
+    color: var(--color-emerald);
+    font-size: 24px;
+  }
+</style>
