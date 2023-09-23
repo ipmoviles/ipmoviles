@@ -1,0 +1,41 @@
+---
+interface Props {
+  title: string;
+  size: string;
+}
+
+const { title, size } = Astro.props;
+---
+
+<div class="contenedor">
+  <h1 class="h1">{title}</h1>
+  <slot />
+</div>
+
+<style lang="scss" define:vars={{ size }}>
+  @use "../assets/scss/base/_breakpoint.scss" as *;
+  .contenedor {
+    width: 350px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: var(--color-dark-jungle-green);
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 30px;
+    @include breakpoint(md) {
+      width: var(--size);
+      margin-bottom: 0px;
+      height: 100%;
+    }
+  }
+
+  .h1 {
+    font-size: 18px;
+    color: var(--color-emerald);
+    @include breakpoint(md) {
+      font-size: 24px;
+    }
+  }
+</style>
