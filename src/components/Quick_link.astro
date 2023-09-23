@@ -12,21 +12,21 @@ import "../assets/scss/base/_breakpoint.scss";
   <a href={href}>{title}</a>
 </li>
 
-<style>
+<style lang="scss">
+  @use "../assets/scss/base/_breakpoint.scss" as *;
   a {
     text-decoration: underline;
-    color: var(--color-mint-cream);
+    color: var(--color-mint-cream) !important;
     font-size: 10px;
-  }
-  li {
-    font-size: 5px;
-  }
-  @media screen and (min-width: 768px) {
-    a {
+    @include breakpoint(md) {
       font-size: 18px;
       color: var(--color-mint-cream) !important;
     }
-    li {
+  }
+  li {
+    font-size: 5px;
+    color: var(--color-mint-cream) !important;
+    @include breakpoint(md) {
       font-size: 10px;
       color: var(--color-mint-cream) !important;
     }
