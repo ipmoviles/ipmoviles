@@ -4,9 +4,10 @@ interface Props {
   icon: string;
   body: string;
   number: string;
+  background: string;
 }
 
-const { icon, body, number } = Astro.props;
+const { icon, body, number, background } = Astro.props;
 ---
 
 <div class="contenedor">
@@ -15,7 +16,7 @@ const { icon, body, number } = Astro.props;
   <p class="body">{body}</p>
 </div>
 
-<style lang="scss">
+<style lang="scss" define:vars={{ background }}>
   @use "../assets/scss/base/_breakpoint.scss" as *;
 
   .contenedor {
@@ -29,12 +30,15 @@ const { icon, body, number } = Astro.props;
     align-items: center;
     border-radius: 5px;
     box-sizing: border-box;
-    padding: 16px;
+    padding: 20px;
     gap: 10px;
     color: var(--color-mint-cream);
+    margin-left: 60px;
     @include breakpoint(md) {
       width: 299px;
-      height: 194px;
+      height: auto;
+      background-color: var(--background);
+      margin-left: 0px;
     }
   }
 
