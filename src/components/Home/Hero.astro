@@ -1,12 +1,16 @@
 ---
-
+import Icon from "astro-icon";
+import { Image } from "astro:assets";
+import heroImage from "../../assets/hero-image.svg";
 ---
 
 <section class="section-hero">
   <div class="hero-text">
     <div class="hero-titles">
-      <h1>IP MOVILES</h1>
-      <span>LTDA</span>
+      <div class="hero-title">
+        <h1>IP MOVILES</h1>
+        <span>LTDA</span>
+      </div>
       <h2 class="hero-subtitle">
         Your trusted partner in connectivity and telecommunication services.
       </h2>
@@ -15,13 +19,102 @@
       </h2>
     </div>
     <div class="hero-features">
-      <div><span></span><p>Effective connectivity</p></div>
-      <div><span></span><p>Reliable technology</p></div>
-      <div><span></span><p>Customized solutions</p></div>
+      <div>
+        <Icon name="mdi:check-circle" /><p>Effective connectivity</p>
+      </div>
+      <div>
+        <Icon name="mdi:check-circle" /><p>Reliable technology</p>
+      </div>
+      <div>
+        <Icon name="mdi:check-circle" /><p>Customized solutions</p>
+      </div>
     </div>
   </div>
-  <div class="hero-image"></div>
+  <div class="hero-image">
+    <Image src={heroImage} alt="IP Moviles" />
+  </div>
   <div class="hero-cta">
-    <a href="#" class="go-down-button"><span></span></a>
+    <a href="#section-services" class="go-down-button"
+      ><Icon name="mdi:chevron-down-circle" /></a
+    >
   </div>
 </section>
+
+<style lang="scss">
+  .section-hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: max-content;
+    background: var(--hero-background-color);
+    padding: 80px 0px 50px 0px;
+    text-wrap: balance;
+  }
+
+  .hero-text {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    > .hero-titles {
+      > .hero-title {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        margin-bottom: 30px;
+
+        > h1,
+        span {
+          color: var(--hero-title);
+        }
+
+        > span {
+          font-weight: 700;
+          align-self: flex-end;
+          font-size: 1rem;
+        }
+      }
+
+      > .hero-subtitle {
+        font-size: 2rem;
+
+        &.opacity {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          color: var(--hero-text-opacity);
+        }
+      }
+    }
+    > .hero-features {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 1.8rem;
+
+      div {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
+
+  .hero-image {
+  }
+
+  .hero-cta {
+  }
+
+  .hero-features [astro-icon] {
+    color: var(--action-color);
+    width: 26px;
+    height: 26px;
+  }
+
+  .hero-cta [astro-icon="mdi:chevron-down-circle"] {
+    color: var(--action-color);
+    width: 48px;
+    height: 48px;
+  }
+</style>
