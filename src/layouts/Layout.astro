@@ -37,7 +37,7 @@ const { title } = Astro.props;
     <main id="main-content">
       <slot />
     </main>
-
+    <!-- <Footer /> -->
     <style lang="scss" is:global>
       :root {
         --radius-default: 5px;
@@ -84,7 +84,7 @@ const { title } = Astro.props;
         --switch-bg-color: var(--color-mint-cream);
         --emphasis-color: var(--color-emerald);
         --hero-title: var(--color-emerald);
-        --hero-text-opacity: #BBBFBD;
+        --hero-text-opacity: #bbbfbd;
       }
 
       body {
@@ -113,7 +113,10 @@ const { title } = Astro.props;
       .no-underline {
         text-decoration: none;
       }
+
+      .hidden {
+        display: none;
+      }
     </style>
-    <Footer />
   </body>
 </html>
