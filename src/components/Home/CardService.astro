@@ -1,0 +1,73 @@
+---
+import Icon from "astro-icon";
+
+interface Props {
+  title: string;
+  text: string;
+  icon: string;
+}
+
+const { title, text, icon } = Astro.props;
+---
+
+<div class="card-container">
+  <div class="service-icon">
+    <Icon name={icon} />
+  </div>
+  <div class="service-content">
+    <h3 class="service-title">{title}</h3>
+    <p class="service-text">{text}</p>
+  </div>
+</div>
+
+<style lang="scss">
+  .card-container {
+    min-width: 200px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .service-content {
+      display: flex;
+      justify-content: center;
+      height: 120px;
+      border-radius: var(--radius-default);
+      flex-direction: column;
+      background-color: var(--card-background-color);
+      padding: 20px 20px 0px 20px;
+      text-wrap: balance;
+      color: var(--color-mint-cream);
+
+      .service-text {
+        font-size: 1.2rem;
+      }
+
+      h3.service-title {
+        font-size: 1.2rem;
+      }
+    }
+
+    .service-icon {
+      position: absolute;
+      width: 54px;
+      height: 54px;
+      top: calc(50% - 85px);
+      border-radius: 50%;
+      background-color: var(--color-emerald);
+
+      > svg {
+        position: absolute;
+        left: calc(50% - 14px);
+        top: calc(50% - 14px);
+      }
+    }
+  }
+
+  [astro-icon] {
+    width: 28px;
+    height: 28px;
+    color: var(--color-chinese-black);
+  }
+</style>

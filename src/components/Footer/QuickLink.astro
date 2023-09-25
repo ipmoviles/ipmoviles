@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+  href: string;
+}
+
+const { href, title } = Astro.props;
+---
+
+<li>
+  <a href={href}>{title}</a>
+</li>
+
+<style lang="scss">
+  @use "../../assets/scss/base/_breakpoint.scss" as *;
+  a {
+    color: var(--color-mint-cream);
+    font-size: 1rem;
+    @include breakpoint(sm) {
+      font-size: 1.2rem;
+    } @include breakpoint(md) {
+      font-size: 1.8rem;
+    }
+  }
+</style>
