@@ -2,11 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Home/Hero.astro";
 import Services from "../components/Home/Services.astro";
+import CardService from "../components/Home/CardService.astro";
 ---
 
-<Layout title="Home IP Moviles">
+<Layout title="Home">
   <Hero />
-  <Services />
+  <Services>
+    
+    <CardService title="Remote Connectivity" text="Installation of equipment to bring internet to remote areas" icon="iconoir:antenna" />
+    <CardService title="Remote Connectivity" text="Installation of equipment to bring internet to remote areas" icon="iconoir:antenna" />
+    <CardService title="Remote Connectivity" text="Installation of equipment to bring internet to remote areas" icon="iconoir:antenna" />
+    <CardService title="Remote Connectivity" text="Installation of equipment to bring internet to remote areas" icon="iconoir:antenna" />
+  </Services>
   <!-- Sections -->
 
 </Layout>
