@@ -1,0 +1,40 @@
+---
+interface Props {
+  title: string;
+  body: string;
+}
+
+const { title, body } = Astro.props;
+---
+
+<div class="address">
+  <h3 class="address-title">{title}</h3>
+  <p class="address-text">{body}</p>
+</div>
+
+<style lang="scss">
+  @use "../../assets/scss/base/_breakpoint.scss" as *;
+  h3.address-title {
+    color: var(--color-emerald);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+
+    @include breakpoint(sm) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint(md) {
+      font-size: 2rem;
+    }
+  }
+
+  p.address-text {
+    font-size: 1rem;
+    @include breakpoint(sm) {
+      font-size: 1.2rem;
+    }
+    @include breakpoint(md) {
+      font-size: 1.8rem;
+    }
+  }
+</style>

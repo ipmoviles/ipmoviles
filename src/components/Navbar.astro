@@ -128,12 +128,22 @@ import { LanguageSelector } from "astro-i18next/components";
 </script>
 
 <style lang="scss" is:global>
+  @use "../assets/scss/base/_breakpoint.scss" as *;
   #main-navigation {
     > .container {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       padding: 20px;
+    }
+    @include breakpoint(xl) {
+      display: flex;
+      justify-content: center;
+
+      .container {
+        width: 75%;
+        padding: 20px 0px;
+      }
     }
 
     &.is-desktop {

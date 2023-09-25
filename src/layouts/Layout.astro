@@ -1,6 +1,6 @@
 ---
 import "../assets/scss/globals.scss";
-import Footer from "../components/Footer.astro";
+import Footer from "../components/Footer/Footer.astro";
 import Header from "../components/Header.astro";
 
 interface Props {
@@ -37,7 +37,7 @@ const { title } = Astro.props;
     <main id="main-content">
       <slot />
     </main>
-    <!-- <Footer /> -->
+    <Footer />
     <style lang="scss" is:global>
       :root {
         --radius-default: 5px;
