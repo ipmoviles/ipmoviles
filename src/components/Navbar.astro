@@ -19,9 +19,9 @@ import { LanguageSelector } from "astro-i18next/components";
           <!-- Slot for the desktop menu -->
           <slot />
           <LanguageSelector class="lang-switch" />
-          <DarkMode id="dark-mode-toggle-desktop" />
         </ul>
       </nav>
+      <DarkMode />
       <ContactNavButton />
       <ResponsiveToggle />
     </div>
@@ -29,7 +29,6 @@ import { LanguageSelector } from "astro-i18next/components";
       <ul class="menu">
         <slot />
         <LanguageSelector class="lang-switch" />
-        <DarkMode />
       </ul>
     </nav>
   </div>
@@ -39,8 +38,6 @@ import { LanguageSelector } from "astro-i18next/components";
   const mainNav = document.querySelector("#main-navigation");
   // const header = document.querySelector("header") as HTMLElement;
   const dropdownMenu = mainNav?.querySelector(".dropdown-menu");
-  const darkModeToggle = mainNav?.querySelectorAll(".darkmode-toggle");
-  console.log(darkModeToggle);
 
   const setActiveMenuItem = () => {
     const mobileDesktopMenus = mainNav?.querySelectorAll("nav > ul");
@@ -156,7 +153,7 @@ import { LanguageSelector } from "astro-i18next/components";
     z-index: 100;
     transition: top 0.3s ease;
     background-color: var(--navbar-background-color);
-    
+
     //  nav ul.menu li.menu-item a{
     //   color: var(--navbar-text-color);
     //  }

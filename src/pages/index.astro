@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Home/Hero.astro";
 import Services from "../components/Home/Services.astro";
 import CardService from "../components/Home/CardService.astro";
+import Experience from "../components/Home/Experience.astro";
+import Company from "../components/Home/Company.astro";
 ---
 
 <Layout title="Home">
@@ -10,36 +12,38 @@ import CardService from "../components/Home/CardService.astro";
   <Services>
     <CardService
       title="Remote Connectivity"
-      text="Installation of equipment to bring internet to remote areas"
+      text="Installation of equipment to bring internet to remote areas."
       icon="iconoir:antenna"
     />
     <CardService
-      title="Remote Connectivity"
-      text="Installation of equipment to bring internet to remote areas"
+      title="Configuration and Support"
+      text="Configuration of telecommunications technologies tailored to your needs."
       icon="iconoir:antenna"
     />
     <CardService
-      title="Remote Connectivity"
-      text="Installation of equipment to bring internet to remote areas"
+      title="Site Surveys"
+      text="Site evaluations for new installations and network expansions, with detailed report deliveries."
       icon="iconoir:antenna"
     />
     <div class="break"></div>
     <CardService
-      title="Remote Connectivity"
-      text="Installation of equipment to bring internet to remote areas"
+      title="Network Maintenance"
+      text="Maintenance and optimization of cellular networks, Wi-Fi, and data links."
       icon="iconoir:antenna"
     />
     <CardService
-      title="Remote Connectivity"
-      text="Installation of equipment to bring internet to remote areas"
+      title="Network Deployment"
+      text="Commissioning and configuration of mobile network solutions and network testing"
       icon="iconoir:antenna"
     />
     <CardService
-      title="Remote Connectivity"
-      text="Installation of equipment to bring internet to remote areas"
+      title="Infrastructure and Security"
+      text="Installation of servers, intelligent cabinets, CCTV systems, and data networks for voice, data, and alarm services."
       icon="iconoir:antenna"
     />
   </Services>
+  <Company />
+  <!-- <Experience /> -->
   <!-- Sections -->
 </Layout>
 
