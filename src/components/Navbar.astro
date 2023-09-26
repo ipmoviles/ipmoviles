@@ -19,7 +19,7 @@ import { LanguageSelector } from "astro-i18next/components";
           <!-- Slot for the desktop menu -->
           <slot />
           <LanguageSelector class="lang-switch" />
-          <DarkMode />
+          <DarkMode id="dark-mode-toggle-desktop" />
         </ul>
       </nav>
       <ContactNavButton />
@@ -37,8 +37,10 @@ import { LanguageSelector } from "astro-i18next/components";
 
 <script>
   const mainNav = document.querySelector("#main-navigation");
-  const mainMenu = mainNav?.querySelector("ul");
+  // const header = document.querySelector("header") as HTMLElement;
   const dropdownMenu = mainNav?.querySelector(".dropdown-menu");
+  const darkModeToggle = mainNav?.querySelectorAll(".darkmode-toggle");
+  console.log(darkModeToggle);
 
   const setActiveMenuItem = () => {
     const mobileDesktopMenus = mainNav?.querySelectorAll("nav > ul");
@@ -76,9 +78,11 @@ import { LanguageSelector } from "astro-i18next/components";
     if (mainNavWidth >= widthLimit) {
       mainNav?.classList.add("is-desktop");
       mainNav?.classList.remove("is-mobile");
+      return "desktop";
     } else if (mainNavWidth < widthLimit) {
       mainNav?.classList.add("is-mobile");
       mainNav?.classList.remove("is-desktop");
+      return "mobile";
     }
   };
 
@@ -117,6 +121,21 @@ import { LanguageSelector } from "astro-i18next/components";
     }
   };
 
+  // let prevScrollpos = window.scrollY;
+  // window.onscroll = () => {
+  //   const viewport = checkMenuSize();
+  //   console.log(window.scrollY);
+  //   if (viewport === "mobile") {
+  //     const currentScrollPos = window.scrollY;
+  //     if (prevScrollpos > currentScrollPos) {
+  //       header.style.top = "0";
+  //     } else {
+  //       header.style.top = "-74px";
+  //     }
+  //     prevScrollpos = currentScrollPos;
+  //   }
+  // };
+
   dropdownMenu &&
     dropdownMenu.addEventListener("click", () => {
       toggleDropDownMenu;
@@ -129,7 +148,22 @@ import { LanguageSelector } from "astro-i18next/components";
 
 <style lang="scss" is:global>
   @use "../assets/scss/base/_breakpoint.scss" as *;
+
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: top 0.3s ease;
+    background-color: var(--navbar-background-color);
+    
+    //  nav ul.menu li.menu-item a{
+    //   color: var(--navbar-text-color);
+    //  }
+  }
+
   #main-navigation {
+    transition: top 0.3s ease;
     > .container {
       display: flex;
       justify-content: space-between;

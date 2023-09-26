@@ -38,6 +38,7 @@ const { title } = Astro.props;
       <slot />
     </main>
     <Footer />
+
     <style lang="scss" is:global>
       :root {
         --radius-default: 5px;
@@ -45,45 +46,53 @@ const { title } = Astro.props;
         --font-family-default: "Raleway", sans-serif;
         --font-family-heading: "Rubik", sans-serif;
 
+        // Not overrides
+        --navbar-background-color: var(--color-chinese-black);
+        --navbar-text-color: var(--color-mint-cream);
+        --toggle-color: var(--color-white);
+        --switch-font-color: var(--color-chinese-black);
+        --switch-bg-color: var(--color-mint-cream);
+        --card-background-color: var(--color-blue-saphire);
+        --grey: var(--color-light-silver);
+
         // Light Theme
+        --action-color: var(--color-moonstone-dark);
+        --action-color-state: var(--color-moonstone-dark);
         --font-color: var(--color-rich-black);
         --second-font-color: var(--color-chinese-black);
-        --action-color: var(--color-emerald);
-        --action-color-state: var(--color-emerald);
-        --background-color: var(--color-white-smoke);
-        --hero-background-color: var(--color-white-smoke);
-        --card-background-color: var(--color-dark-jungle-green);
-        --emphasis-color: var(--color-moonstone);
-        --grey: var(--color-light-silver);
+        --background-color: var(--color-azure);
+        --hero-background-color: linear-gradient(
+          180deg,
+          rgba(0, 2, 14, 0.2) 0%,
+          rgba(71, 158, 188, 0.2) 47.4%,
+          rgba(244, 254, 255, 0.2) 100%
+        );
         --theme-color: var(--color-icon-dark);
         --theme-color-state: var(--color-icon-dark-hover);
-        --toggle-color: var(--color-chinese-black);
         --services-card-background: #0b151b;
-        --switch-font-color: var(--color-mint-cream);
-        --switch-bg-color: var(--color-chinese-black);
+        --emphasis-color: var(--color-moonstone);
         --hero-title: var(--color-rich-black);
         --hero-text-opacity: var(--color-chinese-black);
       }
 
       // darkmode overrides
       .darkmode {
+        --action-color: var(--color-moonstone);
+        --action-color-state: var(--color-moonstone);
         --font-color: var(--color-mint-cream);
         --second-font-color: var(--color-mint-cream);
         --background-color: var(--color-chinese-black);
         --hero-background-color: radial-gradient(
           100% 100% at 50% 0%,
           rgba(230, 230, 230, 0.2) 0%,
-          rgba(2, 183, 63, 0.2) 42.77%,
+          rgba(2, 118, 183, 0.2) 42.77%,
           rgba(14, 19, 31, 0.2) 100%
         );
         --theme-color: var(--color-icon-light);
         --theme-color-state: var(--color-icon-light-hover);
-        --toggle-color: var(--color-white);
         --services-card-background: rgba(2, 0, 21, 0.6);
-        --switch-font-color: var(--color-chinese-black);
-        --switch-bg-color: var(--color-mint-cream);
         --emphasis-color: var(--color-emerald);
-        --hero-title: var(--color-emerald);
+        --hero-title: var(--color-moonstone);
         --hero-text-opacity: #bbbfbd;
       }
 

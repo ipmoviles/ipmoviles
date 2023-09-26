@@ -1,9 +1,12 @@
 ---
-import Container from "../Container.astro";
+
 ---
 
 <section id="section-services" class="section-services">
-  <h2 class="section-title">Quality Services</h2>
+  <div class="services-text">
+    <h2 class="section-title">Quality Services</h2>
+    <p>We offer a wide range of services to meet your needs and requirements</p>
+  </div>
   <div class="services-cards">
     <slot />
   </div>
@@ -12,15 +15,27 @@ import Container from "../Container.astro";
 
 <style lang="scss">
   @use "../../assets/scss/base/_breakpoint.scss" as *;
+
   .section-services {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
 
+    > .services-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      gap: 20px;
+    }
     > .services-cards {
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: nowrap;
       padding: 40px 20px;
       overflow-x: scroll;
@@ -29,19 +44,34 @@ import Container from "../Container.astro";
 
       @include breakpoint(md) {
         flex-wrap: wrap;
-        gap: 10px;
+        justify-content: center;
+        row-gap: 25px;
         padding: 40px 20px;
         scroll-snap-type: none;
         overflow-x: hidden;
-        
       }
     }
   }
   .section-title {
-    margin-bottom: 100px;
+    font-size: 3rem;
+
+    @include breakpoint(md) {
+      font-size: 3.6rem;
+    }
+
+    @include breakpoint(lg) {
+      font-size: 4rem;
+    }
   }
   .hyperlink {
     display: block;
-    margin-top: 100px;
+    align-self: flex-start;
+    font-size: 1.4rem;
+    margin-left: 20px;
+    text-decoration: underline;
+    color: var(--font-color);
+    @include breakpoint(md) {
+      font-size: 1.6rem;
+    }
   }
 </style>

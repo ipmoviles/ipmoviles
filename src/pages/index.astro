@@ -8,14 +8,51 @@ import CardService from "../components/Home/CardService.astro";
 <Layout title="Home">
   <Hero />
   <Services>
-    
-    <CardService title="Remote Connectivity" text="Installation of equipment to bring internet to remote areas" icon="iconoir:antenna" />
-    <CardService title="Remote Connectivity" text="Installation of equipment to bring internet to remote areas" icon="iconoir:antenna" />
-    <CardService title="Remote Connectivity" text="Installation of equipment to bring internet to remote areas" icon="iconoir:antenna" />
-    <CardService title="Remote Connectivity" text="Installation of equipment to bring internet to remote areas" icon="iconoir:antenna" />
+    <CardService
+      title="Remote Connectivity"
+      text="Installation of equipment to bring internet to remote areas"
+      icon="iconoir:antenna"
+    />
+    <CardService
+      title="Remote Connectivity"
+      text="Installation of equipment to bring internet to remote areas"
+      icon="iconoir:antenna"
+    />
+    <CardService
+      title="Remote Connectivity"
+      text="Installation of equipment to bring internet to remote areas"
+      icon="iconoir:antenna"
+    />
+    <div class="break"></div>
+    <CardService
+      title="Remote Connectivity"
+      text="Installation of equipment to bring internet to remote areas"
+      icon="iconoir:antenna"
+    />
+    <CardService
+      title="Remote Connectivity"
+      text="Installation of equipment to bring internet to remote areas"
+      icon="iconoir:antenna"
+    />
+    <CardService
+      title="Remote Connectivity"
+      text="Installation of equipment to bring internet to remote areas"
+      icon="iconoir:antenna"
+    />
   </Services>
   <!-- Sections -->
-
 </Layout>
 
-<style></style>
+<style lang="scss">
+  @use "../assets/scss/base/_breakpoint.scss" as *;
+  .break {
+    @include breakpoint(sm) {
+      display: none;
+    }
+    @include breakpoint(md) {
+      display: block;
+      flex-basis: 100%;
+      height: 1px;
+    }
+  }
+</style>
