@@ -5,6 +5,8 @@ import Services from "../components/Home/Services.astro";
 import CardService from "../components/Home/CardService.astro";
 import Experience from "../components/Home/Experience.astro";
 import Company from "../components/Home/Company.astro";
+import { Image } from "astro:assets";
+import imageParallax from "../assets/images/ParallaxExpSection.png";
 ---
 
 <Layout title="Home">
@@ -42,6 +44,7 @@ import Company from "../components/Home/Company.astro";
       icon="iconoir:antenna"
     />
   </Services>
+  <Image src={imageParallax} alt="Company" class={"break-section-image"}/>
   <Company />
   <!-- <Experience /> -->
   <!-- Sections -->
@@ -50,6 +53,7 @@ import Company from "../components/Home/Company.astro";
 <style lang="scss">
   @use "../assets/scss/base/_breakpoint.scss" as *;
   .break {
+    display: none;
     @include breakpoint(sm) {
       display: none;
     }
@@ -59,4 +63,12 @@ import Company from "../components/Home/Company.astro";
       height: 1px;
     }
   }
+
+  .break-section-image {
+    width: 100%;
+   @include breakpoint(530px) {
+     display: none;
+   }
+  }
+  
 </style>

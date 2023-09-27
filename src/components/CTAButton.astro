@@ -1,0 +1,43 @@
+---
+import Icon from "astro-icon";
+interface Props {
+  icon: string;
+}
+
+const { icon } = Astro.props;
+---
+
+<button class="cta-button">
+  <a href="/services"><slot /></a>
+  <Icon name={icon} />
+</button>
+
+<style lang="scss">
+  .cta-button {
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: var(--radius-default);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cta-button-background-color);
+
+    > a {
+      text-decoration: none;
+      color: var(--color-mint-cream);
+      display: inline-block;
+      text-wrap: nowrap;
+    }
+
+    > [astro-icon] {
+      width: 20px;
+      height: 20px;
+      color: var(--color-mint-cream);
+    }
+  }
+</style>

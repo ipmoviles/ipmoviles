@@ -3,15 +3,32 @@
 ---
 
 <section id="section-services" class="section-services">
-  <div class="services-text">
-    <h2 class="section-title">Quality Services</h2>
-    <p>We offer a wide range of services to meet your needs and requirements</p>
+  <div class="services-title-container">
+    <div class="services-text">
+      <h2 class="section-title">Quality Services</h2>
+      <p>
+        We offer a wide range of services to meet your needs and requirements
+      </p>
+    </div>
   </div>
-  <div class="services-cards">
-    <slot />
+  <div class="cards-container">
+    <div class="services-cards">
+      <slot />
+    </div>
   </div>
-  <a href="/services" class="hyperlink">Know more about our services</a>
+  <div class="hyperlink-container">
+    <a href="/services" class="hyperlink">Know more about our services</a>
+  </div>
 </section>
+
+<script>
+  const firstCard = document.querySelector(".card-container:first-child");
+
+  document.addEventListener("resize", () => {
+    const clientWidth = document.documentElement.clientWidth;
+    console.log(clientWidth);
+  });
+</script>
 
 <style lang="scss">
   @use "../../assets/scss/base/_breakpoint.scss" as *;
@@ -22,78 +39,90 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     gap: 20px;
+
+    > .services-title-container,
+    > .hyperlink-container {
+      padding-left: 20px;
+    }
 
     @include breakpoint(lg) {
       width: 90%;
-    }
+      margin-bottom: 100px;
 
-    > .services-text {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-left: 20px;
-      margin-bottom: 20px;
-      gap: 20px;
-
-      @include breakpoint(lg) {
-        margin-left: 40px;
-      }
-      @include breakpoint(xl) {
-        margin-left: 80px;
+      > .services-title-container,
+      > .hyperlink-container {
+        display: flex;
+        width: 100%;
       }
     }
-    > .services-cards {
+
+    > .services-title-container {
+      > .services-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        gap: 20px;
+
+        @include breakpoint(lg) {
+          // margin-left: 40px;
+        }
+        @include breakpoint(xl) {
+          // margin-left: 80px;
+        }
+      }
+    }
+
+    > .cards-container {
       width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: nowrap;
-      padding: 0px 20px;
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
-      gap: 30px;
+      > .services-cards {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding: 0px 20px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        gap: 30px;
 
-      @include breakpoint(md) {
-        flex-wrap: wrap;
-        justify-content: center;
-        row-gap: 25px;
-        padding: 40px 20px;
-        scroll-snap-type: none;
-        overflow-x: hidden;
-      }
+        @include breakpoint(md) {
+          flex-wrap: wrap;
+          justify-content: space-between;
+          row-gap: 25px;
+          // padding: 40px 20px;
+          scroll-snap-type: none;
+          overflow-x: hidden;
+        }
 
-      @include breakpoint(xxl) {
-        justify-content: center;
+        @include breakpoint(xxl) {
+          justify-content: center;
+        }
       }
     }
   }
-  .section-title {
-    font-size: 3rem;
 
-    @include breakpoint(md) {
-      font-size: 3.6rem;
-    }
+  .services-title-container {
+    .section-title {
+      font-size: 3rem;
 
-    @include breakpoint(lg) {
-      font-size: 4rem;
+      @include breakpoint(md) {
+        font-size: 3.6rem;
+      }
+
+      @include breakpoint(lg) {
+        font-size: 4rem;
+      }
     }
   }
   .hyperlink {
-    display: block;
     align-self: flex-start;
     font-size: 1.4rem;
-    margin-left: 20px;
     text-decoration: underline;
     color: var(--font-color);
     @include breakpoint(md) {
       font-size: 1.6rem;
-    }
-    @include breakpoint(lg) {
-      margin-left: 40px;
-    }
-    @include breakpoint(xl) {
-      margin-left: 80px;
     }
   }
 </style>

@@ -1,23 +1,66 @@
 ---
+import { Image } from "astro:assets";
+import image from "../../assets/images/company-full-image.jpg";
+import CTAButton from "../CTAButton.astro";
 
 ---
 
 <section class="section-company" aria-label="Company">
-  <h2 class="section-title">Our Company</h2>
-  <p class="section-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.
-  </p>
-  <!-- CTA Button -->
+  <div class="company-text">
+    <h2 class="section-title">Our Company</h2>
+    <p class="section-text">
+      With over 15 years of experience, at IPmoviles, we're dedicated to
+      excellence in telecommunications and information technology.
+    </p>
+    <p>
+      Our business ethics are rooted in honesty and a customer-centric approach.
+      We pursue global connectivity and ongoing innovation in an ever-evolving
+      technological landscape.
+    </p>
+    <CTAButton icon="mdi:information">More about us</CTAButton>
+  </div>
+  <div class="image-container">
+    <Image src={image} alt="Company image" class={"section-image"} />
+  </div>
 </section>
 
 <style lang="scss">
   @use "../../assets/scss/base/_breakpoint.scss" as *;
 
-  .section-company{
+  .section-company {
     width: 80%;
+    margin-top: 40px;
+
+    @include breakpoint(xxl) {
+      width: 55%;
+    }
+
+    > .company-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 30px;
+
+      > .section-title {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        @include breakpoint(md) {
+          font-size: 3.6rem;
+        }
+
+        @include breakpoint(lg) {
+          font-size: 4rem;
+        }
+      }
+    }
   }
 
+  .image-container {
+    display: none;
+    > img {
+      width: 360px;
+      height: auto;
+    }
+  }
 </style>
