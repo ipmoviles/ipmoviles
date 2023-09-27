@@ -1,14 +1,28 @@
 $breakpoints: (
-    'default': 0px,
-    'sm': 430px,
-    'md': 768px,
-    'lg': 1024px,
-    'xl': 1440px,
-    'xxl': 1600px
+  "default": 0px,
+  "sm": 430px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1440px,
+  "xxl": 1600px,
 ) !default;
 
+// @mixin breakpoint($breakpoint) {
+//     @media (min-width: map-get($breakpoints, $breakpoint)) {
+//         @content;
+//     }
+// }
+
 @mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
     @media (min-width: map-get($breakpoints, $breakpoint)) {
-        @content;
+      @content;
     }
+  } @else if ($breakpoint) {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @error "Not a correct value, check _base-breakpoints for available values.";
+  }
 }
