@@ -2,17 +2,22 @@
 import Icon from "astro-icon";
 interface Props {
   icon: string;
+  href: string;
 }
 
-const { icon } = Astro.props;
+const { icon, href } = Astro.props;
 ---
 
 <button class="cta-button">
-  <a href="/services"><slot /></a>
+  <a href={href}><slot /></a>
   <Icon name={icon} />
 </button>
 
+
+
 <style lang="scss">
+
+  @use "../assets/scss/base/_breakpoint.scss" as *;
   .cta-button {
     appearance: none;
     border: none;
@@ -26,12 +31,19 @@ const { icon } = Astro.props;
     justify-content: center;
     align-items: center;
     background-color: var(--cta-button-background-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    @include breakpoint(sm) {
+      font-size: 1.6rem;
+    }
 
     > a {
       text-decoration: none;
       color: var(--color-mint-cream);
       display: inline-block;
       text-wrap: nowrap;
+      margin-right: 10px;
     }
 
     > [astro-icon] {

@@ -2,7 +2,6 @@
 import { Image } from "astro:assets";
 import image from "../../assets/images/company-full-image.jpg";
 import CTAButton from "../CTAButton.astro";
-
 ---
 
 <section class="section-company" aria-label="Company">
@@ -17,7 +16,8 @@ import CTAButton from "../CTAButton.astro";
       We pursue global connectivity and ongoing innovation in an ever-evolving
       technological landscape.
     </p>
-    <CTAButton icon="mdi:information">More about us</CTAButton>
+
+    <CTAButton icon="mdi:information" href="/about">More about us</CTAButton>
   </div>
   <div class="image-container">
     <Image src={image} alt="Company image" class={"section-image"} />
@@ -28,19 +28,43 @@ import CTAButton from "../CTAButton.astro";
   @use "../../assets/scss/base/_breakpoint.scss" as *;
 
   .section-company {
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-top: 40px;
+    margin-bottom: 40px;
+    text-wrap: balance;
 
-    @include breakpoint(xxl) {
-      width: 55%;
+    @include breakpoint(926px) {
+      flex-direction: row;
+      align-items: center;
+      width: 90%;
+      max-width: 1350px;
+      > .company-text {
+        width: 60%;
+      }
+      > .image-container {
+        width: 40%;
+      }
+    }
+
+    @include breakpoint(xl) {
+      > .image-container {
+        justify-content: flex-end;
+        > img {
+          width: 80%;
+        }
+      }
     }
 
     > .company-text {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 10px;
+      gap: 20px;
       margin-bottom: 30px;
+      padding-right: 10px;
+      padding-left: 20px;
 
       > .section-title {
         font-size: 3rem;
@@ -53,14 +77,25 @@ import CTAButton from "../CTAButton.astro";
           font-size: 4rem;
         }
       }
+
+      @include breakpoint(xl) {
+        padding-left: 0px;
+        margin-bottom: 0px;
+      }
     }
   }
 
   .image-container {
     display: none;
     > img {
-      width: 360px;
+      width: 95%;
       height: auto;
+      border-radius: var(--radius-default);
+    }
+
+    @include breakpoint(530px) {
+      display: flex;
+      justify-content: center;
     }
   }
 </style>

@@ -1,16 +1,135 @@
 ---
-
+import CTAButton from "../CTAButton.astro";
+import logoimages from "../../assets/images/logos/index.js";
+import { Image } from "astro:assets";
 ---
 
 <section class="section-experience">
-    <h2 class="section-title">Our Experience</h2>
-    <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="experience-images section-circles">
-        <!-- aqui van las imagenes de logos -->
+  <div class="section-container">
+    <div class="content">
+      <h2 class="section-title">We've worked with the best</h2>
+      <div class="section-content--flex">
+        <div class="section-subtitle">
+          <p class="section-text">
+            In IPmoviles, we've had the privilege of partnering with top
+            companies in the telecommunications and technology industry. Our
+            expertise and dedication to delivering high-quality solutions have
+            allowed us to build strong relationships with these industry
+            leaders.
+          </p>
+          <p>
+            Over the years, we've collaborated to drive innovation,
+            connectivity, and business success.
+          </p>
+        </div>
+        <div class="experience-images section-circles">
+          <Image src={logoimages.asecones} alt="ASECONES-LOGO" />
+          <Image src={logoimages.claro} alt="CLARO-LOGO" />
+          <Image src={logoimages.ingeant} alt="INGEANT-LOGO" />
+          <Image src={logoimages.inspur} alt="INSPUR-LOGO" />
+          <Image src={logoimages.movistar} alt="MOVISTAR-LOGO" />
+          <Image src={logoimages.qmc} alt="QMC-LOGO" />
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <style lang="scss">
-@use "../../assets/scss/base/_breakpoint.scss" as *;
+  @use "../../assets/scss/base/_breakpoint.scss" as *;
 
+  .section-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    @include breakpoint(530px) {
+      margin-top:40px;
+    }
+
+    > .section-container {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      max-width: 1350px;
+      padding: 40px 40px;
+      border-radius: var(--radius-default);
+      background-color: var(--exp-card-background-color);
+      color: var(--color-mint-cream);
+      > .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        > .section-title {
+          margin-bottom: 20px;
+        }
+
+        > .section-content--flex {
+          display: flex;
+          flex-direction: column;
+          > .section-subtitle {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+
+          > .section-circles {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            place-items: center;
+            background-color: var(--color-light-silver);
+            border-radius: var(--radius-default);
+            padding: 10px;
+            margin-top: 30px;
+
+            gap: 10px;
+            > img {
+              width: 150px;
+              height: auto;
+              object-fit: contain;
+            }
+
+            > img:nth-child(2) {
+              width: 120px;
+            }
+          }
+        }
+
+        > .section-button {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        @include breakpoint(926px) {
+          > .section-content--flex {
+            flex-direction: row;
+            gap: 40px;
+            > .section-subtitle {
+              width: 50%;
+            }
+
+            > .section-circles {
+              width: 50%;
+              grid-template-columns: repeat(3, 1fr);
+              grid-template-rows: repeat(2, 1fr);
+              margin: 0px;
+            }
+          }
+        }
+
+        @include breakpoint(xl) {
+          > .section-content--flex {
+           
+          }
+        }
+      }
+    }
+  }
 </style>

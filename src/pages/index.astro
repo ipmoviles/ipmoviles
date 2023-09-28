@@ -44,11 +44,22 @@ import imageParallax from "../assets/images/ParallaxExpSection.png";
       icon="iconoir:antenna"
     />
   </Services>
-  <Image src={imageParallax} alt="Company" class={"break-section-image"}/>
+  <Image src={imageParallax} alt="Company" class={"break-section-image"} />
   <Company />
-  <!-- <Experience /> -->
+  <Experience />
   <!-- Sections -->
 </Layout>
+
+<script>
+  const button = document.querySelectorAll(".cta-button");
+  
+  button.forEach((button) => {
+    const href = button?.querySelector("a")?.href || "#";
+    button.addEventListener("click", () => {
+      window.location.href = href;
+    })
+  })
+</script>
 
 <style lang="scss">
   @use "../assets/scss/base/_breakpoint.scss" as *;
@@ -66,9 +77,9 @@ import imageParallax from "../assets/images/ParallaxExpSection.png";
 
   .break-section-image {
     width: 100%;
-   @include breakpoint(530px) {
-     display: none;
-   }
+    margin: 40px;
+    @include breakpoint(530px) {
+      display: none;
+    }
   }
-  
 </style>
