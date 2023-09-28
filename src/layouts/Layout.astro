@@ -65,6 +65,7 @@ const { title } = Astro.props;
         --font-color: var(--color-rich-black);
         --second-font-color: var(--color-chinese-black);
         --background-color: var(--color-azure);
+        --title-color: var(--color-rich-black);
         --hero-background-color: linear-gradient(
           180deg,
           rgba(0, 2, 14, 0.2) 0%,
@@ -90,6 +91,7 @@ const { title } = Astro.props;
         --font-color: var(--color-mint-cream);
         --second-font-color: var(--color-mint-cream);
         --background-color: var(--color-chinese-black);
+        --title-color: var(--color-moonstone);
         --hero-background-color: radial-gradient(
           100% 100% at 50% 0%,
           rgba(230, 230, 230, 0.2) 0%,
@@ -119,6 +121,14 @@ const { title } = Astro.props;
           display: flex;
           flex-direction: column;
           align-items: center;
+
+          h2.section-title{
+            color: var(--color-moonstone);
+          }
+
+          h1{
+            color: var(--title-color);
+          }
         }
 
         footer {
