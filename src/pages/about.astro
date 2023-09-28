@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import CardAboutUsFondo from "../components/CardAboutUsFondo.astro";
 import { Image } from "astro:assets";
 import image from "../assets/images/obrero.svg";
+import icon1 from "../assets/images/iconXPabout1.svg";
+import Icon from "astro-icon";
 ---
 
 <Layout title="About Us">
@@ -11,38 +13,9 @@ import image from "../assets/images/obrero.svg";
     <div class="mover">
       <div class="contenedorExperiencia">
         <div class="experiencia">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 52 52"
-            fill="none"
-            style="display: flex; justify-content: center; align-items: center; position: relative;"
-            class="iconXP"
-          >
-            <circle cx="26" cy="26" r="26" fill="#020015"></circle>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              x="10"
-              y="10"
-            >
-              <path
-                d="M21.7144 8H30.8572V17.1429"
-                stroke="#71CE28"
-                stroke-width="2.28571"
-                stroke-linecap="round"
-                stroke-linejoin="round"></path>
-              <path
-                d="M30.8571 8L17.9428 20.9143C17.7292 21.1237 17.442 21.241 17.1428 21.241C16.8437 21.241 16.5565 21.1237 16.3428 20.9143L11.0857 15.6571C10.872 15.4477 10.5848 15.3304 10.2857 15.3304C9.98653 15.3304 9.69931 15.4477 9.48568 15.6571L1.14282 24"
-                stroke="#71CE28"
-                stroke-width="2.28571"
-                stroke-linecap="round"
-                stroke-linejoin="round"></path>
-            </svg>
-          </svg>
-
+          <div class="iconXP">
+            <Icon name="mdi:star-check" />
+          </div>
           <p class="cardNoFondo">
             With <span class="xp">over 15 years</span> of unmatched excellence
             in the Telecom and ICT fields. In IPMoviles we are dedicated to
@@ -58,34 +31,13 @@ import image from "../assets/images/obrero.svg";
         </div>
 
         <div class="experiencia">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 52 52"
-            fill="none"
-            class="iconXP"
-          >
-            <circle cx="26" cy="26" r="26" fill="#020015"></circle>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              x="10"
-              y="10"
-            >
-              <path
-                d="M25.3334 12C25.334 10.3932 24.9198 8.81345 24.1308 7.41369C23.3418 6.01393 22.2049 4.84156 20.8299 4.01007C19.455 3.17858 17.8887 2.71613 16.2826 2.66749C14.6766 2.61884 13.0852 2.98565 11.6624 3.73241C10.2397 4.47917 9.03386 5.58058 8.16162 6.93002C7.28939 8.27947 6.7803 9.83124 6.68365 11.4351C6.587 13.039 6.90605 14.6407 7.60993 16.0851C8.3138 17.5295 9.37866 18.7678 10.7014 19.68L6.66675 26.6666L9.67475 26.7906L11.2854 29.3333L15.9067 21.328C15.9388 21.328 15.9681 21.3333 16.0001 21.3333C16.0321 21.3333 16.0614 21.3293 16.0934 21.328L20.7148 29.3333L22.3574 26.8453L25.3334 26.6666L21.2987 19.68C22.5436 18.8229 23.5613 17.676 24.2641 16.338C24.967 15.0001 25.334 13.5113 25.3334 12ZM9.33342 12C9.33342 10.6814 9.72441 9.39251 10.457 8.29618C11.1895 7.19985 12.2307 6.34537 13.4489 5.84078C14.667 5.3362 16.0075 5.20418 17.3007 5.46141C18.5939 5.71865 19.7818 6.35359 20.7141 7.28594C21.6465 8.21829 22.2814 9.40617 22.5387 10.6994C22.7959 11.9926 22.6639 13.333 22.1593 14.5512C21.6547 15.7694 20.8002 16.8106 19.7039 17.5431C18.6076 18.2757 17.3186 18.6666 16.0001 18.6666C14.232 18.6666 12.5363 17.9643 11.286 16.714C10.0358 15.4638 9.33342 13.7681 9.33342 12Z"
-                fill="#71CE28"></path>
-              <path
-                d="M16 16C18.2091 16 20 14.2091 20 12C20 9.79086 18.2091 8 16 8C13.7909 8 12 9.79086 12 12C12 14.2091 13.7909 16 16 16Z"
-                fill="#71CE28"></path>
-            </svg>
-          </svg>
+          <div class="iconXP">
+            <Icon name="mdi:medal-outline" />
+          </div>
 
           <p class="cardNoFondo">
-            We prioritize <span class="xp"
-              >our clients' needs as a customer-centric company</span
+            We prioritize <span class="xp">
+              our clients' needs as a customer-centric company</span
             > , primarily focused on ICT solutions. Over the last 5 years, we've
             consistently earned positive ratings, including recognition from
             evaluators like Colombia Credit Report. These results shape our
@@ -227,10 +179,15 @@ import image from "../assets/images/obrero.svg";
         margin-bottom: 100px;
       }
     }
-    .obrero-img img{
-      max-width: 650px;
+    .obrero-img img {
+      width: 200px;
+      height: 300px;
+      @include breakpoint(md) {
+        width: 400px;
+        height: 500px;
+      }
     }
-    
+
     .mover {
       display: flex;
       flex-direction: column;
@@ -240,10 +197,16 @@ import image from "../assets/images/obrero.svg";
       }
     }
 
-    .iconXP {
-      width: 52px;
-      height: 52px;
+    .iconXP [astro-icon] {
+      color: var(--action-color);
+      width: 50px;
+      height: 50px;
+      background-color: var(--color-rich-black);
+      box-sizing: border-box;
+      padding: 10px;
+      border-radius: 100%;
       @include breakpoint(md) {
+        padding: 20px;
         width: 80px;
         height: 80px;
       }
@@ -286,13 +249,10 @@ import image from "../assets/images/obrero.svg";
       width: 100%;
     }
     .h1 {
-      color: var(--color-emerald);
       font-size: 24px;
       margin-top: 30px;
-      padding-left: 65px;
       @include breakpoint(md) {
         font-size: 40px;
-        padding-left: 180px;
       }
     }
 

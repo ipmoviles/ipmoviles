@@ -8,7 +8,7 @@ const { title, size } = Astro.props;
 ---
 
 <div class="contenedor">
-  <h1 class="h1">{title}</h1>
+  <h2 class="section-title">{title}</h2>
   <slot />
 </div>
 
@@ -31,9 +31,8 @@ const { title, size } = Astro.props;
     }
   }
 
-  .h1 {
+  .h2 {
     font-size: 18px;
-    color: var(--color-emerald);
     @include breakpoint(md) {
       font-size: 24px;
     }
