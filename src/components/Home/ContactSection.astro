@@ -1,0 +1,56 @@
+---
+import Icon from "astro-icon";
+---
+
+<section class="section-contact">
+  <div class="section-container">
+    <div class="content">
+      <h2 class="section-title">LETS WORK TOGETHER!</h2>
+      <a href="/contact" class="hyperlink"
+        >Contact Us <span><Icon name="bi:send-fill" /></span></a
+      >
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .section-contact {
+    width: 100%;
+    background: var(--contact-section-background);
+    color: var(--color-rich-black);
+    margin-top: 40px;
+    > .section-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0px;
+      > .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        > .section-title {
+         color: var(--color-mint-cream);
+        }
+        > .hyperlink {
+          display: flex;
+          width: 150px;
+          padding: 10px;
+          align-items: center;
+          text-decoration: none;
+          justify-content: center;
+          color: var(--color-mint-cream);
+          border: 2px solid var(--color-mint-cream);
+          border-radius: var(--radius-default);
+
+          [astro-icon] {
+            margin-left: 20px;
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+</style>
