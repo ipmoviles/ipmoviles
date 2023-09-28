@@ -1,14 +1,109 @@
 ---
-
+import { Image } from "astro:assets";
+import image from "../../assets/images/antenna-image-products.jpg";
+import claro from "../../assets/images/logos/claro-logo.png";
 ---
 
 <section class="section-products">
-  <h2 class="section-title">Our Products</h2>
-  <p class="section-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
-  </p>
-  <div class="products-cards section-circles">
-    <!-- imagenes en circulos -->
+  <div class="section-container">
+    <div class="content-left">
+      <h2 class="section-title">Our Products</h2>
+      <p class="section-text">
+        At IPmoviles, we take pride in partnering with some of the most trusted
+        and renowned brands in the telecommunications and technology industry.
+      </p>
+      <p>
+        Our collaboration with these industry-leading brands allows us to
+        deliver high-quality solutions and cutting-edge services to our clients.
+      </p>
+      <div class="products-cards section-circles">
+        <Image src={claro} alt="claro logo" />
+        <Image src={claro} alt="claro logo" />
+        <Image src={claro} alt="claro logo" />
+        <Image src={claro} alt="claro logo" />
+      </div>
+    </div>
+    <div class="content-right">
+      <Image src={image} alt="products section image" />
+    </div>
   </div>
 </section>
+
+<style lang="scss">
+
+  @use "../../assets/scss/base/_breakpoint.scss" as *;
+  .section-products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    > .section-container {
+      width: 95%;
+      max-width: 1350px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 0px 20px;
+
+      @include breakpoint(lg) {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        > .content-left {
+          width: 100%;
+        }
+
+        > .content-right {
+          width: 40%;
+        }
+      }
+
+
+      > .content-left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-wrap: balance;
+        > h2 {
+          margin-bottom: 20px;
+        }
+
+        > p {
+
+        }
+
+        > .products-cards {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          margin-top: 20px;
+          gap: 40px;
+          padding: 20px 20px;
+
+          > img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+
+            
+          }
+        }
+      }
+
+      > .content-right {
+        display: none;
+        > img {
+          width: 100%;
+          height: auto;
+          border-radius: var(--radius-default);
+        }
+
+        @include breakpoint(lg) {
+          display: block;
+        }
+      }
+    }
+  }
+</style>

@@ -46,14 +46,18 @@
       > .hyperlink-container {
         display: flex;
         width: 100%;
+        max-width: 1350px;
+        padding-left: 20px;
       }
     }
 
     @include breakpoint(xl) {
       align-items: center;
+    }
+
+    @include breakpoint(xxl) {
       > .services-title-container,
       > .hyperlink-container {
-        max-width: 1350px;
         padding-left: 0px;
       }
     }
@@ -95,6 +99,7 @@
           scroll-snap-type: none;
           overflow-x: hidden;
         }
+
 
         @include breakpoint(xxl) {
           justify-content: center;

@@ -7,6 +7,7 @@ import Experience from "../components/Home/Experience.astro";
 import Company from "../components/Home/Company.astro";
 import { Image } from "astro:assets";
 import imageParallax from "../assets/images/ParallaxExpSection.png";
+import Products from "../components/Home/Products.astro";
 ---
 
 <Layout title="Home">
@@ -47,6 +48,7 @@ import imageParallax from "../assets/images/ParallaxExpSection.png";
   <Image src={imageParallax} alt="Company" class={"break-section-image"} />
   <Company />
   <Experience />
+  <Products />
   <!-- Sections -->
 </Layout>
 
