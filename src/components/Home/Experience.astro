@@ -1,7 +1,9 @@
 ---
 import CTAButton from "../CTAButton.astro";
-import logoimages from "../../assets/images/logos/index.js";
+import  logoimages  from "../../assets/images/logos/index.js";
 import { Image } from "astro:assets";
+
+const {asecones, claro, ingeant, inspur, movistar, qmc} = logoimages
 ---
 
 <section class="section-experience">
@@ -23,12 +25,12 @@ import { Image } from "astro:assets";
           </p>
         </div>
         <div class="experience-images section-circles">
-          <Image src={logoimages.asecones} alt="ASECONES-LOGO" />
-          <Image src={logoimages.claro} alt="CLARO-LOGO" />
-          <Image src={logoimages.ingeant} alt="INGEANT-LOGO" />
-          <Image src={logoimages.inspur} alt="INSPUR-LOGO" />
-          <Image src={logoimages.movistar} alt="MOVISTAR-LOGO" />
-          <Image src={logoimages.qmc} alt="QMC-LOGO" />
+          <Image src={asecones} alt="ASECONES-LOGO" />
+          <Image src={claro} alt="CLARO-LOGO" />
+          <Image src={ingeant} alt="INGEANT-LOGO" />
+          <Image src={inspur} alt="INSPUR-LOGO" />
+          <Image src={movistar} alt="MOVISTAR-LOGO" />
+          <Image src={qmc} alt="QMC-LOGO" />
         </div>
       </div>
     </div>
