@@ -239,6 +239,18 @@ import { LanguageSelector } from "astro-i18next/components";
           font-size: 1.6rem;
           line-height: normal;
           transition: color 0.15s ease-in-out;
+
+          @include breakpoint(lg) {
+            font-size: 1.8rem;
+          }
+
+          @include breakpoint(xl) {
+            font-size: 2rem;
+          }
+
+          @include breakpoint(xxl) {
+            font-size: 2.2rem;
+          }
         }
 
         /* has-dropdown is not used */

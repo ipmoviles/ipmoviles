@@ -21,15 +21,6 @@
   </div>
 </section>
 
-<script>
-  const firstCard = document.querySelector(".card-container:first-child");
-
-  document.addEventListener("resize", () => {
-    const clientWidth = document.documentElement.clientWidth;
-    console.log(clientWidth);
-  });
-</script>
-
 <style lang="scss">
   @use "../../assets/scss/base/_breakpoint.scss" as *;
 
@@ -55,6 +46,15 @@
       > .hyperlink-container {
         display: flex;
         width: 100%;
+      }
+    }
+
+    @include breakpoint(xl) {
+      align-items: center;
+      > .services-title-container,
+      > .hyperlink-container {
+        max-width: 1350px;
+        padding-left: 0px;
       }
     }
 
@@ -123,6 +123,18 @@
     color: var(--font-color);
     @include breakpoint(md) {
       font-size: 1.6rem;
+    }
+
+    @include breakpoint(lg) {
+      font-size: 1.8rem;
+    }
+
+    @include breakpoint(xl) {
+      font-size: 2rem;
+    }
+
+    @include breakpoint(xxl) {
+      font-size: 2.2rem;
     }
   }
 </style>
