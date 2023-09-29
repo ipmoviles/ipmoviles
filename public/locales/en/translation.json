@@ -6,145 +6,117 @@
     "together": "Let's Work Together",
     "contactus": "Contact Us",
     "quick_links": "Quick Links",
-    "links": ["About Us", "Gallery", "Our Services", "Contact Us", "Careers"],
+    "links": ["About Us", "Gallery", "Our Services", "Contact Us"],
     "title_colombia": "Colombia Office",
-    "address_colombia": "Cra 1st # 11-34Q Chía - Cundinamarca",
     "title_usa": "USA Office",
-    "address_usa": "210 NE 45th St. Oakland Park, Florida 33334",
     "aIng": "Instagram Link",
     "aLinkedIn": "LinkedIn Link",
-    "rights": "All rights reserved by IPMoviles.com"
+    "rights": "2022 IP Moviles *All rights reserved"
   },
   "site_home": {
-    "company_name": "IP MOVILES Ltda.",
     "header_text01": "Your trusted partner in connectivity and telecommunications services.",
-    "header_text02": "Technology solutions tailored to our clients' needs.",
-    "service01": "Reliable Connectivity",
-    "service02": "Effective Technology",
+    "header_text02": "Technology solutions tailored to the needs of our customers",
+    "service01": "Effective connectivity",
+    "service02": "Reliable technology",
     "service03": "Customized Solutions",
-    "quality": "Quality Services",
-    "card01": "Remote Connectivity: Installation of equipment to bring internet to remote areas",
+    "quality_services": "Quality Services",
+    "card01_title": "Remote Connectivity",
+    "card01_body": "Installation of equipment to bring Internet to remote areas.",
+    "card02_title": "Configuration and Support",
+    "card02_body": "Configuration of telecommunications technologies tailored to your needs.",
+    "card03_title": "Site Surveys",
+    "card03_body": "Site evaluations for new installations and network expansions, with detailed report deliveries.",
+    "card04_title": "Network Maintenance",
+    "card04_body": "Maintenance and optimization of cellular networks, Wi-Fi, and data links.",
+    "card05_title": "Network Deployment",
+    "card05_body": "Commissioning and configuration of mobile network solutions and network testing",
+    "card06_title": "Infrastructure and Security",
+    "card06_body": "Installation of servers, intelligent cabinets, CCTV systems, and data networks for voice, data, and alarm services.",
     "link_services": "Learn more about our services",
-    "about_us": "IPmoviles is a telecommunications company with over 15 years of experience, partnered with INSPUR to provide cutting-edge cloud solutions. They have worked in sectors such as education, finance, and oil, and have received positive ratings in the past 5 years.",
-    "ver_Mas": "More about us",
-    "clients": "We work with experts",
-    "about_clients": "",
-    "clients_button": "Meet our experts",
-    "title_products": "Quality Products",
-    "text_products": ""
+    "our_company": "Our Company",
+    "company_text01": "With over 15 years of experience, at IPmoviles, we're dedicated to excellence in telecommunications and information technology.",
+    "company_text02": "Our business ethics are rooted in honesty and a customer-centric approach. We pursue global connectivity and ongoing innovation in an ever-evolving technological landscape.",
+    "CTA_company":"More about us",
+    "clients": "We've worked with the best",
+    "clients_text01": "In IPmoviles, we've had the privilege of partnering with top companies in the telecommunications and technology industry. Our expertise and dedication to delivering high-quality solutions have allowed us to build strong relationships with these industry leaders.",
+    "clients_text02": "Over the years, we've collaborated to drive innovation, connectivity, and business success.",
+    "our_products":"Our Products",
+    "product_text01": "At IPmoviles, we take pride in partnering with some of the most trusted and renowned brands in the telecommunications and technology industry.",
+    "product_text02": "Our collaboration with these industry-leading brands allows us to deliver high-quality solutions and cutting-edge services to our clients."
   },
-  "pagina_sobreNosotros": {
-    "titulo_SobreNosotros": "About us",
-    "descripcion": "IPmoviles is a",
-    "descripcionN": "company with over 15 years",
-    "descripcion2": "of unparalleled excellence in the fields of Telecommunications and Information and Communication Technology (ICT). At",
-    "ipMoviles": "IPMoviles",
-    "descripcion3": ", we are dedicated to providing high-quality services and cutting-edge cloud solutions, strictly adhering to industry regulations. We have formed strong strategic alliances with industry leaders such as INSPUR.{{Spacer}}{{Spacer}}Since our foundation in 2008, we have earned trust as the go-to experts, tackling a wide range of projects across multiple sectors, from education, telecommunications, finance, and oil.",
-    "prioridad": "As a customer-centric company,",
-    "prioridazamos": "we prioritize your needs,",
-    "prioridad2": "focusing primarily on ICT solutions. Over the last 5 years, we have consistently received positive ratings, including recognitions from evaluators like",
-    "colombia_credit": "Colombia Credit Report.",
-    "prioridad3": "These results shape our quality system, fostering continuous improvement.{{Spacer}}{{Spacer}}Our commitment to staying at the forefront of network technology drives us to continually update our active staff. Additionally, we actively participated in the Andicom 2015 conference.",
-    "titulo_Mision": "Our Mission",
-    "mision": "We contribute",
-    "necesidades": "to society's technological needs",
-    "mision2": "by providing comprehensive solutions tailored to our clients' needs. This is achieved through the availability and performance of our infrastructure, environment, quality, management, and personnel.",
-    "titulo_vision": "Our Vision",
-    "vision": "By",
-    "año": "2035,",
-    "nuetra_vision": "our vision is to become a leading company, firmly established in the international market for high-quality technology and services, recognized as a reliable and innovative company, complying with current regulations and technological trends and solutions. We will continue to strive for excellence in our field, contributing to the technological progress of society and the performance of our clients' businesses.",
-    "titulo_valores": "Our Corporate Values",
-    "valores_corporativos": "Our company's philosophy centers around loyalty, responsibility, honesty, respect, and competitiveness. We emphasize individual responsibilities to strengthen our institutional image and carry out tasks with a commitment to quality.",
-    "acciones": "Our actions are guided by ethical discernment and respect for both individuals and the organization. We prioritize efficiency, service-oriented commitment, and a culture of quality to exceed customer expectations while respecting the environment."
+  "about_us": {
+    "about_us_title": "About us",
+    "text01": "With",
+    "text02": " over 15 years",
+    "text03": " of unmatched excellence in the Telecom and ICT fields. In IPMoviles we are dedicated to providing high-quality services and cutting-edge cloud solutions while strictly adhering to industry regulations, Forming strong strategic alliances with industry leaders like INSPUR.",
+    "text04": "Since our establishment in 2008, We've gained your trust as the go-to experts, tackling a wide range of projects across multiple sectors, from telecommunications to education, finance, and oil.",
+    "text05": "We prioritize",
+    "text06": " our clients' needs as a customer-centric company ",
+    "text07": ", primarily focused on ICT solutions. Over the last 5 years, we've consistently earned positive ratings, including recognition from evaluators like Colombia Credit Report. These results shape our quality system, fostering ongoing improvement.",
+    "text08": "Our commitment to staying at the forefront of network technology drives us to continuously update our personnel. Additionally, we actively participated in the Andicom 2015 conference.",
+    "mission_title": "Our Mission",
+    "mission_text01": "We",
+    "mission_text02": "contribute to the technological needs of society",
+    "mission_text03": "by providing comprehensive solutions tailored to the requirements presented. This is achieved through the availability, performance, quality, management, and evolution of our company's infrastructure and architecture.",
+    "mission_text04":"We are guided by a culture of processes and projects, keeping our personnel focused on best practices and trends towards the convergence of telecommunications.",
+    "vision_title": "Our Vision",
+    "vision_text01": "By",
+    "vision_text02": "2035",
+    "vision_text03": " , our vision is to become a nationally and internationally recognized leading company, firmly established in the provision of high-quality and efficient technological services and solutions. We will adhere to quality standards and comply with current regulations to ensure outstanding performance in our field.",
+    "values_title": "Our Corporate Values",
+    "values01": "Our company's philosophy centers on loyalty, responsibility, honesty, respect, and competitiveness. We emphasize fulfilling individual responsibilities to strengthen our institutional image and carrying out tasks with commitment to quality.",
+    "values01_desktop": "At our core, our company is founded upon a philosophy of loyalty, responsibility, honesty, and respect. We believe in fulfilling our individual responsibilities to enhance our institutional image, carrying out tasks with unwavering commitment to established quality policies, and always acting with ethical discernment and respect for the inherent rights of each individual and our organization.",
+    "values02": "Our actions are guided by ethical discernment and respect for both individuals and the organization. We prioritize efficiency, service-oriented commitment, and a culture of quality to exceed customer expectations while respecting the environment.",
+    "values02_desktop": "We strive for efficiency, delivering quality results through meticulous planning, and demonstrate a strong commitment to service and a sense of belonging to our organization, all while exercising the necessary leadership to achieve our objectives while respecting the environment. Our overarching goal is to maintain competitiveness through a culture of quality, ensuring that every product and service we offer not only meets but exceeds customer expectations."
   },
-  "Pagina_Servicios": {
-    "titulo_servicios": "Our Services",
-    "secciones": [
+  "our_services": {
+    "our_services_title": "Our Services",
+    "cards":[
+            "Installation of equipment for internet distribution to remote areas of interes.",
+            "Promote configurationm, administration, and support solutions for the main technologies according to your requirements.",
+            "Preparation of site survey for new LET sites; delivery of reports with plans in sketchups",
+            "Preparation of site survehy for 3G, 4G, 5G network expansions, taking photographic records and delivery of reports.",
+            "Services of personnel dedicated to preparing reports required by the operator to control the correct installation of the equipment in the quality area.",
+            "Maintenance service for radio bases of the different 2g, 3g, and 4g cellular network technologies as well as Wifi networks, review of microwave and satellite links.",
+            "Disassembly of celluar network equipment and return of these to the warehouse duly invetoried.",
+            "Commisioning, configuration, and probe of cellular services network solutions according to operator parameters.",
+            "Site master tests, PIM master measurement, VER, to guarantee the correct implementation of the network solution.",
+            "Cellular network optimization in different technologies according to specific parameter of the RF area.",
+            "Expansion of the capacity of the different cellular network technologies to improve traffic performance.",
+            "Installation, disassembly, and maintenance of microwave links (NEC, siemens, ericson, among other), Installation of satellite links from brands such as Embratel, HughesNet and optic fiber networks."
+            ],
+    "ready_work": "We are ready to work",
+    "readdy_work_text01":"We got everything in order to work and fulfill all your requeriments.",
+    "readdy_work_text02": "We prioritize safety through certified HSEQ teams and comprehensive training.",
+    "readdy_work_text03": "Our technical staff receives advanced training, including safe driving and working at heights.",
+    "readdy_work_text04": "We have a fleet for logistics and testing to ensure quality nationwide."
+  },
+  "contact_us": {
+    "contact_us_title": "Contact Us",
+    "form": [
       {
-        "numero": 1,
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "numero": 2,
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "numero": 3,
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "numero": 4,
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "numero": 5,
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "numero": 6,
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "contac_text01": "You can contact us using the methods listed below:",
+        "name": "Your name",
+        "email": "Your email",
+        "phone": "Your phone",
+        "message": "Your message",
+        "send_button": "Send Request"
       }
     ],
-    "titulo_experiencia": "Our Experience",
-    "experiencia": "We have 15 years of experience with highly qualified personnel in the execution of various projects in the telecommunications sector, such as:",
-    "tarjetas": [
+    "contact_info": [
       {
-        "título": "Contract",
-        "detalles": {
-          "servicio": "Provision of installation and/or de-installation services for cellular solutions",
-          "cliente": "Comcel S.A.",
-          "duración": "XXXXX",
-          "service_provisto": "Installation of equipment and expansion according to network and service standards of existing sites, and work orders with assigned compliance."
-        }
-      },
-      {
-        "título": "Contract",
-        "detalles": {
-          "servicio": "Provision of installation and/or de-installation services for cellular solutions",
-          "cliente": "Comcel S.A.",
-          "duración": "XXXXX",
-          "service_provisto": "Installation of equipment and expansion according to network and service standards of existing sites, and work orders with assigned compliance."
-        }
+        "contact_info_title": "Contact Information",
+        "USA_phone": "Phones in the USA",
+        "colombian_phone": "Phones in Colombia",
+        "emails": "Our emails"
       }
     ],
-    "titulo": "We are ready to work",
-    "personal": "HSEQ certified personnel with system responsibility license.",
-    "logística": "Logistics and transportation fleet.",
-    "equipo": "Testing equipment for adjustment and quality review"
+    "florida": "Locate us in Florida, US",
+    "colombia": "Locate us in Colombia"
   },
-  "pagina_contacto": {
-    "Titulo_contacto": "Contact Us",
-    "formulario": [
-      {
-        "como_contactar": "You can contact us by filling out the form",
-        "nombre": "Your name",
-        "correo_electronico": "Your email",
-        "telefono": "Your phone",
-        "mensaje": "Your message",
-        "boton_enviar": "Send Request"
-      }
-    ],
-    "cuadro_contactos": [
-      {
-        "informacion_contacto": "Contact Information",
-        "telefonos_USA": "Phones in the USA",
-        "tel1": "(+1) (954) 770-4449",
-        "tel2": "(954) 770-6061",
-        "telefonos_Colombia": "Phones in Colombia",
-        "tel3": "+57 320 8542698",
-        "tel4": "+57 313 2723646",
-        "correos": "Our emails",
-        "correo1": "andres.morales@ipmoviles.net",
-        "correo2": "karina.otalora@ipmoviles.net",
-        "correo3": "info@ipmoviles.com"
-      }
-    ],
-    "ubicación_Florida": "Find us in Florida, USA",
-    "ubicación_Colombia": "Find us in Colombia"
-  },
-  "pagina_galeria": {
-    "titulo_galeria": "Gallery",
-    "texto_galeria": "",
-    "mirar_mas": "Check out more on our social media:"
+  "gallery": {
+    "gallery_title": "Gallery",
+    "gallery_text01": "Discover the future of connectivity and telecommunications innovation through captivating visuals that illustrate seamless communication",
+    "gallery_text02": "See more in our social networks"
   }
 }
