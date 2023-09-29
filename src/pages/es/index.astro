@@ -1,17 +1,17 @@
 ---
 import { changeLanguage } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Home/Hero.astro";
-import Services from "../components/Home/Services.astro";
-import CardService from "../components/Home/CardService.astro";
-import Experience from "../components/Home/Experience.astro";
-import Company from "../components/Home/Company.astro";
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Home/Hero.astro";
+import Services from "../../components/Home/Services.astro";
+import CardService from "../../components/Home/CardService.astro";
+import Experience from "../../components/Home/Experience.astro";
+import Company from "../../components/Home/Company.astro";
 import { Image } from "astro:assets";
-import imageParallax from "../assets/images/ParallaxExpSection.png";
-import Products from "../components/Home/Products.astro";
-import ContactSection from "../components/Home/ContactSection.astro";
+import imageParallax from "../../assets/images/ParallaxExpSection.png";
+import Products from "../../components/Home/Products.astro";
+import ContactSection from "../../components/Home/ContactSection.astro";
 
-changeLanguage("en");
+changeLanguage("es");
 ---
 
 <Layout title="Home">
@@ -69,7 +69,7 @@ changeLanguage("en");
 </script>
 
 <style lang="scss">
-  @use "../assets/scss/base/_breakpoint.scss" as *;
+  @use "../../assets/scss/base/_breakpoint.scss" as *;
   .break {
     display: none;
     @include breakpoint(sm) {

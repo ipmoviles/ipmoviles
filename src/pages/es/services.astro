@@ -1,11 +1,13 @@
 ---
-import { changeLanguage } from "i18next";
-import CardServicesLeft from "../components/CardServicesLeft.astro";
-import CardServicesRight from "../components/CardServicesRight.astro";
-import Layout from "../layouts/Layout.astro";
+import { changeLanguage, t } from "i18next";
+import CardServicesLeft from "../../components/CardServicesLeft.astro";
+import CardServicesRight from "../../components/CardServicesRight.astro";
+import Layout from "../../layouts/Layout.astro";
+import { Trans } from "astro-i18next/components";
 
-changeLanguage("en");
+changeLanguage("es");
 
+//Installation of equipment for Internet distribution to remote areas of interest.
 const services = [
     {
         body: "Installation of equipment for Internet distribution to remote areas of interest.",
@@ -82,10 +84,7 @@ const services = [
   <section class="contenedor">
     <h1 class="h1">Our Services</h1>
     <p class="intro">
-      <span class="nombre">IP Moviles</span> offers telecommunications services,
-      including remote Internet equipment installation, network configuration,
-      and LTE/5G expansions, with a 15-year track record emphasizing safety and
-      quality.
+      {t("Pagina_Servicios.titulo_servicios")}
     </p>
     <div class="cards">
       <div class="mobile">
@@ -168,7 +167,7 @@ const services = [
   </section>
 
   <style lang="scss">
-    @use "../assets/scss/base/_breakpoint.scss" as *;
+    @use "../../assets/scss/base/_breakpoint.scss" as *;
 
     .contenedor {
       position: relative;

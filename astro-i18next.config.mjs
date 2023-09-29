@@ -2,4 +2,12 @@
 export default {
     defaultLocale: "en",
     locales: ["en", "es"],
+    routes: {
+      es: {
+        about: "about",
+        services: "services",
+        contact: "contact",
+        gallery: "gallery"
+      }
+    }
   };

@@ -1,29 +1,25 @@
 ---
 import Navbar from "../components/Navbar.astro";
-import LangSwitch from "../components/LangSwitch.astro";
-// import { SkipLinks } from 'accessible-astro-components'
-// import { Icon } from 'astro-icon'
-import { LanguageSelector } from "astro-i18next/components";
-import { DarkMode } from "accessible-astro-components";
+import { localizePath } from "astro-i18next";
 ---
 
 <header>
   <!-- <SkipLinks /> -->
   <Navbar>
     <li class="menu-item">
-      <a href="/">Home</a>
+      <a href={localizePath("/")}>Home</a>
     </li>
     <li class="menu-item">
-      <a href="/about">About Us</a>
+      <a href={localizePath("/about")}>About Us</a>
     </li>
     <li class="menu-item">
-      <a href="/services">Our Services</a>
+      <a href={localizePath("/services")}>Our Services</a>
     </li>
     <li class="menu-item">
-      <a href="/gallery">Gallery</a>
+      <a href={localizePath("/gallery")}>Gallery</a>
     </li>
     <li class="menu-item">
-      <a href="/contact">Contact Us</a>
+      <a href={localizePath("/contact")}>Contact Us</a>
     </li>
   </Navbar>
 </header>
