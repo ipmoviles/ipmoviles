@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Gallery">
-  <section class="contenedor">
+  <section class="container">
     <h1>Gallery</h1>
     <p class="intro">
       Discover the future of connectivity and telecommunications innovation
@@ -67,11 +67,28 @@ import Layout from "../layouts/Layout.astro";
 
   <style lang="scss">
     @use "../assets/scss/base/_breakpoint.scss" as *;
-    .contenedor {
+    .container {
+      display: flex;
+      flex-direction: column;
       box-sizing: border-box;
       padding: 30px 65px 30px 65px;
       @include breakpoint(md) {
         padding: 30px 190px 30px 190px;
+      }
+
+      > .grid-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        max-width: 1350px;
+
+
+        @include breakpoint(md) {
+          grid-template-columns: repeat(3, 1fr);
+          max-width: 950px;
+        }
       }
     }
 
@@ -92,18 +109,6 @@ import Layout from "../layouts/Layout.astro";
       }
     }
 
-    .grid-container {
-      margin-top: 30px;
-      margin-bottom: 30px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-
-      @include breakpoint(md) {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 950px;
-      }
-    }
     .grid-item-1 {
       grid-row: 1/2;
       @include breakpoint(md) {

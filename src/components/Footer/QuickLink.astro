@@ -13,12 +13,17 @@ const { href, title } = Astro.props;
 
 <style lang="scss">
   @use "../../assets/scss/base/_breakpoint.scss" as *;
+
+  li {
+    color: var(--color-mint-cream);
+  }
   a {
     color: var(--color-mint-cream);
     font-size: 1rem;
     @include breakpoint(sm) {
       font-size: 1.2rem;
-    } @include breakpoint(md) {
+    }
+    @include breakpoint(md) {
       font-size: 1.8rem;
     }
   }
