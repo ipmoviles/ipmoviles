@@ -2,6 +2,9 @@
 import Icon from "astro-icon";
 import { Image } from "astro:assets";
 import heroImage from "../../assets/hero-image.svg";
+import { changeLanguage, t } from "i18next";
+
+changeLanguage("es");
 ---
 
 <section class="section-hero">
@@ -117,7 +120,6 @@ import heroImage from "../../assets/hero-image.svg";
         }
 
         @include breakpoint(md) {
-          
         }
       }
     }

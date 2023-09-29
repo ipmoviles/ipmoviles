@@ -67,9 +67,10 @@
     "mission_text03": "proporcionando soluciones integrales adaptadas a los requisitos presentados. Esto se consigue mediante la disponibilidad, el rendimiento, la calidad, la gestión y la evolución de la infraestructura y la arquitectura de nuestra empresa.",
     "mission_text04":"Nos guiamos por una cultura de procesos y proyectos, que mantiene a nuestro personal centrado en las mejores prácticas y tendencias hacia la convergencia de las telecomunicaciones.",
     "vision_title": "Nuestra visión",
-    "vision_text01": "Para",
-    "vision_text02": "2035",
+    "vision_text01": "Para ",
+    "vision_text02": "2035 ",
     "vision_text03": "Nuestra visión es convertirnos en una empresa líder reconocida nacional e internacionalmente, firmemente establecida en la prestación de servicios y soluciones tecnológicas de alta calidad y eficiencia. Nos ceñiremos a las normas de calidad y cumpliremos la normativa vigente para garantizar un rendimiento sobresaliente en nuestro campo.",
+    "vision_text04": "Nos ceñiremos a las normas de calidad y cumpliremos la normativa vigente para defectizar un rendimiento sobresaliente en nuestro campo.",
     "values_title": "Nuestros valores corporativos",
     "values01": "La filosofía de nuestra empresa se centra en la lealtad, la responsabilidad, la honestidad, el respeto y la competitividad. Hacemos hincapié en el cumplimiento de las responsabilidades individuales para fortalecer nuestra imagen institucional y en la realización de tareas con compromiso de calidad.",
     "values01_desktop": "Nuestra empresa se basa en una filosofía de lealtad, responsabilidad, honestidad y respeto. Creemos en el cumplimiento de nuestras responsabilidades individuales para mejorar nuestra imagen institucional, llevando a cabo las tareas con un compromiso inquebrantable con las políticas de calidad establecidas, y actuando siempre con discernimiento ético y respeto por los derechos inherentes a cada individuo y a nuestra organización.",
@@ -78,6 +79,8 @@
   },
   "our_services ": {
     "our_services_title": "Nuestros servicios",
+    "IP_Moviles":"IP Moviles",
+    "our_services_info":"ofrecemos servicios de telecomunicaciones, incluyendo instalaciones de equipos de red, configuración de red, y ampliaciones LTE/5G, con un historial de éxito enfocado en la seguridad y la calidad.",
     "cards": [
       "Instalación de equipos para distribución de internet a zonas remotas de interés.",
       "Promover soluciones de configuración, administración y soporte de las principales tecnologías de acuerdo a sus requerimientos.",

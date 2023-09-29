@@ -60,9 +60,10 @@
     "mission_text03": "by providing comprehensive solutions tailored to the requirements presented. This is achieved through the availability, performance, quality, management, and evolution of our company's infrastructure and architecture.",
     "mission_text04":"We are guided by a culture of processes and projects, keeping our personnel focused on best practices and trends towards the convergence of telecommunications.",
     "vision_title": "Our Vision",
-    "vision_text01": "By",
+    "vision_text01": "By ",
     "vision_text02": "2035",
     "vision_text03": " , our vision is to become a nationally and internationally recognized leading company, firmly established in the provision of high-quality and efficient technological services and solutions. We will adhere to quality standards and comply with current regulations to ensure outstanding performance in our field.",
+    "vision_text04":"We will adhere to quality standards and comply with current regulations to ensure outstanding performance in our field.",
     "values_title": "Our Corporate Values",
     "values01": "Our company's philosophy centers on loyalty, responsibility, honesty, respect, and competitiveness. We emphasize fulfilling individual responsibilities to strengthen our institutional image and carrying out tasks with commitment to quality.",
     "values01_desktop": "At our core, our company is founded upon a philosophy of loyalty, responsibility, honesty, and respect. We believe in fulfilling our individual responsibilities to enhance our institutional image, carrying out tasks with unwavering commitment to established quality policies, and always acting with ethical discernment and respect for the inherent rights of each individual and our organization.",
@@ -71,6 +72,8 @@
   },
   "our_services": {
     "our_services_title": "Our Services",
+    "IP_Moviles":"IP Moviles",
+    "our_services_info":"offers telecommunications services, including remote Internet equipment installation, network configuration, and LTE/5G expansions, with a 15-year track record emphasizing safety and quality.",
     "cards":[
             "Installation of equipment for internet distribution to remote areas of interes.",
             "Promote configurationm, administration, and support solutions for the main technologies according to your requirements.",

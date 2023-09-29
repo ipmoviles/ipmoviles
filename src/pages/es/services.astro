@@ -3,88 +3,87 @@ import { changeLanguage, t } from "i18next";
 import CardServicesLeft from "../../components/CardServicesLeft.astro";
 import CardServicesRight from "../../components/CardServicesRight.astro";
 import Layout from "../../layouts/Layout.astro";
-import { Trans } from "astro-i18next/components";
 
 changeLanguage("es");
 
-//Installation of equipment for Internet distribution to remote areas of interest.
 const services = [
-    {
-        body: "Installation of equipment for Internet distribution to remote areas of interest.",
-        icon: "mdi:radio-tower",
-    },
-    {
-        body: "Promote configuration administration, and support solutions for the main technologies according to your requirements.",
-        icon: "mdi:tools",
-    },
-    {
-        body: "Preparation of site survey for new LTE sites; delivery of reports with plans in sketch-up.",
-        icon: "mdi:map-search-outline",
-    },
-    {
-        body: "Preparation of site survey for 3G, 4G and 5G network expansions, taking photographic records and delivery of reports.",
-        icon: "mdi:form-select",
-    },
-    {
-        body: "Services of personnel dedicated to preparing reports required by the operator to control the correct installation of the equipment in the quality area.",
-        icon: "mdi:file-document",
-    },
-    {
-        body: "Maintenance service for radio bases of the different 2G, 3G and 4G cellular network review of microwave and satellite links.",
-        icon: "mdi:hammer",
-    },
-    {
-        body: "Disassembly of cellular network equipment and return of these to the warehouse duly inventoried.",
-        icon: "mdi:recycle",
-    },
-    {
-        body: "Commissioning, configuration, and probe of cellular services network solutions according to operator parameters.",
-        icon: "mdi:cog-outline",
-    },
-    {
-        body: "Site master tests, PIM master measurement, VER, to guarantee the correct implementation of the network solution.",
-        icon: "mdi:clipboard-check",
-    },
-    {
-        body: "Cellular network optimization in different technologies according to specific parameters of the RF area.",
-        icon: "mdi:settings",
-    },
-    {
-        body: "Expansion of the capacity of the different cellular network technologies to improve traffic performance.",
-        icon: "mdi:trending-up",
-    },
-    {
-        body: "Installation, disassembly, and maintenance of microwave links (NEC, Siemens, Ericsson, among others).",
-        icon: "mdi:wrench",
-    },
-    {
-        body: "Installation of satellite links from brands such as Embratel, HughesNet and fiber optic networks.",
-        icon: "mdi:satellite-variant",
-    },
-    {
-        body: "Installation of servers, intelligent cabinets adjusted to the dimensioning of the client's network.",
-        icon: "mdi:server",
-    },
-    {
-        body: "We install reliable and high-quality CCTV video surveillance systems, according to the needs of the client.",
-        icon: "mdi:camera-outline",
-    },
-    {
-        body: "Installation of data networks, based on UTP cable, fiber optics and other types of connectivity that allow the integration of different internet, voice, data, and alarm services.",
-        icon: "mdi:network",
-    },
-    {
-        body: "Installation, commissioning and testing of the power systems / backup D.C, A.C (Power Eltek, power ZTE) with alarm wiring to manage its operation.",
-        icon: "mdi:power-plug",
-    },
+  {
+    body: "Installation of equipment for Internet distribution to remote areas of interest.",
+    icon: "mdi:radio-tower",
+  },
+  {
+    body: "Promote configuration administration, and support solutions for the main technologies according to your requirements.",
+    icon: "mdi:tools",
+  },
+  {
+    body: "Preparation of site survey for new LTE sites; delivery of reports with plans in sketch-up.",
+    icon: "mdi:map-search-outline",
+  },
+  {
+    body: "Preparation of site survey for 3G, 4G and 5G network expansions, taking photographic records and delivery of reports.",
+    icon: "mdi:form-select",
+  },
+  {
+    body: "Services of personnel dedicated to preparing reports required by the operator to control the correct installation of the equipment in the quality area.",
+    icon: "mdi:file-document",
+  },
+  {
+    body: "Maintenance service for radio bases of the different 2G, 3G and 4G cellular network review of microwave and satellite links.",
+    icon: "mdi:hammer",
+  },
+  {
+    body: "Disassembly of cellular network equipment and return of these to the warehouse duly inventoried.",
+    icon: "mdi:recycle",
+  },
+  {
+    body: "Commissioning, configuration, and probe of cellular services network solutions according to operator parameters.",
+    icon: "mdi:cog-outline",
+  },
+  {
+    body: "Site master tests, PIM master measurement, VER, to guarantee the correct implementation of the network solution.",
+    icon: "mdi:clipboard-check",
+  },
+  {
+    body: "Cellular network optimization in different technologies according to specific parameters of the RF area.",
+    icon: "mdi:settings",
+  },
+  {
+    body: "Expansion of the capacity of the different cellular network technologies to improve traffic performance.",
+    icon: "mdi:trending-up",
+  },
+  {
+    body: "Installation, disassembly, and maintenance of microwave links (NEC, Siemens, Ericsson, among others).",
+    icon: "mdi:wrench",
+  },
+  {
+    body: "Installation of satellite links from brands such as Embratel, HughesNet and fiber optic networks.",
+    icon: "mdi:satellite-variant",
+  },
+  {
+    body: "Installation of servers, intelligent cabinets adjusted to the dimensioning of the client's network.",
+    icon: "mdi:server",
+  },
+  {
+    body: "We install reliable and high-quality CCTV video surveillance systems, according to the needs of the client.",
+    icon: "mdi:camera-outline",
+  },
+  {
+    body: "Installation of data networks, based on UTP cable, fiber optics and other types of connectivity that allow the integration of different internet, voice, data, and alarm services.",
+    icon: "mdi:network",
+  },
+  {
+    body: "Installation, commissioning and testing of the power systems / backup D.C, A.C (Power Eltek, power ZTE) with alarm wiring to manage its operation.",
+    icon: "mdi:power-plug",
+  },
 ];
 ---
 
 <Layout title="Services">
   <section class="contenedor">
-    <h1 class="h1">Our Services</h1>
+    <h1 class="h1">{t("our_services.our_services_title")}</h1>
     <p class="intro">
-      {t("Pagina_Servicios.titulo_servicios")}
+      <span class="nombre">{t("our_services.IP_Moviles")}</span>
+      {t("our_services.our_services_info")}
     </p>
     <div class="cards">
       <div class="mobile">

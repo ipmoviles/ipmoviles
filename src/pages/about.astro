@@ -1,17 +1,16 @@
 ---
-import { changeLanguage } from "i18next";
+import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import CardAboutUsFondo from "../components/CardAboutUsFondo.astro";
 import { Image } from "astro:assets";
 import image from "../assets/images/obrero.svg";
-import icon1 from "../assets/images/iconXPabout1.svg";
 import Icon from "astro-icon";
 
 changeLanguage("en");
 ---
 
 <Layout title="About Us">
-  <h1 class="h1">About Us</h1>
+  <h1 class="h1">{t("about_us.about_us_title")}</h1>
   <section class="contenedor">
     <div class="mover">
       <div class="contenedorExperiencia">
@@ -20,16 +19,12 @@ changeLanguage("en");
             <Icon name="mdi:star-check" />
           </div>
           <p class="cardNoFondo">
-            With <span class="xp">over 15 years</span> of unmatched excellence
-            in the Telecom and ICT fields. In IPMoviles we are dedicated to
-            providing high-quality services and cutting-edge cloud solutions
-            while strictly adhering to industry regulations, Forming strong
-            strategic alliances with industry leaders like INSPUR.
+            {t("about_us.text01")}
+            <span class="xp">{t("about_us.text02")}</span>
+            {t("about_us.text03")}
           </p>
           <p class="cardNoFondo">
-            Since our establishment in 2008, We've gained your trust as the
-            go-to experts, tackling a wide range of projects across multiple
-            sectors, from telecommunications to education, finance, and oil.
+            {t("about_us.text04")}
           </p>
         </div>
 
@@ -39,17 +34,13 @@ changeLanguage("en");
           </div>
 
           <p class="cardNoFondo">
-            We prioritize <span class="xp">
-              our clients' needs as a customer-centric company</span
-            > , primarily focused on ICT solutions. Over the last 5 years, we've
-            consistently earned positive ratings, including recognition from
-            evaluators like Colombia Credit Report. These results shape our
-            quality system, fostering ongoing improvement.
+            {t("about_us.text05")}<span class="xp">
+              {t("about_us.text06")}</span
+            >
+            {t("about_us.text07")}
           </p>
           <p class="cardNoFondo">
-            Our commitment to staying at the forefront of network technology
-            drives us to continuously update our personnel. Additionally, we
-            actively participated in the Andicom 2015 conference.
+            {t("about_us.text08")}
           </p>
         </div>
       </div>
@@ -59,82 +50,59 @@ changeLanguage("en");
     </div>
     <div class="grid">
       <div class="izquierdo">
-        <CardAboutUsFondo size={"450px"} title={"Our Mission"}>
+        <CardAboutUsFondo size={"450px"} title={t("about_us.mission_tittle")}>
           <div class="mobile">
             <p class="cardFondo">
-              We <span class="span"
-                >contribute to the technological needs of society</span
-              > by providing comprehensive solutions tailored to the
-              requirements presented. This is achieved through the availability,
-              performance, quality, management, and evolution of our company's
-              infrastructure and architecture.
+              {t("about_us.mission_text01")}
+              <span class="span">{t("about_us.mission_text02")}</span>
+              {t("about_us.mission_text03")}
             </p>
             <p class="cardFondo">
-              We are guided by a culture of processes and projects, keeping our
-              personnel focused on best practices and trends towards the
-              convergence of telecommunications.
+              {t("about_us.mission_text04")}
             </p>
           </div>
 
           <div class="desktop">
             <p class="cardFondo">
-              We <span class="span"
-                >contribute to the technological needs of society</span
-              > by providing comprehensive solutions tailored to the
-              requirements presented. This is achieved through the availability,
-              performance, quality, management, and evolution of our company's
-              infrastructure and architecture.
+              {t("about_us.mission_text01")}
+              <span class="span">{t("about_us.mission_text02")}</span>
+              {t("about_us.mission_text03")}
             </p>
             <p class="cardFondo">
-              We are guided by a culture of processes and projects, keeping our
-              personnel focused on best practices and trends towards the
-              convergence of telecommunications.
+              {t("about_us.mission_text04")}
             </p>
           </div>
         </CardAboutUsFondo>
 
-        <CardAboutUsFondo size={"450px"} title={"Our  Vision"}>
+        <CardAboutUsFondo size={"450px"} title={t("about_us.vision_title")}>
           <div class="mobile">
             <p class="cardFondo">
-              By <span class="span">2035</span> , our vision is to become a
-              nationally and internationally recognized leading company, firmly
-              established in the provision of high-quality and efficient
-              technological services and solutions. We will adhere to quality
-              standards and comply with current regulations to ensure
-              outstanding performance in our field.
+              {t("about_us.vision_text01")}
+              <span class="span">{t("about_us.vision_text02")}</span>
+              {t("about_us.vision_text03")}
+              {t("about_us.vision_text04")}
             </p>
           </div>
 
           <div class="desktop">
             <p class="cardFondo">
-              By <span class="span">2035</span>, our vision is to become a
-              nationally and internationally recognized leading company, firmly
-              established in the provision of high-quality and efficient
-              technological services and solutions.
-            </p>
-
-            <p class="cardFondo">
-              We will adhere to quality standards and comply with current
-              regulations to ensure outstanding performance in our field.
+              {t("about_us.vision_text01")}
+              <span class="span">{t("about_us.vision_text02")}</span>
+              {t("about_us.vision_text03")}
+              {t("about_us.vision_text04")}
             </p>
           </div>
         </CardAboutUsFondo>
       </div>
       <div class="derecho">
-        <CardAboutUsFondo size={"621px"} title={"Our Corporate Values"}>
+        <CardAboutUsFondo size={"621px"} title={t("about_us.values_title")}>
           <div class="mobile">
             <ul>
               <li class="liFondo">
-                Our company's philosophy centers on loyalty, responsibility,
-                honesty, respect, and competitiveness. We emphasize fulfilling
-                individual responsibilities to strengthen our institutional
-                image and carrying out tasks with commitment to quality.
+                {t("about_us.values01")}
               </li>
               <li class="liFondo">
-                Our actions are guided by ethical discernment and respect for
-                both individuals and the organization. We prioritize efficiency,
-                service-oriented commitment, and a culture of quality to exceed
-                customer expectations while respecting the environment.
+                {t("about_us.values02")}
               </li>
             </ul>
           </div>
@@ -142,23 +110,10 @@ changeLanguage("en");
           <div class="desktop">
             <ul>
               <li class="liFondo">
-                At our core, our company is founded upon a philosophy of
-                loyalty, responsibility, honesty, and respect. We believe in
-                fulfilling our individual responsibilities to enhance our
-                institutional image, carrying out tasks with unwavering
-                commitment to established quality policies, and always acting
-                with ethical discernment and respect for the inherent rights of
-                each individual and our organization.
+                {t("about_us.values01_desktop")}
               </li>
               <li class="liFondo">
-                We strive for efficiency, delivering quality results through
-                meticulous planning, and demonstrate a strong commitment to
-                service and a sense of belonging to our organization, all while
-                exercising the necessary leadership to achieve our objectives
-                while respecting the environment. Our overarching goal is to
-                maintain competitiveness through a culture of quality, ensuring
-                that every product and service we offer not only meets but
-                exceeds customer expectations.
+                {t("about_us.values02_desktop")}
               </li>
             </ul>
           </div>

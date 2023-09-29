@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Home/Hero.astro";
 import Services from "../components/Home/Services.astro";
@@ -18,34 +18,34 @@ changeLanguage("en");
   <Hero />
   <Services>
     <CardService
-      title="Remote Connectivity"
-      text="Installation of equipment to bring internet to remote areas."
+      title={t("site_home.card01_title")}
+      text={t("site_home.card01_body")}
       icon="iconoir:antenna"
     />
     <CardService
-      title="Configuration and Support"
-      text="Configuration of telecommunications technologies tailored to your needs."
+      title={t("site_home.card02_title")}
+      text={t("site_home.card02_body")}
       icon="iconoir:antenna"
     />
     <CardService
-      title="Site Surveys"
-      text="Site evaluations for new installations and network expansions, with detailed report deliveries."
+      title={t("site_home.card03_title")}
+      text={t("site_home.card03_body")}
       icon="iconoir:antenna"
     />
     <div class="break"></div>
     <CardService
-      title="Network Maintenance"
-      text="Maintenance and optimization of cellular networks, Wi-Fi, and data links."
+      title={t("site_home.card04_title")}
+      text={t("site_home.card04_body")}
       icon="iconoir:antenna"
     />
     <CardService
-      title="Network Deployment"
-      text="Commissioning and configuration of mobile network solutions and network testing"
+      title={t("site_home.card05_title")}
+      text={t("site_home.card05_body")}
       icon="iconoir:antenna"
     />
     <CardService
-      title="Infrastructure and Security"
-      text="Installation of servers, intelligent cabinets, CCTV systems, and data networks for voice, data, and alarm services."
+      title={t("site_home.card06_title")}
+      text={t("site_home.card06_body")}
       icon="iconoir:antenna"
     />
   </Services>
@@ -59,13 +59,13 @@ changeLanguage("en");
 
 <script>
   const button = document.querySelectorAll(".cta-button");
-  
+
   button.forEach((button) => {
     const href = button?.querySelector("a")?.href || "#";
     button.addEventListener("click", () => {
       window.location.href = href;
-    })
-  })
+    });
+  });
 </script>
 
 <style lang="scss">
