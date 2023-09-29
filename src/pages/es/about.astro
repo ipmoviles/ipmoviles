@@ -1,13 +1,13 @@
 ---
 import { changeLanguage } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import CardAboutUsFondo from "../components/CardAboutUsFondo.astro";
+import Layout from "../../layouts/Layout.astro";
+import CardAboutUsFondo from "../../components/CardAboutUsFondo.astro";
 import { Image } from "astro:assets";
-import image from "../assets/images/obrero.svg";
-import icon1 from "../assets/images/iconXPabout1.svg";
+import image from "../../assets/images/obrero.svg";
+import icon1 from "../../assets/images/iconXPabout1.svg";
 import Icon from "astro-icon";
 
-changeLanguage("en");
+changeLanguage("es");
 ---
 
 <Layout title="About Us">
@@ -168,7 +168,7 @@ changeLanguage("en");
   </section>
 
   <style lang="scss">
-    @use "../assets/scss/base/_breakpoint.scss" as *;
+    @use "../../assets/scss/base/_breakpoint.scss" as *;
 
     .contenedorExperiencia {
       display: flex;
