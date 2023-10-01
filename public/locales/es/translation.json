@@ -10,146 +10,123 @@
       "Acerca de nosotros",
       "Galería",
       "Nuestros servicios",
-      "Contáctanos",
-      "Carreras"
+      "Contáctanos"
     ],
     "title_colombia": "Sede en Colombia",
-    "address_colombia": "Cra 1ª # 11-34Q Chía - Cundinamarca",
     "title_usa": "Sede en Estados Unidos",
-    "address_usa": "210 NE 45th St. Oakland Park, Florida 33334",
     "a_ig": "Enlace en Instagram",
     "a_linkedIn": "Enlace a LinkedIn",
-    "rights": "Todos los derechos reservados por IPMoviles.com"
+    "rights": "2022 IP Moviles *Todos los derechos reservados"
   },
   "site_home": {
     "header_text01": "Su socio de confianza en conectividad y servicios de telecomunicaciones.",
-    "header_text02": "Soluciones tecnológicas adaptadas a las necesidades de nuestros clientes.",
-    "service01": "Conectividad confiable",
-    "service02": "Tecnología efectiva",
+    "header_text02": "Soluciones tecnológicas adaptadas a las necesidades de nuestros clientes",
+    "service01": "Conectividad efectiva",
+    "service02": "Tecnología fiable",
     "service03": "Soluciones personalizadas",
-    "quality": "Servicios de calidad",
-    "card01": "Conectividad remota: Instalación de equipos para llevar internet a áreas remotas",
+    "quality_services": "Servicios de calidad",
+    "card01_title": "Conectividad remota",
+    "card01_body":"Instalación de equipos para llevar Internet a zonas remotas.",
+    "card02_title": "Configuración y soporte",
+    "card02_body": "Configuración de tecnologías de telecomunicaciones adaptadas a sus necesidades.",
+    "card03_title": "Evaluaciones de sitios",
+    "card03_body": "Evaluaciones de sitios para nuevas instalaciones y ampliaciones de red, con envíos detallados de reportes.",
+    "card04_title": "Mantenimiento de red",
+    "card04_body": "Mantenimiento y optimización de redes celulares, Wi-Fi y enlaces de datos.",
+    "card05_title": "Despliegue de red",
+    "card05_body": "Comisionamiento y configuración de soluciones de red móvil y pruebas de red.",
+    "card06_title": "Infraestructura y seguridad",
+    "card06_body": "Instalación de servidores, cajas inteligentes, sistemas de cámaras de vigilancia y redes de datos para voz, datos y alarma.",
     "link_services": "Conoce más sobre nuestros servicios",
+    "our_company":"Nuestra empresa",
+    "company_text01": "Con más de 15 años de experiencia, en IPmoviles, nos esforzamos por la excelencia en las telecomunicaciones y la Tecnología de la Información y Comunicación (TIC). En",
+    "company_text02": "Nuestros valores éticos se basan en honestidad y un enfoque centrado en el cliente. Buscamos la conectividad global y la innovación en un panorama tecnológico en el que evoluciona.",
+    "CTA_company":"Más sobre nosotros",
     "about_us": "IPmoviles es una empresa de telecomunicaciones con más de 15 años de experiencia, aliada con INSPUR para ofrecer soluciones en la nube. Han trabajado en sectores como educación, finanzas y petróleo, y han recibido calificaciones positivas en los últimos 5 años.",
     "ver_Mas": "Más sobre nosotros",
-    "clients": "Trabajamos con expertos",
-    "about_clients": "",
-    "clients_button": "Conoce a nuestros expertos",
-    "title_products": "Productos de calidad",
-    "text_products": ""
+    "clients": "Hemos trabajado con los mejores",
+    "clients_text01": "En IPmoviles, hemos tenido el privilegio de asociarnos con empresas punteras del sector de las telecomunicaciones y la tecnología. Nuestra experiencia y dedicación a ofrecer soluciones de alta calidad nos han permitido establecer sólidas relaciones con estos líderes del sector.",
+    "clients_text02": "En los años transcurridos, hemos colaborado para impulsar la innovación, la conectividad y el éxito empresarial.",
+    "our_products":"Nuestros Productos",
+    "product_text01": "En IPmoviles, damos la bienvenida a algunos de los marcas de confianza y renombradas en el sector de las telecomunicaciones y la tecnología.",
+    "product_text02": "Nuestra colaboración con estas marcas nos permite ofrecer soluciones de alta calidad y servicios de última generación a nuestros clientes."
   },
-  "pagina_sobreNosotros": {
-    "titulo_SobreNosotros": "Acerca de nosotros",
-    "descripcion": "IPmoviles es una empresa",
-    "descripcionN": "con más de 15 años",
-    "descripcion2": "de excelencia incomparable en los campos de las Telecomunicaciones y la Tecnología de la Información y Comunicación (TIC). En",
-    "ipMoviles": "IPMoviles",
-    "descripcion3": "nos dedicamos a proporcionar servicios de alta calidad y soluciones en la nube de vanguardia, cumpliendo estrictamente con las regulaciones de la industria. Formamos fuertes alianzas estratégicas con líderes de la industria como INSPUR.{{Spacer}}{{Spacer}}Desde nuestra fundación en 2008, hemos ganado la confianza como los expertos a los que acudir, abordando una amplia gama de proyectos en múltiples sectores, desde educación, telecomunicaciones, finanzas y petróleo.",
-    "prioridad": "Como empresa centrada en el cliente",
-    "prioridazamos": "Priorizamos sus necesidades",
-    "prioridad2": "centrándonos principalmente en soluciones de TIC. Durante los últimos 5 años, hemos obtenido constantemente calificaciones positivas, incluyendo reconocimientos de evaluadores como",
-    "colombia_credit": "Colombia Credit Report.",
-    "prioridad3": "Estos resultados dan forma a nuestro sistema de calidad, fomentando la mejora continua. {{Spacer}}{{Spacer}}Nuestro compromiso con mantenernos a la vanguardia de la tecnología de red nos impulsa a actualizar continuamente a nuestro personal activo. Además, participamos activamente en la conferencia Andicom 2015.",
-    "titulo_Mision": "Nuestra misión",
-    "mision": "Contribuimos",
-    "necesidades": "a las necesidades tecnológicas de la sociedad",
-    "mision2": "proporcionando soluciones integrales adaptadas a las necesidades de nuestros clientes. Esto se logra a través de la disponibilidad y rendimiento de la infraestructura, el entorno, la calidad, la gestión y el personal de nuestra empresa.",
-    "titulo_vision": "Nuestra visión",
-    "vision": "Para",
-    "año": "2035",
-    "nuetra_vision": "nuestra visión es convertirnos en una empresa líder, firmemente establecida en el mercado internacional de tecnología y servicios de alta calidad, reconocida como una empresa confiable e innovadora, cumpliendo con las regulaciones actuales y las tendencias y soluciones tecnológicas. Continuaremos esforzándonos por la excelencia en nuestro campo, contribuyendo al progreso tecnológico de la sociedad y al rendimiento de los negocios de nuestros clientes.",
-    "titulo_valores": "Nuestros valores corporativos",
-    "valores_corporativos": "La filosofía de nuestra empresa se centra en la lealtad, la responsabilidad, la honestidad, el respeto y la competitividad. Enfatizamos el cumplimiento de las responsabilidades individuales para fortalecer nuestra imagen institucional y llevar a cabo las tareas con un compromiso con la calidad.",
-    "acciones": "Nuestras acciones están guiadas por el discernimiento ético y el respeto tanto hacia las personas como hacia la organización. Priorizamos la eficiencia, el compromiso orientado al servicio y una cultura de calidad para superar las expectativas de los clientes mientras respetamos el medio ambiente."
+  "about_us": {
+    "about_us_title": "Acerca de nosotros",
+    "text01": "Con",
+    "text02": " más de 15 años",
+    "text03": " de excelencia sin parangón en los campos de las telecomunicaciones y las TIC. En IPMoviles nos dedicamos a ofrecer servicios de alta calidad y soluciones en la nube de vanguardia, cumpliendo estrictamente la normativa del sector y formando sólidas alianzas estratégicas con líderes del sector como INSPUR.",
+    "text04": "Desde nuestra fundación en 2008, nos hemos ganado su confianza como expertos a los que acudir, abordando una amplia gama de proyectos en múltiples sectores, desde las telecomunicaciones hasta la educación, las finanzas y el petróleo.",
+    "text05": "Damos prioridad a",
+    "text06": " las necesidades de nuestros clientes como empresa centrada en el cliente ",
+    "text07": ", principalmente enfocados en las soluciones de TIC. Durante los últimos 5 años, hemos obtenido constantemente calificaciones positivas, incluyendo reconocimientos de evaluadores como",  
+    "text08": "Nuestro compromiso de mantenernos a la vanguardia de la tecnología de redes nos impulsa a actualizar continuamente a nuestro personal. Además, participamos activamente en la conferencia Andicom 2015.",
+    "mission_tittle": "Nuestra misión",
+    "mission_text01": " ",
+    "mission_text02": "contribuimos a las necesidades tecnológicas de la sociedad",
+    "mission_text03": "proporcionando soluciones integrales adaptadas a los requisitos presentados. Esto se consigue mediante la disponibilidad, el rendimiento, la calidad, la gestión y la evolución de la infraestructura y la arquitectura de nuestra empresa.",
+    "mission_text04":"Nos guiamos por una cultura de procesos y proyectos, que mantiene a nuestro personal centrado en las mejores prácticas y tendencias hacia la convergencia de las telecomunicaciones.",
+    "vision_title": "Nuestra visión",
+    "vision_text01": "Para ",
+    "vision_text02": "2035 ",
+    "vision_text03": "Nuestra visión es convertirnos en una empresa líder reconocida nacional e internacionalmente, firmemente establecida en la prestación de servicios y soluciones tecnológicas de alta calidad y eficiencia. Nos ceñiremos a las normas de calidad y cumpliremos la normativa vigente para garantizar un rendimiento sobresaliente en nuestro campo.",
+    "vision_text04": "Nos ceñiremos a las normas de calidad y cumpliremos la normativa vigente para defectizar un rendimiento sobresaliente en nuestro campo.",
+    "values_title": "Nuestros valores corporativos",
+    "values01": "La filosofía de nuestra empresa se centra en la lealtad, la responsabilidad, la honestidad, el respeto y la competitividad. Hacemos hincapié en el cumplimiento de las responsabilidades individuales para fortalecer nuestra imagen institucional y en la realización de tareas con compromiso de calidad.",
+    "values01_desktop": "Nuestra empresa se basa en una filosofía de lealtad, responsabilidad, honestidad y respeto. Creemos en el cumplimiento de nuestras responsabilidades individuales para mejorar nuestra imagen institucional, llevando a cabo las tareas con un compromiso inquebrantable con las políticas de calidad establecidas, y actuando siempre con discernimiento ético y respeto por los derechos inherentes a cada individuo y a nuestra organización.",
+    "values02": "Nuestras acciones se guían por el discernimiento ético y el respeto tanto a las personas como a la organización. Priorizamos la eficiencia, el compromiso orientado al servicio y una cultura de calidad para superar las expectativas de los clientes respetando el medio ambiente.",
+    "values02_desktop": "Buscamos la eficiencia, ofreciendo resultados de calidad mediante una planificación meticulosa, y demostramos un fuerte compromiso de servicio y sentido de pertenencia a nuestra organización, todo ello ejerciendo el liderazgo necesario para alcanzar nuestros objetivos respetando el medio ambiente. Nuestro objetivo global es mantener la competitividad a través de una cultura de calidad, garantizando que todos los productos y servicios que ofrecemos no sólo cumplan las expectativas del cliente, sino que las superen."
   },
-  "Pagina_Servicios": {
-    "titulo_servicios": "Nuestros servicios",
-    "secciones": [
+  "our_services ": {
+    "our_services_title": "Nuestros servicios",
+    "IP_Moviles":"IP Moviles",
+    "our_services_info":"ofrecemos servicios de telecomunicaciones, incluyendo instalaciones de equipos de red, configuración de red, y ampliaciones LTE/5G, con un historial de éxito enfocado en la seguridad y la calidad.",
+    "cards": [
+      "Instalación de equipos para distribución de internet a zonas remotas de interés.",
+      "Promover soluciones de configuración, administración y soporte de las principales tecnologías de acuerdo a sus requerimientos.",
+      " Elaboración de site survey para nuevos emplazamientos de LET; entrega de informes con planos en sketchups",
+      "Preparación de site survehy para ampliaciones de redes 3G, 4G, 5G, toma de registros fotográficos y entrega de informes.",
+      "Servicios de personal dedicado a la elaboración de informes requeridos por el operador para el control de la correcta instalación de los equipos en el área de calidad.",
+      "Servicio de mantenimiento de radiobases de las diferentes tecnologías de redes celulares 2g, 3g, y 4g así como redes Wifi, revisión de enlaces de microondas y satelitales.",
+      "Desmontaje de equipos de red celular y devolución de los mismos al almacén debidamente invetorizados.",
+      "Puesta en servicio, configuración y sondeo de soluciones de red de servicios celulares según los parámetros del operador.",
+      "Pruebas de site master, medición de PIM master, VER, para garantizar la correcta implementación de la solución de red.",
+      "Optimización de la red celular en diferentes tecnologías según parámetro específico de la zona RF.",
+      "Ampliación de la capacidad de las diferentes tecnologías de red celular para mejorar el rendimiento del tráfico.",
+      "Instalación, desmontaje y mantenimiento de enlaces de microondas (NEC, siemens, ericson, entre otros), Instalación de enlaces satelitales de marcas como Embratel, HughesNet y redes de fibra óptica."
+    ],
+    "ready_work": "Estamos listos para trabajar",
+    "readdy_work_text01": "Tenemos todo en orden para trabajar y cumplir con todos sus requerimientos.",
+    "readdy_work_text02": "Priorizamos la seguridad a través de personal certificado de HSEQ y capacitación integral.",
+    "readdy_work_text03": "Nuestro personal técnico recibe capacitación avanzada, incluyendo manejo de vehículos y manejo de alturas.",
+    "readdy_work_text04": "Tenemos una flota para logística y pruebas de calidad nacional."
+  },
+  "contact_us": {
+    "contact_us_title": "Contáctanos",
+    "form": [
       {
-        "numero": 1,
-        "descripcion": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "numero": 2,
-        "descripcion": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "numero": 3,
-        "descripcion": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "numero": 4,
-        "descripcion": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "numero": 5,
-        "descripcion": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "numero": 6,
-        "descripcion": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "contac_text01": "Puede ponerse en contacto con nosotros por los medios que se indican a continuación",
+        "name": "Tu nombre",
+        "email": "Tu correo",
+        "phone": "Tu teléfono",
+        "message": "Su mensaje",
+        "send_button": "Enviar solicitud"
       }
     ],
-    "titulo_experiencia": "Nuestra experiencia",
-    "experiencia": "Tenemos 15 años de experiencia con personal altamente calificado en la ejecución de diversos proyectos en el sector de las telecomunicaciones, tales como:",
-    "tarjetas": [
+    "contact_info": [
       {
-        "título": "Contrato",
-        "detalles": {
-          "servicio": "Provisión de servicios de instalación y/o desinstalación de soluciones celulares",
-          "cliente": "Comcel S.A.",
-          "duración": "XXXXX",
-          "service_provisto": "Instalación de equipos y expansión según las normas de red y servicio de los sitios existentes, y órdenes de trabajo con el cumplimiento asignado."
-        }
-      },
-      {
-        "título": "Contrato",
-        "detalles": {
-          "servicio": "Provisión de servicios de instalación y/o desinstalación de soluciones celulares",
-          "cliente": "Comcel S.A.",
-          "duración": "XXXXX",
-          "service_provisto": "Instalación de equipos y expansión según las normas de red y servicio de los sitios existentes, y órdenes de trabajo con el cumplimiento asignado."
-        }
+        "contact_info_title": "Información de Contacto",
+        "USA_phone": "Teléfonos en Estados Unidos",
+        "colombian_phone": "Teléfonos en Colombia",
+        "emails": "Nuestros correos"
       }
     ],
-    "titulo": "Estamos listos para trabajar",
-    "personal": "Personal certificado HSEQ con licencia a cargo del sistema.",
-    "logística": "Flota de logística y transporte.",
-    "equipo": "Equipo de prueba para pruebas de ajuste y revisión de calidad"
+    "florida": "Encuéntranos en Florida, Estados Unidos",
+    "colombia": "Encuéntranos en Colombia"
   },
-  "pagina_contacto": {
-    "Titulo_contacto": "Contáctanos",
-    "formulario": [
-      {
-        "como_contactar": "Puede contactarnos llenando el formulario",
-        "nombre": "Tu nombre",
-        "correo_electronico": "Tu correo",
-        "telefono": "Tu teléfono",
-        "mensaje": "Su mensaje",
-        "boton_enviar": "Enviar solicitud"
-      }
-    ],
-    "cuadro_contactos": [
-      {
-        "informacion_contacto": "Información de Contacto",
-        "telefonos_USA": "Teléfonos en Estados Unidos",
-        "tel1": "(+1) (954) 770-4449",
-        "tel2": "(954) 770-6061",
-        "telefonos_Colombia": "Teléfonos en Colombia",
-        "tel3": "+57 320 8542698",
-        "tel4": "+57 313 2723646",
-        "correos": "Nuestros correos",
-        "correo1": "andres.morales@ipmoviles.net",
-        "correo2": "karina.otalora@ipmoviles.net",
-        "correo3": "info@ipmoviles.com"
-      }
-    ],
-    "ubicación_Florida": "Encuéntranos en Florida, Estados Unidos",
-    "ubicación_Colombia": "Encuéntranos en Colombia"
-  },
-  "pagina_galeria": {
-    "titulo_galeria": "Galería",
-    "texto_galeria": "",
-    "mirar_mas": "Mira más en nuestras redes sociales:"
+  "gallery": {
+    "gallery_title": "Galería",
+    "gallery_text01": " Descubre el futuro de la conectividad y la innovación de telecomunicaciones a través de imágenes cautivantes que ilustran una comunicación asertiva.",
+    "gallery_text02": "Mira más en nuestras redes sociales"
   }
 }

@@ -22,7 +22,7 @@ changeLanguage("en");
           <label for="phone">Your phone:</label>
           <input type="number" placeholder="Phone" />
 
-          <p>
+          <p class="message">
             Lets get in contact, leave your info above and we will email you
             very fast.
           </p>
@@ -203,7 +203,7 @@ changeLanguage("en");
       }
     }
 
-    form p {
+    .message {
       display: none;
       @include breakpoint(md) {
         display: flex;
@@ -303,6 +303,7 @@ changeLanguage("en");
     }
 
     .phone p {
+      display: flex;
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -362,17 +363,10 @@ changeLanguage("en");
       }
     }
 
-    .mapa .title,
-    p {
+    .mapa .title {
       display: none;
       @include breakpoint(md) {
         display: flex;
-      }
-    }
-
-    .mapa .title {
-      @include breakpoint(md) {
-        color: var(--action-color);
       }
     }
 
