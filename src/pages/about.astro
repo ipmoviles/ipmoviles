@@ -1,7 +1,6 @@
 ---
 import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
-import CardAboutUsFondo from "../components/CardAboutUsFondo.astro";
 import { Image } from "astro:assets";
 import mobileImage from "../assets/images/obrero.svg";
 import desktopImage from "../assets/images/desktop-image.png";
@@ -59,9 +58,7 @@ changeLanguage("en");
     <section class="cards-container">
       <div class="cards">
         <div class="mission-card card-item">
-          <h2 class="card-title">
-            {t("about_us.mission_tittle")}
-          </h2>
+          <h2 class="card-title">{t("about_us.mission_title")}</h2>
           <p class="card-description">
             {t("about_us.mission_text01")}
             <span class="span">{t("about_us.mission_text02")}</span>
@@ -88,7 +85,6 @@ changeLanguage("en");
           <h2 class="card-title">
             {t("about_us.values_title")}
           </h2>
-
           <p>
             {t("about_us.values01_desktop")}
           </p>
@@ -99,118 +95,6 @@ changeLanguage("en");
       </div>
     </section>
   </div>
-  <!-- 
-  <h1 class="h1">{t("about_us.about_us_title")}</h1>
-  <section class="contenedor">
-    <div class="mover">
-      <div class="contenedorExperiencia">
-        <div class="experiencia">
-          <div class="iconXP">
-            <Icon name="mdi:star-check" />
-          </div>
-          <p class="cardNoFondo">
-            {t("about_us.text01")}
-            <span class="xp">{t("about_us.text02")}</span>
-            {t("about_us.text03")}
-          </p>
-          <p class="cardNoFondo">
-            {t("about_us.text04")}
-          </p>
-        </div>
-
-        <div class="experiencia">
-          <div class="iconXP">
-            <Icon name="mdi:medal-outline" />
-          </div>
-
-          <p class="cardNoFondo">
-            {t("about_us.text05")}<span class="xp">
-              {t("about_us.text06")}</span
-            >
-            {t("about_us.text07")}
-          </p>
-          <p class="cardNoFondo">
-            {t("about_us.text08")}
-          </p>
-        </div>
-      </div>
-      <div class="obrero-img">
-        <Image src={image} alt="products section image" />
-      </div>
-    </div>
-    <div class="grid">
-      <div class="izquierdo">
-        <CardAboutUsFondo size={"450px"} title={t("about_us.mission_tittle")}>
-          <div class="mobile">
-            <p class="cardFondo">
-              {t("about_us.mission_text01")}
-              <span class="span">{t("about_us.mission_text02")}</span>
-              {t("about_us.mission_text03")}
-            </p>
-            <p class="cardFondo">
-              {t("about_us.mission_text04")}
-            </p>
-          </div>
-
-          <div class="desktop">
-            <p class="cardFondo">
-              {t("about_us.mission_text01")}
-              <span class="span">{t("about_us.mission_text02")}</span>
-              {t("about_us.mission_text03")}
-            </p>
-            <p class="cardFondo">
-              {t("about_us.mission_text04")}
-            </p>
-          </div>
-        </CardAboutUsFondo>
-
-        <CardAboutUsFondo size={"450px"} title={t("about_us.vision_title")}>
-          <div class="mobile">
-            <p class="cardFondo">
-              {t("about_us.vision_text01")}
-              <span class="span">{t("about_us.vision_text02")}</span>
-              {t("about_us.vision_text03")}
-              {t("about_us.vision_text04")}
-            </p>
-          </div>
-
-          <div class="desktop">
-            <p class="cardFondo">
-              {t("about_us.vision_text01")}
-              <span class="span">{t("about_us.vision_text02")}</span>
-              {t("about_us.vision_text03")}
-              {t("about_us.vision_text04")}
-            </p>
-          </div>
-        </CardAboutUsFondo>
-      </div>
-      <div class="derecho">
-        <CardAboutUsFondo size={"621px"} title={t("about_us.values_title")}>
-          <div class="mobile">
-            <ul>
-              <li class="liFondo">
-                {t("about_us.values01")}
-              </li>
-              <li class="liFondo">
-                {t("about_us.values02")}
-              </li>
-            </ul>
-          </div>
-
-          <div class="desktop">
-            <ul>
-              <li class="liFondo">
-                {t("about_us.values01_desktop")}
-              </li>
-              <li class="liFondo">
-                {t("about_us.values02_desktop")}
-              </li>
-            </ul>
-          </div>
-        </CardAboutUsFondo>
-      </div>
-    </div>
-  </section> -->
 </Layout>
 
 <style lang="scss">
@@ -308,7 +192,7 @@ changeLanguage("en");
       margin: 40px 0px;
       > img {
         width: 100%;
-        
+
         height: auto;
         @include breakpoint(1350px) {
           border-radius: var(--radius-default);
@@ -343,6 +227,10 @@ changeLanguage("en");
       align-items: center;
       width: 100%;
       margin: 40px 0px;
+
+      p {
+        line-height: 1.4;
+      }
       > .cards {
         display: grid;
         align-items: start;
@@ -378,6 +266,7 @@ changeLanguage("en");
         }
         .card-description {
           > .span {
+            font-weight: 600;
           }
         }
       }
