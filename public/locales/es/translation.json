@@ -111,26 +111,31 @@
   },
   "contact_us": {
     "contact_us_title": "Contáctanos",
-    "form": [
+    "form": 
       {
+        "title": "Formulario de contacto",
         "contac_text01": "Puede ponerse en contacto con nosotros por los medios que se indican a continuación",
         "name": "Tu nombre",
         "email": "Tu correo",
         "phone": "Tu teléfono",
         "message": "Su mensaje",
-        "send_button": "Enviar solicitud"
-      }
-    ],
-    "contact_info": [
+        "send_button": "Enviar solicitud",
+        "message_final":"Pongámonos en contacto, deje su información arriba y le enviaremos un correo electrónico muy pronto."
+      },
+    "contact_info": 
       {
         "contact_info_title": "Información de Contacto",
         "USA_phone": "Teléfonos en Estados Unidos",
         "colombian_phone": "Teléfonos en Colombia",
-        "emails": "Nuestros correos"
+        "emails": "Nuestros correos",
+        "redes":"Nuestras redes sociales"
       }
-    ],
+    ,
+    "location_title": "Nuestra Ubicación",
     "florida": "Encuéntranos en Florida, Estados Unidos",
-    "colombia": "Encuéntranos en Colombia"
+    "colombia": "Encuéntranos en Colombia",
+    "united_states": "Estados Unidos",
+    "colombia_": "Colombia"
   },
   "gallery": {
     "gallery_title": "Galería",
