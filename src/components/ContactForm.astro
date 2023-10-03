@@ -115,10 +115,14 @@ import { t } from "i18next";
       color: var(--color-mint-cream);
       border: none;
       padding: 10px;
+      font-size: 1.4rem;
       cursor: pointer;
       @include breakpoint(md) {
         align-self: center;
         width: 50%;
+      }
+      @include breakpoint(lg) {
+        font-size: 1.6rem;
       }
       > [astro-icon] {
         width: 20px;
