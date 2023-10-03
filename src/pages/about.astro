@@ -3,7 +3,8 @@ import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import CardAboutUsFondo from "../components/CardAboutUsFondo.astro";
 import { Image } from "astro:assets";
-import image from "../assets/images/obrero.svg";
+import mobileImage from "../assets/images/obrero.svg";
+import desktopImage from "../assets/images/desktop-image.png";
 import Icon from "astro-icon";
 
 changeLanguage("en");
@@ -11,41 +12,94 @@ changeLanguage("en");
 
 <Layout title="About Us">
   <div class="container">
-    <h1 class="h1">{t("about_us.about_us_title")}</h1>
+    <div class="page-title">
+      <h1 class="about-title">{t("about_us.about_us_title")}</h1>
+    </div>
+
     <section class="about-description">
       <div class="about-description-container">
-        <div class="experiencia">
+        <div class="experience">
           <div class="iconXP">
             <Icon name="mdi:star-check" />
           </div>
-          <p class="cardNoFondo">
+          <p class="experience-text">
             {t("about_us.text01")}
             <span class="xp">{t("about_us.text02")}</span>
             {t("about_us.text03")}
           </p>
-          <p class="cardNoFondo">
+          <p class="experience-text">
             {t("about_us.text04")}
           </p>
         </div>
 
-        <div class="experiencia">
+        <div class="experience">
           <div class="iconXP">
             <Icon name="mdi:medal-outline" />
           </div>
 
-          <p class="cardNoFondo">
+          <p class="experience-text">
             {t("about_us.text05")}<span class="xp">
               {t("about_us.text06")}</span
             >
             {t("about_us.text07")}
           </p>
-          <p class="cardNoFondo">
+          <p class="experience-text">
             {t("about_us.text08")}
           </p>
         </div>
       </div>
     </section>
+    <div class="desktop-image">
+      <Image src={desktopImage} alt="example image" />
+    </div>
+    <div class="mobile-image">
+      <Image src={mobileImage} alt="example image" />
+    </div>
+
+    <section class="cards-container">
+      <div class="cards">
+        <div class="mission-card card-item">
+          <h2 class="card-title">
+            {t("about_us.mission_tittle")}
+          </h2>
+          <p class="card-description">
+            {t("about_us.mission_text01")}
+            <span class="span">{t("about_us.mission_text02")}</span>
+            {t("about_us.mission_text03")}
+          </p>
+          <p class="card-description">
+            {t("about_us.mission_text04")}
+          </p>
+        </div>
+        <div class="vision-card card-item">
+          <h2 class="card-title">
+            {t("about_us.vision_title")}
+          </h2>
+          <p class="card-description">
+            {t("about_us.vision_text01")}
+            <span class="span">{t("about_us.vision_text02")}</span>
+            {t("about_us.vision_text03")}
+          </p>
+          <p class="card-description">
+            {t("about_us.vision_text04")}
+          </p>
+        </div>
+        <div class="values-card card-item">
+          <h2 class="card-title">
+            {t("about_us.values_title")}
+          </h2>
+
+          <p>
+            {t("about_us.values01_desktop")}
+          </p>
+          <p>
+            {t("about_us.values02_desktop")}
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
+  <!-- 
   <h1 class="h1">{t("about_us.about_us_title")}</h1>
   <section class="contenedor">
     <div class="mover">
@@ -156,160 +210,177 @@ changeLanguage("en");
         </CardAboutUsFondo>
       </div>
     </div>
-  </section>
+  </section> -->
+</Layout>
 
-  <style lang="scss">
-    @use "../assets/scss/base/_breakpoint.scss" as *;
+<style lang="scss">
+  @use "../assets/scss/base/_breakpoint.scss" as *;
 
-    .contenedorExperiencia {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > .page-title {
       display: flex;
-      flex-direction: column;
-      gap: 32px;
-      @include breakpoint(md) {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 138px;
-        margin-bottom: 100px;
+      width: 90%;
+      margin: 40px 0px;
+      > .about-title {
+        font-size: 3.6rem;
+        font-weight: 700;
+
+        @include breakpoint(md) {
+          font-size: 4.8rem;
+        }
+
+        @include breakpoint(lg) {
+          font-size: 5.6rem;
+        }
+
+        @include breakpoint(xl) {
+          font-size: 6.4rem;
+        }
       }
     }
-    .obrero-img img {
-      width: 200px;
-      height: 300px;
-      @include breakpoint(md) {
-        width: 400px;
-        height: 500px;
-      }
+    p {
+      font-weight: 300;
+      line-height: 1.6;
     }
 
-    .mover {
+    .about-description-container,
+    img,
+    .page-title {
+      max-width: 1350px;
+    }
+
+    > .about-description {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      @include breakpoint(md) {
-        flex-direction: column-reverse;
-      }
-    }
-
-    .iconXP [astro-icon] {
-      color: var(--action-color);
-      width: 50px;
-      height: 50px;
-      background-color: var(--color-rich-black);
-      box-sizing: border-box;
-      padding: 10px;
-      border-radius: 100%;
-      @include breakpoint(md) {
-        padding: 20px;
-        width: 80px;
-        height: 80px;
-      }
-    }
-
-    .experiencia {
-      display: flex;
-      flex-direction: column;
+      width: 100%;
+      height: auto;
       align-items: center;
       justify-content: center;
-      gap: 20px;
-      font-size: 16px;
-      @include breakpoint(md) {
-        width: 452px;
-        font-size: 24px;
-        gap: 20px;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      margin: 40px 0px;
+
+      > .about-description-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 1350px;
+        gap: 50px;
+        @include breakpoint(md) {
+          flex-direction: row;
+        }
+
+        > .experience {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+          // text-wrap: balance;
+          > .iconXP {
+            > [astro-icon] {
+              color: var(--action-color);
+              width: 50px;
+              height: 50px;
+              background-color: var(--color-rich-black);
+              padding: 10px;
+              border-radius: 100%;
+              @include breakpoint(md) {
+                padding: 20px;
+                width: 80px;
+                height: 80px;
+              }
+            }
+          }
+
+          > .experience-text {
+            > .xp {
+              color: var(--emphasis-color);
+            }
+          }
+        }
       }
     }
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      box-sizing: border-box;
-      padding: 20px;
+
+    .desktop-image {
+      display: none;
+      margin: 40px 0px;
+      > img {
+        width: 100%;
+        
+        height: auto;
+        @include breakpoint(1350px) {
+          border-radius: var(--radius-default);
+          max-width: 1215px;
+        }
+      }
+      @include breakpoint(md) {
+        display: block;
+      }
     }
 
-    .cardNoFondo {
-      font-weight: 600;
-    }
-
-    .xp {
-      color: var(--emphasis-color);
-    }
-    .contenedor {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-sizing: border-box;
-      padding: 30px 65px 30px 65px;
+    .mobile-image {
+      display: block;
       width: 100%;
-    }
-    .h1 {
-      padding-left: 60px;
-      width: 100%;
-      font-size: 24px;
-      margin-top: 30px;
-      @include breakpoint(md) {
-        font-size: 40px;
-        padding-left: 180px;
-      }
-    }
-
-    .span {
-      font-weight: 700;
-    }
-
-    .cardFondo {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--color-mint-cream);
-      @include breakpoint(md) {
-        font-size: 24px;
-      }
-    }
-
-    .liFondo {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--color-mint-cream);
-      line-height: 130%;
-      @include breakpoint(md) {
-        font-size: 24px;
-      }
-    }
-
-    .grid {
-      @include breakpoint(md) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-        justify-content: center;
-        width: 60%;
-      }
-    }
-
-    .izquierdo {
-      @include breakpoint(md) {
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        grid-gap: 10px;
-      }
-    }
-
-    .mobile {
+      margin: 40px 0px;
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      justify-content: center;
+      > img {
+        width: 80%;
+        max-width: 430px;
+        height: auto;
+      }
+
       @include breakpoint(md) {
         display: none;
       }
     }
 
-    .desktop {
-      display: none;
-      @include breakpoint(md) {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    > .cards-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 40px 0px;
+      > .cards {
+        display: grid;
+        align-items: start;
+        justify-items: center;
+        gap: 20px;
+        width: 90%;
+        max-width: 1350px;
+        grid-template-columns: repeat(1, 1fr);
+        @include breakpoint(md) {
+          grid-template-columns: repeat(2, auto);
+          grid-template-rows: repeat(2, auto);
+          > .mission-card {
+            grid-area: 1 / 1 / 2 / 2;
+          }
+          > .vision-card {
+            grid-area: 2 / 1 / 3 / 2;
+          }
+          > .values-card {
+            height: 100%;
+            grid-area: 1 / 2 / 3 / 3;
+          }
+        }
+
+        > .card-item {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          background-color: var(--card-background-color);
+          padding: 40px 20px;
+          border-radius: var(--radius-default);
+        }
+        .card-title {
+        }
+        .card-description {
+          > .span {
+          }
+        }
       }
     }
-  </style>
-</Layout>
+  }
+</style>

@@ -45,6 +45,7 @@ import { LanguageSelector } from "astro-i18next/components";
   const setActiveMenuItem = () => {
     const mobileDesktopMenus = mainNav?.querySelectorAll("nav > ul");
     const currentPathname = window.location.pathname;
+    console.log(currentPathname);
 
     mobileDesktopMenus?.forEach((menu) => {
       const menuItems = [
@@ -52,12 +53,12 @@ import { LanguageSelector } from "astro-i18next/components";
       ] as HTMLAnchorElement[];
       menuItems.forEach((menuItem) => {
         if (
-          currentPathname.includes(menuItem.pathname.replaceAll("/", "")) &&
+          currentPathname.includes(menuItem.pathname) &&
           menuItem.textContent !== "Home"
         ) {
           menuItem.classList.add("is-active");
           menuItem.setAttribute("aria-current", "page");
-        } else if (menuItem.textContent === "Home" && currentPathname === "/") {
+        } else if (menuItem.textContent === "Home" && (currentPathname === "/" || currentPathname === "/es")) {
           menuItem.classList.add("is-active");
           menuItem.setAttribute("aria-current", "page");
         }
