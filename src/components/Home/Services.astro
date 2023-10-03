@@ -1,13 +1,13 @@
 ---
-
+import { t } from "i18next";
 ---
 
 <section id="section-services" class="section-services">
   <div class="services-title-container">
     <div class="services-text">
-      <h2 class="section-title">Quality Services</h2>
+      <h2 class="section-title">{t("site_home.quality_services")}</h2>
       <p>
-        We offer a wide range of services to meet your needs and requirements
+        {t("site_home.quality_subtitle")}
       </p>
     </div>
   </div>
@@ -17,7 +17,7 @@
     </div>
   </div>
   <div class="hyperlink-container">
-    <a href="/services" class="hyperlink">Know more about our services</a>
+    <a href="/services" class="hyperlink">{t("site_home.link_services")}</a>
   </div>
 </section>
 
@@ -99,7 +99,6 @@
           scroll-snap-type: none;
           overflow-x: hidden;
         }
-
 
         @include breakpoint(xxl) {
           justify-content: center;

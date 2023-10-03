@@ -1,7 +1,13 @@
-
 {
   "header": {
     "contact_button": "Contact Us"
+  },
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "about": "About Us",
+    "gallery": "Gallery"
   },
   "footer": {
     "together": "Let's Work Together",
@@ -21,6 +27,7 @@
     "service02": "Reliable technology",
     "service03": "Customized Solutions",
     "quality_services": "Quality Services",
+    "quality_subtitle": "We offer a wide range of services to meet your needs and requirements",
     "card01_title": "Remote Connectivity",
     "card01_body": "Installation of equipment to bring Internet to remote areas.",
     "card02_title": "Configuration and Support",
@@ -97,26 +104,32 @@
   },
   "contact_us": {
     "contact_us_title": "Contact Us",
-    "form": [
+    "form": 
       {
+        "title": "Contact Form",
         "contac_text01": "You can contact us using the methods listed below:",
         "name": "Your name",
         "email": "Your email",
         "phone": "Your phone",
         "message": "Your message",
-        "send_button": "Send Request"
+        "send_button": "Send Request",
+        "message_final":"Lets get in contact, leave your info above and we will email you very fast."
       }
-    ],
-    "contact_info": [
+    ,
+    "contact_info": 
       {
         "contact_info_title": "Contact Information",
         "USA_phone": "Phones in the USA",
         "colombian_phone": "Phones in Colombia",
-        "emails": "Our emails"
+        "emails": "Our emails",
+        "redes": "Our social networks"
       }
-    ],
+    ,
+    "location_title":"Our Location",
     "florida": "Locate us in Florida, US",
-    "colombia": "Locate us in Colombia"
+    "colombia": "Locate us in Colombia",
+    "united_states": "United States",
+    "colombia_": "Colombia"
   },
   "gallery": {
     "gallery_title": "Gallery",

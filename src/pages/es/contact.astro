@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { changeLanguage, t } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 
 changeLanguage("es");
@@ -7,33 +7,33 @@ changeLanguage("es");
 
 <Layout title="Contact">
   <div class="contenedor">
-    <h1>Contact Us</h1>
-    <p class="intro">You can contact us using the methods listed below:</p>
+    <h1>{t("contact_us.contact_us_title")}</h1>
+    <p class="intro">{t("contact_us.form.contac_text01")}</p>
     <div class="form-contact">
       <form action="">
-        <h2>Contact form</h2>
+        <h2>{t("contact_us.form.title")}</h2>
         <div>
-          <label for="name">Your name:</label>
+          <label for="name">{t("contact_us.form.name")}</label>
           <input type="text" placeholder="Name" />
 
-          <label for="email">Your email:</label>
+          <label for="email">{t("contact_us.form.email")}</label>
           <input type="email" placeholder="Email" />
 
-          <label for="phone">Your phone:</label>
+          <label for="phone">{t("contact_us.form.phone")}</label>
           <input type="number" placeholder="Phone" />
 
           <p class="message">
-            Lets get in contact, leave your info above and we will email you
-            very fast.
+            {t("contact_us.form.message_final")}
           </p>
         </div>
 
         <div>
-          <label for="message">Your message:</label>
+          <label for="message">{t("contact_us.form.message")}</label>
           <textarea name="" id="" cols="30" rows="10" placeholder="Message"
           ></textarea>
           <button type="submit">
-            Send request <svg
+            {t("contact_us.form.send_button")}
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -49,28 +49,28 @@ changeLanguage("es");
       </form>
 
       <div class="contact-info">
-        <h2>Contact Information</h2>
+        <h2>{t("contact_us.contact_info.contact_info_title")}</h2>
         <div class="phone">
-          <h3>USA phones</h3>
+          <h3>{t("contact_us.contact_info.USA_phone")}</h3>
           <p>+57 320 8542698</p>
           <p>+57 313 2723646</p>
         </div>
 
         <div class="phone">
-          <h3>Colombia phones</h3>
+          <h3>{t("contact_us.contact_info.colombian_phone")}</h3>
           <p>+57 320 8542698</p>
           <p>+57 313 2723646</p>
         </div>
 
         <div class="phone">
-          <h3>Our emails</h3>
+          <h3>{t("contact_us.contact_info.emails")}</h3>
           <p>andres.morales@ipmoviles.net</p>
           <p>karina.otalora@ipmoviles.net</p>
           <p>info@ipmoviles.com</p>
         </div>
 
         <div class="redes">
-          <h3>Our social networks</h3>
+          <h3>{t("contact_us.contact_info.redes")}</h3>
           <span>
             <a href="https://www.linkedin.com/ipmoviles" target="_blank">
               <svg
@@ -103,12 +103,12 @@ changeLanguage("es");
       </div>
     </div>
     <div class="mapa">
-      <h2 class="title">Our location</h2>
-      <p>You can find us in USA and Colombia.</p>
+      <h2 class="title">{t("contact_us.location_title")}</h2>
+      <p>{t("contact_us.colombia")}</p>
       <div>
         <span>
-          <h2 class="desktop">United State</h2>
-          <h2 class="mobile">Locate us in Florida, US</h2>
+          <h2 class="desktop">{t("contact_us.united_states")}</h2>
+          <h2 class="mobile">{t("contact_us.florida")}</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1881.5471667048807!2d-80.1448023840359!3d26.18185068006446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDEwJzU0LjkiTiA4MMKwMDgnMzcuNyJX!5e0!3m2!1ses!2sco!4v1686007858948!5m2!1ses!2sco"
             style="border:0;"
@@ -119,8 +119,8 @@ changeLanguage("es");
         </span>
 
         <span>
-          <h2 class="desktop">Colombia</h2>
-          <h2 class="mobile">Locate us in Colombia</h2>
+          <h2 class="desktop">{t("contact_us.colombia_")}</h2>
+          <h2 class="mobile">{t("contact_us.colombia")}</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.4927983146786!2d-74.04921073045426!3d4.856756492685045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f87f272775d9b%3A0xa56fbd10bdb4aa8f!2sCra.+1a+%2311-130%2C+Ch%C3%ADa%2C+Cundinamarca!5e0!3m2!1ses!2sco!4v1535412193622"
             frameborder="0"

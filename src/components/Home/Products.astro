@@ -2,19 +2,18 @@
 import { Image } from "astro:assets";
 import image from "../../assets/images/antenna-image-products.jpg";
 import claro from "../../assets/images/logos/claro-logo.png";
+import { t } from "i18next";
 ---
 
 <section class="section-products">
   <div class="section-container">
     <div class="content-left">
-      <h2 class="section-title">Our Products</h2>
+      <h2 class="section-title">{t("site_home.our_products")}</h2>
       <p class="section-text">
-        At IPmoviles, we take pride in partnering with some of the most trusted
-        and renowned brands in the telecommunications and technology industry.
+        {t("site_home.product_text01")}
       </p>
       <p>
-        Our collaboration with these industry-leading brands allows us to
-        deliver high-quality solutions and cutting-edge services to our clients.
+        {t("site_home.product_text02")}
       </p>
       <div class="products-cards section-circles">
         <Image src={claro} alt="claro logo" />
@@ -30,7 +29,6 @@ import claro from "../../assets/images/logos/claro-logo.png";
 </section>
 
 <style lang="scss">
-
   @use "../../assets/scss/base/_breakpoint.scss" as *;
   .section-products {
     width: 100%;
@@ -61,7 +59,6 @@ import claro from "../../assets/images/logos/claro-logo.png";
         }
       }
 
-
       > .content-left {
         display: flex;
         flex-direction: column;
@@ -70,7 +67,6 @@ import claro from "../../assets/images/logos/claro-logo.png";
         > h2 {
           margin-bottom: 20px;
         }
-
 
         > .products-cards {
           display: grid;
@@ -82,7 +78,7 @@ import claro from "../../assets/images/logos/claro-logo.png";
           > img {
             width: 100%;
             max-width: 150px;
-            height: auto;            
+            height: auto;
           }
         }
       }

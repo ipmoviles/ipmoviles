@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { changeLanguage, t } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 
 changeLanguage("es");
@@ -7,10 +7,9 @@ changeLanguage("es");
 
 <Layout title="Gallery">
   <section class="container">
-    <h1>Gallery</h1>
+    <h1>{t("gallery.gallery_title")}</h1>
     <p class="intro">
-      Discover the future of connectivity and telecommunications innovation
-      through captivating visuals that illustrate seamless communication
+      {t("gallery.gallery_text01")}
     </p>
     <div class="grid-container">
       <div class="grid-item-1">
@@ -37,7 +36,7 @@ changeLanguage("es");
       </div>
     </div>
 
-    <p class="fin">See more in our social networks</p>
+    <p class="fin">{t("gallery.gallery_text02")}</p>
     <div class="redes">
       <a href="https://www.linkedin.com/ipMoviles" target="_blank"
         ><svg
@@ -86,7 +85,6 @@ changeLanguage("es");
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         max-width: 1350px;
-
 
         @include breakpoint(md) {
           grid-template-columns: repeat(3, 1fr);

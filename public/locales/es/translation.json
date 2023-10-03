@@ -2,6 +2,13 @@
   "header": {
     "contact_button": "Contáctanos"
   },
+  "navbar": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "about": "Acerca de nosotros",
+    "gallery": "Galería"
+  },
   "footer": {
     "together": "Trabajemos juntos",
     "contactus": "Contáctanos",
@@ -25,6 +32,7 @@
     "service02": "Tecnología fiable",
     "service03": "Soluciones personalizadas",
     "quality_services": "Servicios de calidad",
+    "quality_subtitle":" Ofrecemos una amplia gama de servicios para satisfacer sus necesidades y requisitos",
     "card01_title": "Conectividad remota",
     "card01_body":"Instalación de equipos para llevar Internet a zonas remotas.",
     "card02_title": "Configuración y soporte",
@@ -77,7 +85,7 @@
     "values02": "Nuestras acciones se guían por el discernimiento ético y el respeto tanto a las personas como a la organización. Priorizamos la eficiencia, el compromiso orientado al servicio y una cultura de calidad para superar las expectativas de los clientes respetando el medio ambiente.",
     "values02_desktop": "Buscamos la eficiencia, ofreciendo resultados de calidad mediante una planificación meticulosa, y demostramos un fuerte compromiso de servicio y sentido de pertenencia a nuestra organización, todo ello ejerciendo el liderazgo necesario para alcanzar nuestros objetivos respetando el medio ambiente. Nuestro objetivo global es mantener la competitividad a través de una cultura de calidad, garantizando que todos los productos y servicios que ofrecemos no sólo cumplan las expectativas del cliente, sino que las superen."
   },
-  "our_services ": {
+  "our_services": {
     "our_services_title": "Nuestros servicios",
     "IP_Moviles":"IP Moviles",
     "our_services_info":"ofrecemos servicios de telecomunicaciones, incluyendo instalaciones de equipos de red, configuración de red, y ampliaciones LTE/5G, con un historial de éxito enfocado en la seguridad y la calidad.",
@@ -103,30 +111,36 @@
   },
   "contact_us": {
     "contact_us_title": "Contáctanos",
-    "form": [
+    "form": 
       {
+        "title": "Formulario de contacto",
         "contac_text01": "Puede ponerse en contacto con nosotros por los medios que se indican a continuación",
         "name": "Tu nombre",
         "email": "Tu correo",
         "phone": "Tu teléfono",
         "message": "Su mensaje",
-        "send_button": "Enviar solicitud"
-      }
-    ],
-    "contact_info": [
+        "send_button": "Enviar solicitud",
+        "message_final":"Pongámonos en contacto, deje su información arriba y le enviaremos un correo electrónico muy pronto."
+      },
+    "contact_info": 
       {
         "contact_info_title": "Información de Contacto",
         "USA_phone": "Teléfonos en Estados Unidos",
         "colombian_phone": "Teléfonos en Colombia",
-        "emails": "Nuestros correos"
+        "emails": "Nuestros correos",
+        "redes":"Nuestras redes sociales"
       }
-    ],
+    ,
+    "location_title": "Nuestra Ubicación",
     "florida": "Encuéntranos en Florida, Estados Unidos",
-    "colombia": "Encuéntranos en Colombia"
+    "colombia": "Encuéntranos en Colombia",
+    "united_states": "Estados Unidos",
+    "colombia_": "Colombia"
   },
   "gallery": {
     "gallery_title": "Galería",
     "gallery_text01": " Descubre el futuro de la conectividad y la innovación de telecomunicaciones a través de imágenes cautivantes que ilustran una comunicación asertiva.",
     "gallery_text02": "Mira más en nuestras redes sociales"
   }
+
 }
