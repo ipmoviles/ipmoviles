@@ -1,17 +1,17 @@
 ---
 import Address from "./Address.astro";
 import QuickLink from "./QuickLink.astro";
+import { t } from "i18next";
 ---
 
 <footer>
   <div class="container">
     <div class="child-1">
-      <h3>Quick Links</h3>
-      <QuickLink href="about" title="About Us" />
-      <QuickLink href="gallery" title="Gallery" />
-      <QuickLink href="services" title="Our Services" />
-      <QuickLink href="contact" title="Contact Us" />
-      <QuickLink href="#" title="Careers" />
+      <h3>{t("footer.quick_links")}</h3>
+      <QuickLink href="about" title={t("navbar.about")} />
+      <QuickLink href="gallery" title={t("navbar.gallery")} />
+      <QuickLink href="services" title={t("navbar.services")} />
+      <QuickLink href="contact" title={t("navbar.contact")} />
     </div>
     <div class="child-2">
       <Address
@@ -24,7 +24,7 @@ import QuickLink from "./QuickLink.astro";
       />
     </div>
     <div class="child-3">
-      <a href="https://www.linkedin.com/ipMoviles" target="_blank"
+      <a href="https://www.linkedin.com/company/ipmoviles" target="_blank"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           height="24"
@@ -36,7 +36,7 @@ import QuickLink from "./QuickLink.astro";
             fill="#85cbfe"></path>
         </svg></a
       >
-      <a href="https://www.instagram.com/ipmoviles/" target="_blank">
+      <a href="https://www.instagram.com/ip_moviles/" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -51,9 +51,8 @@ import QuickLink from "./QuickLink.astro";
       </a>
     </div>
   </div>
-  <p>© 2022 IP Moviles *All rights reserved</p>
+  <p>© {t("footer.rights")}</p>
 </footer>
-
 
 <style lang="scss">
   @use "../../assets/scss/base/_breakpoint.scss" as *;

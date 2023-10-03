@@ -1,7 +1,13 @@
-
 {
   "header": {
     "contact_button": "Contact Us"
+  },
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "about": "About Us",
+    "gallery": "Gallery"
   },
   "footer": {
     "together": "Let's Work Together",
@@ -21,6 +27,7 @@
     "service02": "Reliable technology",
     "service03": "Customized Solutions",
     "quality_services": "Quality Services",
+    "quality_subtitle": "We offer a wide range of services to meet your needs and requirements",
     "card01_title": "Remote Connectivity",
     "card01_body": "Installation of equipment to bring Internet to remote areas.",
     "card02_title": "Configuration and Support",

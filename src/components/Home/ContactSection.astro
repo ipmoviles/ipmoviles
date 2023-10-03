@@ -1,13 +1,14 @@
 ---
 import Icon from "astro-icon";
+import { t } from "i18next";
 ---
 
 <section class="section-contact">
   <div class="section-container">
     <div class="content">
-      <h2 class="section-title">LETS WORK TOGETHER!</h2>
+      <h2 class="section-title">{t("footer.together")}</h2>
       <a href="/contact" class="hyperlink"
-        >Contact Us <span><Icon name="bi:send-fill" /></span></a
+        >{t("footer.contactus")} <span><Icon name="bi:send-fill" /></span></a
       >
     </div>
   </div>
@@ -32,7 +33,7 @@ import Icon from "astro-icon";
         gap: 20px;
         text-align: center;
         > .section-title {
-         color: var(--color-mint-cream);
+          color: var(--color-mint-cream);
         }
         > .hyperlink {
           display: flex;

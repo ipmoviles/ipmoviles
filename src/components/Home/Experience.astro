@@ -2,6 +2,7 @@
 import CTAButton from "../CTAButton.astro";
 import logoimages from "../../assets/images/logos/index.js";
 import { Image } from "astro:assets";
+import { t } from "i18next";
 
 const { asecones, claro, ingeant, inspur, movistar, qmc } = logoimages;
 ---
@@ -9,19 +10,14 @@ const { asecones, claro, ingeant, inspur, movistar, qmc } = logoimages;
 <section class="section-experience">
   <div class="section-container">
     <div class="content">
-      <h2 class="section-title">We've worked with the best</h2>
+      <h2 class="section-title">{t("site_home.clients")}</h2>
       <div class="section-content--flex">
         <div class="section-subtitle">
           <p class="section-text">
-            In IPmoviles, we've had the privilege of partnering with top
-            companies in the telecommunications and technology industry. Our
-            expertise and dedication to delivering high-quality solutions have
-            allowed us to build strong relationships with these industry
-            leaders.
+            {t("site_home.clients_text01")}
           </p>
           <p>
-            Over the years, we've collaborated to drive innovation,
-            connectivity, and business success.
+            {t("site_home.clients_text02")}
           </p>
         </div>
         <div class="experience-images section-circles">

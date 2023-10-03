@@ -2,6 +2,13 @@
   "header": {
     "contact_button": "Contáctanos"
   },
+  "navbar": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "about": "Acerca de nosotros",
+    "gallery": "Galería"
+  },
   "footer": {
     "together": "Trabajemos juntos",
     "contactus": "Contáctanos",
@@ -25,6 +32,7 @@
     "service02": "Tecnología fiable",
     "service03": "Soluciones personalizadas",
     "quality_services": "Servicios de calidad",
+    "quality_subtitle":" Ofrecemos una amplia gama de servicios para satisfacer sus necesidades y requisitos",
     "card01_title": "Conectividad remota",
     "card01_body":"Instalación de equipos para llevar Internet a zonas remotas.",
     "card02_title": "Configuración y soporte",
@@ -129,4 +137,5 @@
     "gallery_text01": " Descubre el futuro de la conectividad y la innovación de telecomunicaciones a través de imágenes cautivantes que ilustran una comunicación asertiva.",
     "gallery_text02": "Mira más en nuestras redes sociales"
   }
+
 }
