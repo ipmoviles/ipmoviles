@@ -8,15 +8,27 @@ import { t } from "i18next";
     <div class="left">
       <div class="input">
         <label for="name">{t("contact_us.form.name")}</label>
-        <input type="text" placeholder="Name" required />
+        <input
+          type="text"
+          placeholder={t("contact_us.form.place_name")}
+          required
+        />
       </div>
       <div class="input">
         <label for="email">{t("contact_us.form.email")}</label>
-        <input type="email" placeholder="Email" required />
+        <input
+          type="email"
+          placeholder={t("contact_us.form.place_email")}
+          required
+        />
       </div>
       <div class="input">
         <label for="phone">{t("contact_us.form.phone")}</label>
-        <input type="number" placeholder="Phone" required />
+        <input
+          type="number"
+          placeholder={t("contact_us.form.place_phone")}
+          required
+        />
       </div>
     </div>
     <div class="right">
@@ -28,7 +40,7 @@ import { t } from "i18next";
           cols="30"
           rows="10"
           required
-          placeholder="Message"></textarea>
+          placeholder={t("contact_us.form.place_message")}></textarea>
       </div>
     </div>
   </div>
