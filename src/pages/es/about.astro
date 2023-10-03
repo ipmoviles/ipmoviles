@@ -5,6 +5,7 @@ import { Image } from "astro:assets";
 import mobileImage from "../../assets/images/obrero.svg";
 import desktopImage from "../../assets/images/desktop-image.png";
 import Icon from "astro-icon";
+import ContactSection from "../../components/Home/ContactSection.astro";
 
 changeLanguage("es");
 ---
@@ -58,9 +59,7 @@ changeLanguage("es");
     <section class="cards-container">
       <div class="cards">
         <div class="mission-card card-item">
-          <h2 class="card-title">
-            {t("about_us.mission_tittle")}
-          </h2>
+          <h2 class="card-title">{t("about_us.mission_title")}</h2>
           <p class="card-description">
             {t("about_us.mission_text01")}
             <span class="span">{t("about_us.mission_text02")}</span>
@@ -97,6 +96,7 @@ changeLanguage("es");
       </div>
     </section>
   </div>
+  <ContactSection />
 </Layout>
 
 <style lang="scss">
@@ -183,6 +183,7 @@ changeLanguage("es");
           > .experience-text {
             > .xp {
               color: var(--emphasis-color);
+              font-weight: 600;
             }
           }
         }
@@ -241,6 +242,7 @@ changeLanguage("es");
         width: 90%;
         max-width: 1350px;
         grid-template-columns: repeat(1, 1fr);
+        color: var(--color-mint-cream);
         @include breakpoint(md) {
           grid-template-columns: repeat(2, auto);
           grid-template-rows: repeat(2, auto);

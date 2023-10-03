@@ -1,31 +1,28 @@
 ---
 import { changeLanguage, t } from "i18next";
 import Layout from "../../layouts/Layout.astro";
+import sendGrid from "@sendgrid/mail";
 
 changeLanguage("es");
 
-import sendGrid from "@sendgrid/mail";
 sendGrid.setApiKey(import.meta.env.SENDGRID_API_KEY);
 console.log(import.meta.env.SENDGRID_API_KEY);
-
 if (Astro.request.method === "POST") {
-  try {
-    // Getting posted data from our contact form
-    const data = await Astro.request.formData();
-    const name = data.get("name");
-    const email = data.get("email");
-    const phone = data.get("phone");
-    const message = data.get("message");
-
-    // TODO: Do not forget to do validation and error handling over received data from your contact form.
-
-    // Sending email
-    const msg = {
-      to: "ipmovilesdev@gmail.com", // Change to your recipient
-      from: "ipmovilesdev@gmail.com", // Change to your verified sender
-      replyTo: { email: email, name: name },
-      subject: `Contact form submission from ${name}`,
-      text: `
+    try {
+        // Getting posted data from our contact form
+        const data = await Astro.request.formData();
+        const name = data.get("name");
+        const email = data.get("email");
+        const phone = data.get("phone");
+        const message = data.get("message");
+        // TODO: Do not forget to do validation and error handling over received data from your contact form.
+        // Sending email
+        const msg = {
+            to: "ipmovilesdev@gmail.com",
+            from: "ipmovilesdev@gmail.com",
+            replyTo: { email: email, name: name },
+            subject: `Contact form submission from ${name}`,
+            text: `
 Subject: Contacto de ${name}
 
 Hello,
@@ -42,18 +39,19 @@ Please follow up with them to provide the atention they need. Building strong cu
 Best regards,
 IP Moviles
 `,
-    };
-    await sendGrid
-      .send(msg)
-      .then(() => {
-        console.log("Email sent");
-      })
-      .catch((error) => {
+        };
+        await sendGrid
+            .send(msg)
+            .then(() => {
+            console.log("Email sent");
+        })
+            .catch((error) => {
+            console.error(error);
+        });
+    }
+    catch (error) {
         console.error(error);
-      });
-  } catch (error) {
-    console.error(error);
-  }
+    }
 }
 ---
 
@@ -62,17 +60,17 @@ IP Moviles
     <h1>{t("contact_us.contact_us_title")}</h1>
     <p class="intro">{t("contact_us.form.contac_text01")}</p>
     <div class="form-contact">
-      <form method="post">
+      <form action="">
         <h2>{t("contact_us.form.title")}</h2>
         <div>
           <label for="name">{t("contact_us.form.name")}</label>
-          <input type="text" name="name" placeholder="Name" required />
+          <input type="text" placeholder="Name" />
 
           <label for="email">{t("contact_us.form.email")}</label>
-          <input type="email" name="email" placeholder="Email" required />
+          <input type="email" placeholder="Email" />
 
           <label for="phone">{t("contact_us.form.phone")}</label>
-          <input type="number" name="phone" placeholder="Phone" required />
+          <input type="number" placeholder="Phone" />
 
           <p class="message">
             {t("contact_us.form.message_final")}
@@ -81,13 +79,8 @@ IP Moviles
 
         <div>
           <label for="message">{t("contact_us.form.message")}</label>
-          <textarea
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Message"
-            required></textarea>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message"
+          ></textarea>
           <button type="submit">
             {t("contact_us.form.send_button")}
             <svg
@@ -190,7 +183,7 @@ IP Moviles
   </div>
 
   <style lang="scss">
-    @use "../assets/scss/base/_breakpoint.scss" as *;
+    @use "../../assets/scss/base/_breakpoint.scss" as *;
 
     .contenedor {
       box-sizing: border-box;
