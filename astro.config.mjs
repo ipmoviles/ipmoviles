@@ -5,9 +5,5 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   integrations: [astroI18next()],
   output: "hybrid",
-  adapter: vercel(
-    {
-      includeFiles: ["./public/locales/en/translation.json","./public/locales/es/translation.json"],
-    }
-  ),
+  adapter: vercel(),
 });

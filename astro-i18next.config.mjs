@@ -11,11 +11,5 @@ export default {
     },
   },
   fallbackLng: "en",
-  preload: ["en", "es"],
   load: ["server", "client"],
-  i18nextServer: {
-    debug: true,
-    initInmediate: false,
-    preload: ["en", "es"],
-  },
 };
