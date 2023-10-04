@@ -3,8 +3,21 @@ import { t } from "i18next";
 import "./styles.scss";
 import { useState } from "preact/hooks";
 
-export default function FormContact() {
+export default function FormContact(props) {
+  const {
+    namelabel,
+    nameplaceholder,
+    emaillabel,
+    emailplaceholder,
+    phonelabel,
+    phoneplaceholder,
+    messagelabel,
+    messageplaceholder,
+    buttonlabel,
+  } = props;
+
   const [responseMessage, setResponseMessage] = useState("");
+
   async function submit(e: SubmitEvent) {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
@@ -23,52 +36,51 @@ export default function FormContact() {
       <div class="content">
         <div class="left">
           <div class="input">
-            <label for="name">{t("contact_us.form.name")}</label>
+            <label for="name">{namelabel}</label>
             <input
               type="text"
               name="name"
-              placeholder={t("contact_us.form.place_name") as string}
+              placeholder={nameplaceholder}
               required
             />
           </div>
           <div class="input">
-            <label for="email">{t("contact_us.form.email")}</label>
+            <label for="email">{emaillabel}</label>
             <input
               type="email"
               name="email"
-              placeholder={t("contact_us.form.place_email") as string}
+              placeholder={emailplaceholder}
               required
             />
           </div>
           <div class="input">
-            <label for="phone">{t("contact_us.form.phone")}</label>
+            <label for="phone">{phonelabel}</label>
             <input
               type="number"
               name="phone"
-              placeholder={t("contact_us.form.place_phone") as string}
+              placeholder={phoneplaceholder}
               required
             />
           </div>
         </div>
         <div class="right">
           <div class="input">
-            <label for="message">{t("contact_us.form.message")}</label>
+            <label for="message">{messagelabel}</label>
             <textarea
               name="message"
               id="message"
               cols={30}
               rows={10}
               required
-              placeholder={t("contact_us.form.place_message") as string}
+              placeholder={messageplaceholder}
             ></textarea>
           </div>
         </div>
       </div>
       <button type="submit">
-        {t("contact_us.form.send_button")}
-        <slot name="icon"></slot>
+        {buttonlabel}
       </button>
-      {responseMessage && <p>{responseMessage}</p>}
+      {responseMessage && <p class="response-message">{responseMessage}</p>}
     </form>
   );
 }
