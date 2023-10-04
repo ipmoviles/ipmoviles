@@ -16,6 +16,6 @@ export default {
   i18nextServer: {
     debug: true,
     initInmediate: false,
-    preload: true,
+    preload: ["en", "es"],
   },
 };
