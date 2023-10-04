@@ -9,7 +9,7 @@ import Icon from "astro-icon";
 changeLanguage("en");
 
 sendGrid.setApiKey(import.meta.env.SENDGRID_API_KEY);
-
+console.log(import.meta.env.SENDGRID_API_KEY);
 if (Astro.request.method === "POST") {
     try {
         // Getting posted data from our contact form
@@ -18,6 +18,7 @@ if (Astro.request.method === "POST") {
         const email = data.get("email");
         const phone = data.get("phone");
         const message = data.get("message");
+        console.log("name:", name, "email:", email, "phone:", phone, "message:", message);
         // TODO: Do not forget to do validation and error handling over received data from your contact form.
         // Sending email
         const msg = {

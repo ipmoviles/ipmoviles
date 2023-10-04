@@ -10,9 +10,12 @@ export default {
       gallery: "gallery",
     },
   },
-  preload: ["en","es"],
+  fallbackLng: "en",
+  preload: ["en", "es"],
   load: ["server", "client"],
   i18nextServer: {
     debug: true,
+    initInmediate: false,
+    preload: true,
   },
 };
