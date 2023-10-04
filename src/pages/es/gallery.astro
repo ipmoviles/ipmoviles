@@ -1,6 +1,10 @@
 ---
 import { changeLanguage, t } from "i18next";
 import Layout from "../../layouts/Layout.astro";
+import gallery from "../../assets/images/gallery/index";
+import { Image } from "astro:assets";
+
+const { primera, segunda, tercera, cuarta, quinta, sexta, septima } = gallery;
 
 changeLanguage("es");
 ---
@@ -13,26 +17,26 @@ changeLanguage("es");
     </p>
     <div class="grid-container">
       <div class="grid-item-1">
-        <img src="../../public/1.webp" alt="Imagen 1" />
+        <Image src={primera} alt="Imagen 1" />
       </div>
       <div class="grid-item-2">
-        <img src="../../public/2.webp" alt="Imagen 2" />
+        <Image src={segunda} alt="Imagen 2" />
       </div>
       <div class="grid-item-3">
-        <img src="../../public/3.webp" alt="Imagen 3" />
+        <Image src={tercera} alt="Imagen 3" />
       </div>
       <div class="grid-item-4">
-        <img src="../../public/5.webp" alt="Imagen 5" />
+        <Image src={quinta} alt="Imagen 5" />
       </div>
       <div class="grid-item-5">
-        <img src="../../public/4.webp" alt="Imagen 4" />
+        <Image src={cuarta} alt="Imagen 4" />
       </div>
 
       <div class="grid-item-6">
-        <img src="../../public/6.webp" alt="Imagen 6" />
+        <Image src={sexta} alt="Imagen 6" />
       </div>
       <div class="grid-item-7">
-        <img src="../../public/7.webp" alt="Imagen 6" />
+        <Image src={septima} alt="Imagen 7" />
       </div>
     </div>
 
