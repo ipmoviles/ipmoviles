@@ -1,0 +1,91 @@
+@use "../../assets/scss/base/breakpoint" as *;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  > .content {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    > .left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      > .input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        > input {
+          width: 100%;
+          height: 40px;
+          padding: 10px;
+          border-radius: var(--radius-default);
+          border: none;
+          background-color: var(--color-light-silver);
+        }
+      }
+    }
+
+    > .right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+
+      > .input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        height: 90%;
+        > textarea {
+          width: 100%;
+          padding: 10px;
+          font-size: 1.4rem;
+          border-radius: var(--radius-default);
+          border: none;
+          background-color: var(--color-light-silver);
+          resize: none;
+          color: var(--color-rich-black);
+          @include breakpoint(md) {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  > button {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: var(--radius-default);
+    background-color: var(--button-background-color);
+    color: var(--color-mint-cream);
+    border: none;
+    padding: 10px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    @include breakpoint(md) {
+      align-self: center;
+      width: 50%;
+    }
+    @include breakpoint(lg) {
+      font-size: 1.6rem;
+    }
+    > [astro-icon] {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
