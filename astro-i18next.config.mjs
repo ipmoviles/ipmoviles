@@ -9,5 +9,6 @@ export default {
         contact: "contact",
         gallery: "gallery"
       }
-    }
+    },
+    load: ["server"]
   };
