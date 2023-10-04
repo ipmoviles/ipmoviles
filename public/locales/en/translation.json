@@ -2,6 +2,13 @@
   "header": {
     "contact_button": "Contact Us"
   },
+  "titles": {
+    "home":"Home",
+    "services":"Services",
+    "contact":"Contact",
+    "about":"About Us",
+    "gallery":"Gallery"
+  },
   "navbar": {
     "home": "Home",
     "services": "Services",
