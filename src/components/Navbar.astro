@@ -54,7 +54,7 @@ import { LanguageSelector } from "astro-i18next/components";
         ) {
           menuItem.classList.add("is-active");
           menuItem.setAttribute("aria-current", "page");
-        } else if (menuItem.textContent === "Home" && (currentPathname === "/" || currentPathname === "/es")) {
+        } else if ((menuItem.textContent === "Home" || menuItem.textContent === "Inicio") && (currentPathname === "/" || currentPathname === "/es")) {
           console.log(currentPathname);
           menuItem.classList.add("is-active");
           menuItem.setAttribute("aria-current", "page");
