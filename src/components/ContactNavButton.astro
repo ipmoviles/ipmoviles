@@ -1,8 +1,9 @@
 ---
 import { t } from "i18next";
+import { localizePath } from "astro-i18next";
 ---
 
-<a class="menu-cta" href="/contact"> {t("footer.contactus")}</a>
+<a class="menu-cta" href={localizePath("/contact")}> {t("footer.contactus")}</a>
 
 <style lang="scss">
   .menu-cta {
