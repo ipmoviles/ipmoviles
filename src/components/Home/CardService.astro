@@ -12,7 +12,7 @@ const { title, text, icon } = Astro.props;
 
 <div class="card-container">
   <div class="service-icon">
-    <Icon name={icon} />
+    <Icon name={icon}/>
   </div>
   <div class="service-content">
     <h3 class="service-title">{title}</h3>
@@ -36,7 +36,7 @@ const { title, text, icon } = Astro.props;
     justify-content: flex-start;
     gap: 20px;
     border-radius: var(--radius-default);
-    padding: 30px 20px;
+    padding: 20px 20px;
     background-color: var(--card-background-color);
 
     .service-content {
@@ -50,12 +50,12 @@ const { title, text, icon } = Astro.props;
       max-width: 350px;
 
       .service-text {
-        font-size: 1.2rem;
-        line-height: 130%;
+        font-size: 1.4rem;
+        line-height: 120%;
       }
 
       h3.service-title {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         line-height: 130%;
       }
 

@@ -1,7 +1,7 @@
 export const prerender = true;
 import { t } from "i18next";
 import "./styles.scss";
-import { useState } from "preact/hooks";
+import { useState, useRef } from "preact/hooks";
 
 export default function FormContact(props) {
   const {
@@ -17,7 +17,7 @@ export default function FormContact(props) {
   } = props;
 
   const [responseMessage, setResponseMessage] = useState("");
-
+  const formRef = useRef();
   async function submit(e: SubmitEvent) {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
@@ -28,11 +28,20 @@ export default function FormContact(props) {
     const data = await response.json();
     if (data.message) {
       setResponseMessage(data.message);
+      if (formRef.current) {
+        formRef.current.reset();
+      }
     }
   }
 
   return (
-    <form action="" method="POST" class="contact-form" onSubmit={submit}>
+    <form
+      action=""
+      method="POST"
+      class="contact-form"
+      onSubmit={submit}
+      ref={formRef}
+    >
       <div class="content">
         <div class="left">
           <div class="input">
@@ -77,9 +86,7 @@ export default function FormContact(props) {
           </div>
         </div>
       </div>
-      <button type="submit">
-        {buttonlabel}
-      </button>
+      <button type="submit">{buttonlabel}</button>
       {responseMessage && <p class="response-message">{responseMessage}</p>}
     </form>
   );
