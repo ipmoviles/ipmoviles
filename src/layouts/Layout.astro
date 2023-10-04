@@ -3,7 +3,6 @@ import "../assets/scss/globals.scss";
 import Footer from "../components/Footer/Footer.astro";
 import Header from "../components/Header.astro";
 import i18next, { t } from "i18next";
-import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
   title: string;
@@ -32,11 +31,10 @@ const { title } = Astro.props;
       rel="stylesheet"
     />
     <title>{title}</title>
-    <ViewTransitions />
   </head>
 
   <body>
-    <Header transition:persist />
+    <Header/>
     <main id="main-content">
       <slot />
     </main>
