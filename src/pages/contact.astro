@@ -1,62 +1,10 @@
 ---
-export const prerender = false;
 import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
-import sendGrid from "@sendgrid/mail";
-import ContactForm from "../components/ContactForm.astro";
 import Icon from "astro-icon";
+import FormContact from "../components/Contact/FormContact";
 
 changeLanguage("en");
-
-sendGrid.setApiKey(import.meta.env.SENDGRID_API_KEY);
-console.log(import.meta.env.SENDGRID_API_KEY);
-if (Astro.request.method === "POST") {
-    try {
-        // Getting posted data from our contact form
-        const data = await Astro.request.formData();
-        const name = data.get("name");
-        const email = data.get("email");
-        const phone = data.get("phone");
-        const message = data.get("message");
-        console.log("name:", name, "email:", email, "phone:", phone, "message:", message);
-        // TODO: Do not forget to do validation and error handling over received data from your contact form.
-        // Sending email
-        const msg = {
-            to: "ipmovilesdev@gmail.com",
-            from: "ipmovilesdev@gmail.com",
-            replyTo: { email: email, name: name },
-            subject: `Contact form submission from ${name}`,
-            text: `
-Subject: Contacto de ${name}
-
-Hello,
-
-You have received a new inquiry from a potential customer. Here are the details:
-
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-Message:${message}
-
-Please follow up with them to provide the atention they need. Building strong customer relationships is key to our success.
-
-Best regards,
-IP Moviles
-`,
-        };
-        await sendGrid
-            .send(msg)
-            .then(() => {
-            console.log("Email sent");
-        })
-            .catch((error) => {
-            console.error(error);
-        });
-    }
-    catch (error) {
-        console.error(error);
-    }
-}
 ---
 
 <Layout title={t("titles.contact")}>
@@ -70,7 +18,7 @@ IP Moviles
         <div class="form-container">
           <h2 class="form-title">{t("contact_us.form.title")}</h2>
           <!-- form component -->
-          <ContactForm />
+          <FormContact icon="mdi:send" client:load />
         </div>
         <div class="contact-container">
           <h2>{t("contact_us.contact_info.contact_info_title")}</h2>
