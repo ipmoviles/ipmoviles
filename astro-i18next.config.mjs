@@ -11,7 +11,7 @@ export default {
     },
   },
   preload: ["en","es"],
-  load: ["server"],
+  load: ["server", "client"],
   i18nextServer: {
     debug: true,
   },
