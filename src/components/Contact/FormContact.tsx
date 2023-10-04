@@ -1,4 +1,4 @@
-export const prerender = false;
+
 import { t } from "i18next";
 import "./styles.scss";
 import { useState } from "preact/hooks";

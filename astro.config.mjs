@@ -6,6 +6,6 @@ import preact from "@astrojs/preact";
 // https://astro.build/config
 export default defineConfig({
   integrations: [astroI18next(), preact()],
-  output: "hybrid",
+  output: "server",
   adapter: vercel()
 });

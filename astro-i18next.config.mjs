@@ -11,5 +11,5 @@ export default {
     },
   },
   fallbackLng: "en",
-  load: ["server", "client"],
+  load: ["server"],
 };
