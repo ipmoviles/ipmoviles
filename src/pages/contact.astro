@@ -1,5 +1,4 @@
 ---
-export const prerender = false;
 import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import sendGrid from "@sendgrid/mail";
@@ -9,6 +8,7 @@ import Icon from "astro-icon";
 changeLanguage("en");
 
 sendGrid.setApiKey(import.meta.env.SENDGRID_API_KEY);
+
 if (Astro.request.method === "POST") {
     try {
         // Getting posted data from our contact form
