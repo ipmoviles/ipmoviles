@@ -8,7 +8,7 @@ interface EmailMessage {
   subject: string;
   text: string;
 }
-
+sgMail.setApiKey(import.meta.env.SENDGRID_API_KEY);
 async function sendEmail(msg: EmailMessage): Promise<void> {
   try {
     await sgMail.send(msg);
@@ -20,7 +20,6 @@ async function sendEmail(msg: EmailMessage): Promise<void> {
 
 export const POST: APIRoute = async ({ request }) => {
   const data = await request.formData();
-    console.log(data);
   const name = data.get("name") as string;
   const email = data.get("email") as string;
   const phone = data.get("phone") as string;
