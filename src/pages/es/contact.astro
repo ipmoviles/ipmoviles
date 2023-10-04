@@ -19,7 +19,18 @@ changeLanguage("es");
         <div class="form-container">
           <h2 class="form-title">{t("contact_us.form.title")}</h2>
           <!-- form component -->
-          <FormContact icon="mdi:send" client:load />
+          <FormContact
+            client:load
+            namelabel={t("contact_us.form.name")}
+            nameplaceholder={t("contact_us.form.place_name")}
+            emaillabel={t("contact_us.form.email")}
+            emailplaceholder={t("contact_us.form.place_email")}
+            phonelabel={t("contact_us.form.phone")}
+            phoneplaceholder={t("contact_us.form.place_phone")}
+            messagelabel={t("contact_us.form.message")}
+            messageplaceholder={t("contact_us.form.place_message")}
+            buttonlabel={t("contact_us.form.send_button")}
+          />
         </div>
         <div class="contact-container">
           <h2>{t("contact_us.contact_info.contact_info_title")}</h2>
@@ -216,6 +227,9 @@ changeLanguage("es");
                 width: 40px;
                 height: 40px;
                 color: var(--action-color);
+                &:hover {
+                  color: var(--color-mint-cream);
+                }
               }
             }
           }

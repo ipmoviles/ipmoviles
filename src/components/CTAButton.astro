@@ -30,12 +30,13 @@ const { icon, href } = Astro.props;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cta-button-background-color);
+    background-color: var(--color-true-blue);
     margin-top: 10px;
     margin-bottom: 10px;
 
     &:hover {
-      //backgroundcolor
+      background-color: #1738a3;
+      box-shadow: 0 0 10px 0 #1738a3;
     }
     
     @include breakpoint(sm) {

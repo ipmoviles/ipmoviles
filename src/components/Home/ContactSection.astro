@@ -16,6 +16,7 @@ import { localizePath } from "astro-i18next";
 </section>
 
 <style lang="scss">
+  @use "../../assets/scss/base/_breakpoint.scss" as *;
   .section-contact {
     width: 100%;
     background: var(--contact-section-background);
@@ -46,6 +47,16 @@ import { localizePath } from "astro-i18next";
           color: var(--color-mint-cream);
           border: 2px solid var(--color-mint-cream);
           border-radius: var(--radius-default);
+          font-size: 1.4rem;
+
+          @include breakpoint(md) {
+            font-size: 1.6rem;
+          }
+
+          &:hover {
+            background: var(--color-mint-cream);
+            color: var(--color-rich-black);
+          }
 
           [astro-icon] {
             margin-left: 20px;
