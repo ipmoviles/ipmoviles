@@ -1,5 +1,6 @@
 ---
 import { t } from "i18next";
+import { localizePath } from "astro-i18next";
 ---
 
 <section id="section-services" class="section-services">
@@ -17,7 +18,9 @@ import { t } from "i18next";
     </div>
   </div>
   <div class="hyperlink-container">
-    <a href="/services" class="hyperlink">{t("site_home.link_services")}</a>
+    <a href={localizePath("/services")} class="hyperlink"
+      >{t("site_home.link_services")}</a
+    >
   </div>
 </section>
 

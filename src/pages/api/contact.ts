@@ -49,7 +49,7 @@ export const POST: APIRoute = async ({ request }) => {
     await sendEmail(msg);
     return new Response(
       JSON.stringify({
-        message: "Message Sent!",
+        message: "Thank you for getting in touch with us! Your message has been successfully sent. We will be in touch with you soon."
       }),
       { status: 200 }
     );

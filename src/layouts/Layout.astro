@@ -15,10 +15,13 @@ const { title } = Astro.props;
 <html lang={i18next.language} dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta
+      name="description"
+      content="In IPMoviles we are dedicated to providing high-quality services and cutting-edge cloud solutions while strictly adhering to industry regulations, Forming strong strategic alliances with industry leaders"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <meta name="author" content="IPmoviles" />
     <!-- favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- MetaComponent -->
@@ -34,7 +37,7 @@ const { title } = Astro.props;
   </head>
 
   <body>
-    <Header/>
+    <Header />
     <main id="main-content">
       <slot />
     </main>
@@ -82,7 +85,7 @@ const { title } = Astro.props;
         --hero-text-opacity: var(--color-chinese-black);
         --card-background-color: var(--color-true-blue);
         --card-icon-color: #ecebe9;
-        
+
         --exp-card-background-color: var(--color-true-blue);
         --button-background-color: #0a283d;
       }
@@ -110,9 +113,9 @@ const { title } = Astro.props;
         --hero-text-opacity: #bbbfbd;
         --card-background-color: var(--color-blue-saphire);
         --card-icon-color: var(--color-mint-cream);
-        
+
         --exp-card-background-color: #08283a;
-        --button-background-color: #0A77C7;
+        --button-background-color: #0a77c7;
       }
 
       body {
@@ -127,11 +130,11 @@ const { title } = Astro.props;
           flex-direction: column;
           align-items: center;
 
-          h2.section-title{
+          h2.section-title {
             color: var(--heading-font-color);
           }
 
-          h1{
+          h1 {
             color: var(--title-color);
           }
         }

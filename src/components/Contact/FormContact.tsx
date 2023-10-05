@@ -27,7 +27,9 @@ export default function FormContact(props) {
     });
     const data = await response.json();
     if (data.message) {
-      setResponseMessage(data.message);
+      const lang =document.querySelector("html").getAttribute("lang");
+
+      lang === "es" ? setResponseMessage("¡Gracias por ponerte en contacto con nosotros! Tu mensaje ha sido enviado con éxito. Pronto nos pondremos en contacto contigo.") :  setResponseMessage(data.message);    
       if (formRef.current) {
         formRef.current.reset();
       }
