@@ -2,7 +2,7 @@
 import ResponsiveToggle from "../components/ResponsiveToggle.astro";
 import { DarkMode } from "accessible-astro-components";
 import { Image } from "astro:assets";
-import logo from "../assets/logo-navbar.png";
+import logo from "../assets/logo-ipmovilesv002.png";
 import ContactNavButton from "./ContactNavButton.astro";
 import { LanguageSelector } from "astro-i18next/components";
 import { localizePath } from "astro-i18next";
@@ -11,7 +11,7 @@ import { localizePath } from "astro-i18next";
 <div id="main-navigation" class="is-desktop">
   <div class="container">
     <a class="logo-link" href={localizePath("/")}>
-      <Image class="logo" src={logo} alt="IP Moviles" width="100" height="30" />
+      <Image class="logo" src={logo} alt="IP Moviles" />
       <!-- <span class="font-bold">Accessible Astro</span> -->
     </a>
     <div class="wrapper">
