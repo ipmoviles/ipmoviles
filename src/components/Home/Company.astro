@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import image from "../../assets/images/company-full-image.jpg";
 import CTAButton from "../CTAButton.astro";
 import { t } from "i18next";
+import { localizePath } from "astro-i18next";
 ---
 
 <section class="section-company" aria-label="Company">
@@ -15,7 +16,7 @@ import { t } from "i18next";
       {t("site_home.company_text02")}
     </p>
 
-    <CTAButton icon="mdi:information" href="/about">
+    <CTAButton icon="mdi:information" href={localizePath("/about")}>
       {t("site_home.CTA_company")}
     </CTAButton>
   </div>

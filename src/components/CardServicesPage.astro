@@ -35,6 +35,11 @@ const { text, icon } = Astro.props;
     border-radius: var(--radius-default);
     padding: 20px 20px;
     background-color: var(--card-background-color);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken(#0a77c7, 15%);
+    }
 
     .service-content {
       display: flex;

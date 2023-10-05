@@ -13,10 +13,7 @@ const { icon, href } = Astro.props;
   <Icon name={icon} />
 </button>
 
-
-
 <style lang="scss">
-
   @use "../assets/scss/base/_breakpoint.scss" as *;
   .cta-button {
     appearance: none;
@@ -33,12 +30,13 @@ const { icon, href } = Astro.props;
     background-color: var(--color-true-blue);
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: all 0.3s ease;
 
     &:hover {
       background-color: #1738a3;
       box-shadow: 0 0 10px 0 #1738a3;
     }
-    
+
     @include breakpoint(sm) {
       font-size: 1.6rem;
     }
