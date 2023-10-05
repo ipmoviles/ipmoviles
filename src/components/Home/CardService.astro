@@ -12,7 +12,7 @@ const { title, text, icon } = Astro.props;
 
 <div class="card-container">
   <div class="service-icon">
-    <Icon name={icon}/>
+    <Icon name={icon} />
   </div>
   <div class="service-content">
     <h3 class="service-title">{title}</h3>
@@ -24,7 +24,6 @@ const { title, text, icon } = Astro.props;
   @use "../../assets/scss/base/_breakpoint.scss" as *;
 
   .card-container {
-    
     min-width: 200px;
     width: 200px;
     max-width: 430px;
@@ -38,6 +37,11 @@ const { title, text, icon } = Astro.props;
     border-radius: var(--radius-default);
     padding: 20px 20px;
     background-color: var(--card-background-color);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken(#0a77c7, 15%);
+    }
 
     .service-content {
       display: flex;
