@@ -1,7 +1,7 @@
 export const prerender = true;
-import { t } from "i18next";
 import "./styles.scss";
-import { useState, useRef } from "preact/hooks";
+import { useState, useRef } from "react";
+import type { FormEvent } from "react";
 
 export default function FormContact(props) {
   const {
@@ -18,7 +18,7 @@ export default function FormContact(props) {
 
   const [responseMessage, setResponseMessage] = useState("");
   const formRef = useRef();
-  async function submit(e: SubmitEvent) {
+  async function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
     const response = await fetch("/api/contact", {
@@ -27,9 +27,13 @@ export default function FormContact(props) {
     });
     const data = await response.json();
     if (data.message) {
-      const lang =document.querySelector("html").getAttribute("lang");
+      const lang = document.querySelector("html")?.getAttribute("lang");
 
-      lang === "es" ? setResponseMessage("¡Gracias por ponerte en contacto con nosotros! Tu mensaje ha sido enviado con éxito. Pronto nos pondremos en contacto contigo.") :  setResponseMessage(data.message);    
+      lang === "es"
+        ? setResponseMessage(
+            "¡Gracias por ponerte en contacto con nosotros! Tu mensaje ha sido enviado con éxito. Pronto nos pondremos en contacto contigo."
+          )
+        : setResponseMessage(data.message);
       if (formRef.current) {
         formRef.current.reset();
       }
@@ -40,14 +44,14 @@ export default function FormContact(props) {
     <form
       action=""
       method="POST"
-      class="contact-form"
+      className="contact-form"
       onSubmit={submit}
       ref={formRef}
     >
-      <div class="content">
-        <div class="left">
-          <div class="input">
-            <label for="name">{namelabel}</label>
+      <div className="content">
+        <div className="left">
+          <div className="input">
+            <label htmlFor="name">{namelabel}</label>
             <input
               type="text"
               name="name"
@@ -55,8 +59,8 @@ export default function FormContact(props) {
               required
             />
           </div>
-          <div class="input">
-            <label for="email">{emaillabel}</label>
+          <div className="input">
+            <label htmlFor="email">{emaillabel}</label>
             <input
               type="email"
               name="email"
@@ -64,8 +68,8 @@ export default function FormContact(props) {
               required
             />
           </div>
-          <div class="input">
-            <label for="phone">{phonelabel}</label>
+          <div className="input">
+            <label htmlFor="phone">{phonelabel}</label>
             <input
               type="number"
               name="phone"
@@ -74,9 +78,9 @@ export default function FormContact(props) {
             />
           </div>
         </div>
-        <div class="right">
-          <div class="input">
-            <label for="message">{messagelabel}</label>
+        <div className="right">
+          <div className="input">
+            <label htmlFor="message">{messagelabel}</label>
             <textarea
               name="message"
               id="message"
@@ -89,7 +93,7 @@ export default function FormContact(props) {
         </div>
       </div>
       <button type="submit">{buttonlabel}</button>
-      {responseMessage && <p class="response-message">{responseMessage}</p>}
+      {responseMessage && <p className="response-message">{responseMessage}</p>}
     </form>
   );
 }
