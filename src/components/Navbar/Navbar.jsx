@@ -32,7 +32,12 @@ export default function App(props) {
   ];
 
   return (
-    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} height="60px">
+    <Navbar
+      isBordered
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      height="60px"
+    >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -52,18 +57,23 @@ export default function App(props) {
           <p className="font-bold text-inherit ml-2">IP Moviles</p>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
+          <Link color="foreground" href={localizePath("/")}>
+            {t("navbar.home")}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link href={localizePath("/about")} aria-current="page">
+            {t("navbar.about")}
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href={localizePath("/services")}>
+            {t("navbar.services")}
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href={localizePath("/gallery")}>
+            {t("navbar.gallery")}
           </Link>
         </NavbarItem>
       </NavbarContent>
