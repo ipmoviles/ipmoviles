@@ -13,11 +13,10 @@ import { IPLogo } from "./IPLogo";
 import { useState } from "react";
 import { DarkMode } from "./DarkMode";
 import { t } from "i18next";
+import { localizePath } from "astro-i18next";
 
-export default function App(props) {
+export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const { className } = props;
   const menuItems = [
     "Profile",
     "Dashboard",
