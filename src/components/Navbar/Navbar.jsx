@@ -1,3 +1,4 @@
+
 import {
   Navbar,
   NavbarBrand,
@@ -12,11 +13,10 @@ import {
 import { IPLogo } from "./IPLogo";
 import { useState } from "react";
 import { DarkMode } from "./DarkMode";
-import { t } from "i18next";
-import { localizePath } from "astro-i18next";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const menuItems = [
     "Profile",
     "Dashboard",
@@ -31,12 +31,7 @@ export default function App() {
   ];
 
   return (
-    <Navbar
-      isBordered
-      isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
-      height="60px"
-    >
+    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} height="60px">
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -56,23 +51,18 @@ export default function App() {
           <p className="font-bold text-inherit ml-2">IP Moviles</p>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href={localizePath("/")}>
-            {t("navbar.home")}
+          <Link color="foreground" href="#">
+            Features
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link href="#" aria-current="page">
+            Customers
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href={localizePath("/about")} aria-current="page">
-            {t("navbar.about")}
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href={localizePath("/services")}>
-            {t("navbar.services")}
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href={localizePath("/gallery")}>
-            {t("navbar.gallery")}
+          <Link color="foreground" href="#">
+            Integrations
           </Link>
         </NavbarItem>
       </NavbarContent>
