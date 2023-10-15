@@ -1,7 +1,7 @@
 ---
-export const prerender = true;
 import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
+import { HeroSlider } from "../components/Home/Hero01/HeroSlider";
 import Hero from "../components/Home/Hero.astro";
 import Services from "../components/Home/Services.astro";
 import CardService from "../components/Home/CardService.astro";
@@ -12,11 +12,19 @@ import imageParallax from "../assets/images/ParallaxExpSection.png";
 import Products from "../components/Home/Products.astro";
 import ContactSection from "../components/Home/ContactSection.astro";
 
+import sliderImages from "../assets/images/slider/index";
+const { image01, image02, image03, image04 } = sliderImages;
+
 changeLanguage("en");
 ---
 
 <Layout title={t("titles.home")}>
-  <Hero />
+  <HeroSlider client:load>
+    <Image src={image01} alt="Company" slot="image01" />
+    <Image src={image02} alt="Company" slot="image02" />
+    <Image src={image03} alt="Company" slot="image03" />
+    <Image src={image04} alt="Company" slot="image04" />
+  </HeroSlider>
   <Services>
     <CardService
       title={t("site_home.card01_title")}
