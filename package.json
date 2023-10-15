@@ -10,13 +10,26 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^3.0.0",
+    "@astrojs/check": "^0.2.0",
+    "@astrojs/react": "^3.0.3",
+    "@astrojs/tailwind": "^5.0.1",
     "@astrojs/vercel": "^5.0.1",
+    "@nextui-org/navbar": "^2.0.22",
+    "@nextui-org/react": "^2.1.13",
+    "@nextui-org/system": "^2.0.10",
+    "@nextui-org/theme": "^2.1.9",
     "@sendgrid/mail": "^7.7.0",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.11",
     "astro": "^3.0.13",
     "astro-i18next": "^1.0.0-beta.21",
     "astro-icon": "^0.8.1",
-    "preact": "^10.18.1"
+    "framer-motion": "^10.16.4",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "swiper": "^10.3.1",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "accessible-astro-components": "^2.2.1",

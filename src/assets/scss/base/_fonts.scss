@@ -16,21 +16,15 @@ body {
   -webkit-font-smoothing: antialiased;
 
   a:not(.button) {
-    color: var(--color-mint-cream);
+    font-weight: 600;
     text-decoration: none;
 
     // &:visited {
     //   color: var(--action-color); // @todo
     // }
 
-    &.is-active{
+    &.is-active {
       color: var(--action-color);
-    }
-
-    &:hover,
-    &:focus {
-      color: var(--action-color-state); // @todo
-      text-decoration: none;
     }
   }
 
@@ -89,8 +83,6 @@ body {
     @include breakpoint("md") {
       font-size: 3.2rem;
     }
-
-    
   }
 
   p {
@@ -108,10 +100,10 @@ body {
     @include breakpoint(xl) {
       font-size: 2.2rem;
     }
-  
   }
 
-  label, input {
+  label,
+  input {
     font-size: 1.4rem;
     line-height: 1.4;
     @include breakpoint(md) {
