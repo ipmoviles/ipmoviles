@@ -124,10 +124,10 @@
     "contact_info": 
       {
         "contact_info_title": "Contact Information",
-        "USA_phone": "Phones in the USA",
-        "colombian_phone": "Phones in Colombia",
-        "emails": "Our emails",
-        "redes": "Our social networks"
+        "USA_phone": "USA",
+        "colombian_phone": "Colombia",
+        "emails": "Emails",
+        "redes": "Social networks"
       }
     ,
     "location_title":"Our Location",

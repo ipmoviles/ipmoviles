@@ -130,10 +130,10 @@
     "contact_info": 
       {
         "contact_info_title": "Información de Contacto",
-        "USA_phone": "Teléfonos en Estados Unidos",
-        "colombian_phone": "Teléfonos en Colombia",
-        "emails": "Nuestros correos",
-        "redes":"Nuestras redes sociales"
+        "USA_phone": "Estados Unidos",
+        "colombian_phone": "Colombia",
+        "emails": "Correos",
+        "redes":"Redes sociales"
       }
     ,
     "location_title": "Nuestra Ubicación",
