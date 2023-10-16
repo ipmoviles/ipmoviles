@@ -56,6 +56,10 @@ body {
     font-size: 3.8rem;
     line-height: normal;
 
+    &.hero-title{
+      font-size: 5.8rem;
+    }
+
     @include breakpoint("sm") {
       font-size: 6.2rem;
     }
