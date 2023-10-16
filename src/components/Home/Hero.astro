@@ -1,173 +1,93 @@
 ---
 import Icon from "astro-icon";
-import { Image } from "astro:assets";
-import heroImage from "../../assets/hero-image.svg";
 import { t } from "i18next";
 ---
 
-<section class="section-hero">
-  <div class="hero-left">
-    <div class="hero-text">
-      <div class="hero-titles">
-        <div class="hero-title">
-          <h1>IP MOVILES</h1>
-        </div>
-        <h2 class="hero-subtitle">
-          {t("site_home.header_text01")}
-        </h2>
-        <h3 class="hero-subtitle opacity">
-          {t("site_home.header_text02")}
-        </h3>
-      </div>
-      <div class="hero-features">
-        <div>
-          <Icon name="mdi:check-circle" /><p>{t("site_home.service01")}</p>
-        </div>
-        <div>
-          <Icon name="mdi:check-circle" /><p>{t("site_home.service02")}</p>
-        </div>
-        <div>
-          <Icon name="mdi:check-circle" /><p>{t("site_home.service03")}</p>
-        </div>
-      </div>
+<div class="content-container">
+  <div class="content-text">
+    <div class="content-title">
+      <h1>IP MOVILES</h1>
     </div>
-    <div class="hero-image">
-      <Image src={heroImage} alt="IP Moviles" loading={"eager"} />
+    <div class="content-subtitles">
+      <h2 class="hero-subtitle">
+        {t("site_home.header_text01")}
+      </h2>
+      <h3 class="hero-subtitle opacity">
+        {t("site_home.header_text02")}
+      </h3>
     </div>
   </div>
-</section>
+  <div class="content-features">
+    <div>
+      <Icon name="mdi:access-point-check" /><p>{t("site_home.service01")}</p>
+    </div>
+    <div>
+      <Icon name="eos-icons:trusted-organization" /><p>{t("site_home.service02")}</p>
+    </div>
+    <div>
+      <Icon name="gridicons:customize" /><p>{t("site_home.service03")}</p>
+    </div>
+  </div>
+</div>
 
 <style lang="scss">
   @use "../../assets/scss/base/_breakpoint.scss" as *;
 
-  .section-hero {
-    width: 100%;
+  .content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    background: var(--hero-background-color);
-    padding: 40px 0px 50px 0px;
-    text-wrap: balance;
-
-    @include breakpoint(lg) {
-      padding-top: 80px;
-    }
-  }
-
-  .hero-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @include breakpoint(lg) {
-      flex-direction: row;
-      justify-content: space-evenly;
-    }
-
-    @include breakpoint(xl) {
-      justify-content: space-around;
-    }
-  }
-
-  .hero-text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
-
-    @include breakpoint(md) {
-      margin-left: 80px;
-      margin-right: 0px;
-    }
-    @include breakpoint(lg) {
-      width: fit-content;
-      max-width: 50%;
-      margin-left: 0px;
-    }
-
-    @include breakpoint(xl) {
-      margin-left: 0px;
-    }
-
-    > .hero-titles {
-      > .hero-title {
-        display: flex;
-        flex-direction: row;
-        width: fit-content;
-        margin-bottom: 20px;
-
-        > h1 {
-          color: var(--hero-title);
-        }
-      }
-
-      > .hero-subtitle {
-        &.opacity {
-          margin-top: 20px;
-          margin-bottom: 20px;
-          color: var(--hero-text-opacity);
-        }
-
-        @include breakpoint(md) {
-        }
-      }
-    }
-    > .hero-features {
+    > .content-text {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      font-size: 1.8rem;
-
-      div {
+      align-items: center;
+      gap: 15px;
+      > .content-title {
         display: flex;
-        gap: 10px;
+        flex-direction: column;
         align-items: center;
+        gap: 15px;
+        > h1 {
+          color: var(--action-color);
+        }
+      }
+      > .content-subtitles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+        padding: 0px 20px;
+        color: var(--color-mint-cream);
+
+        > .hero-subtitle.opacity {
+          color: var(--grey);
+        }
       }
     }
-  }
+    > .content-features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
 
-  .hero-image {
-    margin-top: 20px;
-    img {
-      width: 200px;
-      height: auto;
-
-      @include breakpoint(sm) {
-        width: 240px;
-      }
       @include breakpoint(md) {
-        width: 350px;
+        flex-direction: row;
       }
-      @include breakpoint(lg) {
-        width: 400px;
+      > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: var(--color-mint-cream);
+
+        [astro-icon] {
+          width: 36px;
+          height: 36px;
+          color: var(--action-color);
+        }
       }
     }
-  }
-
-  .hero-cta {
-    margin-top: 20px;
-    margin-bottom: 10px;
-
-    @include breakpoint(md) {
-      margin-top: 10px;
-    }
-
-    @include breakpoint(lg) {
-      margin-top: 100px;
-      margin-bottom: 90px;
-    }
-  }
-
-  .hero-features [astro-icon] {
-    color: var(--action-color);
-    width: 26px;
-    height: 26px;
-  }
-
-  .hero-cta [astro-icon="mdi:chevron-down-circle"] {
-    color: var(--action-color);
-    width: 48px;
-    height: 48px;
   }
 </style>

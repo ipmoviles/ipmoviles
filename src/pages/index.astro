@@ -1,4 +1,5 @@
 ---
+export const prerender = true;
 import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import { HeroSlider } from "../components/Home/Hero01/HeroSlider";
@@ -24,6 +25,7 @@ changeLanguage("en");
     <Image src={image02} alt="Company" slot="image02" />
     <Image src={image03} alt="Company" slot="image03" />
     <Image src={image04} alt="Company" slot="image04" />
+    <Hero slot="content" />
   </HeroSlider>
   <Services>
     <CardService

@@ -9,14 +9,15 @@ import "swiper/css/navigation";
 import "./styles.scss";
 
 export const HeroSlider = (props) => {
-  const { image01, image02, image03, image04 } = props;
+  const { image01, image02, image03, image04, content } = props;
   return (
-    <Swiper
+    <section className="hero-container">
+      <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         pagination={{ clickable: true }}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         navigation={true}
@@ -29,5 +30,8 @@ export const HeroSlider = (props) => {
         <SwiperSlide>{image03}</SwiperSlide>
         <SwiperSlide>{image04}</SwiperSlide>
       </Swiper>
+      <div className="overlay"></div>
+      <div className="hero-content">{content}</div>
+    </section>
   );
 };

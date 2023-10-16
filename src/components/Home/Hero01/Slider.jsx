@@ -23,30 +23,10 @@ export const Slider = () => {
         slidesPerView={1}
         className="swiper"
       >
-        <SwiperSlide>
-          <img
-            src="../../../assets/images/slider/slider01.jpg"
-            alt="image slider"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="../../../assets/images/slider/slider02.jpg"
-            alt="image slider"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="../../../assets/images/slider/slider03.jpg"
-            alt="image slider"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="../../../assets/images/slider/slider04.jpg"
-            alt="image slider"
-          />
-        </SwiperSlide>
+        <SwiperSlide>{image01}</SwiperSlide>
+        <SwiperSlide>{image02}</SwiperSlide>
+        <SwiperSlide>{image03}</SwiperSlide>
+        <SwiperSlide>{image04}</SwiperSlide>
       </Swiper>
     </>
   );
