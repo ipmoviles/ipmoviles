@@ -13,8 +13,8 @@ export const HeroSlider = (props) => {
   return (
     <section className="hero-container">
       <Swiper
-        modules={[Autoplay, Pagination, Navigation]}
-        pagination={{ clickable: true }}
+        modules={[Autoplay, Navigation]}
+        // pagination={{ clickable: true }}
         centeredSlides={true}
         autoplay={{
           delay: 3500,
