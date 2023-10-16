@@ -5,6 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import gallery from "../assets/images/gallery/index";
 import { Image } from "astro:assets";
 import Icon from "astro-icon";
+
 changeLanguage("en");
 ---
 
@@ -83,6 +84,9 @@ changeLanguage("en");
             width: 48px;
             height: 48px;
             color: #0a77c7;
+            &:hover {
+              color: #78b9e7;
+            }
           }
         }
       }

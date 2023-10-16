@@ -13,26 +13,18 @@ import imageParallax from "../../assets/images/breakImage.jpg";
 import Products from "../../components/Home/Products.astro";
 import ContactSection from "../../components/Home/ContactSection.astro";
 import sliderImages from "../../assets/images/slider/index";
-const {
-  slider01,
-  slider02,
-  slider04,
-  slider07,
-  image01,
-  image02,
-  image03,
-  image04,
-} = sliderImages;
 
 changeLanguage("es");
+
+const { slider01, slider02, slider03, slider07, image01, image02, image03, image04, } = sliderImages;
 ---
 
 <Layout title={t("titles.home")}>
   <HeroSlider client:load>
-    <Image src={slider02} alt="Company" slot="image01" loading={"eager"} />
-    <Image src={slider01} alt="Company" slot="image02" loading={"eager"} />
-    <Image src={slider04} alt="Company" slot="image03" loading={"eager"} />
-    <Image src={slider07} alt="Company" slot="image04" loading={"eager"} />
+    <Image src={slider02} alt="Company" slot="image01" loading={"eager"}/>
+    <Image src={slider01} alt="Company" slot="image02" loading={"eager"}/>
+    <Image src={slider03} alt="Company" slot="image03" loading={"eager"}/>
+    <Image src={slider07} alt="Company" slot="image04" loading={"eager"}/>
     <Hero slot="content" />
   </HeroSlider>
   <Services>
