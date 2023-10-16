@@ -20,7 +20,7 @@ export const HeroSlider = (props) => {
           delay: 3500,
           disableOnInteraction: false,
         }}
-        navigation={true}
+        navigation={false}
         spaceBetween={30}
         slidesPerView={1}
         className="swiper"

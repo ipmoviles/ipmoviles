@@ -30,7 +30,7 @@ const { title } = Astro.props;
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net" />
     <link
-      href="https://fonts.bunny.net/css?family=raleway:300,400,500,600,700|rubik:300,400,500,600,700&display=swap"
+      href="https://fonts.bunny.net/css?family=lato:100,300,400,700,900"
       rel="stylesheet"
     />
     <title>{title}</title>
@@ -51,7 +51,7 @@ const { title } = Astro.props;
         galleryRef={localizePath("/gallery")}
         client:visible
       >
-        <LanguageSelector slot="languageSelect" class={"lang-switch"}/>
+        <LanguageSelector slot="languageSelect" class={"lang-switch"} />
       </Navbar>
       <main id="main-content">
         <slot />
