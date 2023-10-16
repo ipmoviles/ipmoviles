@@ -4,205 +4,173 @@ import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import gallery from "../assets/images/gallery/index";
 import { Image } from "astro:assets";
-
+import Icon from "astro-icon";
 changeLanguage("en");
-
-const { primera, segunda, tercera, cuarta, quinta, sexta, septima } = gallery;
 ---
 
 <Layout title={t("titles.gallery")}>
   <section class="container">
-    <h1>{t("gallery.gallery_title")}</h1>
-    <p class="intro">
-      {t("gallery.gallery_text01")}
-    </p>
-    <div class="grid-container">
-      <div class="grid-item-1">
-        <Image src={primera} alt="Imagen 1" />
-      </div>
-      <div class="grid-item-2">
-        <Image src={segunda} alt="Imagen 2" />
-      </div>
-      <div class="grid-item-3">
-        <Image src={tercera} alt="Imagen 3" />
-      </div>
-      <div class="grid-item-4">
-        <Image src={quinta} alt="Imagen 5" />
-      </div>
-      <div class="grid-item-5">
-        <Image src={cuarta} alt="Imagen 4" />
-      </div>
-
-      <div class="grid-item-6">
-        <Image src={sexta} alt="Imagen 6" />
-      </div>
-      <div class="grid-item-7">
-        <Image src={septima} alt="Imagen 7" />
+    <div class="page-title">
+      <h1 class="gallery-title">{t("gallery.gallery_title")}</h1>
+      <div class="gallery-description">
+        <p>
+          {t("gallery.gallery_text01")}
+        </p>
+        <p>{t("gallery.gallery_text02")}:</p>
+        <div class="socials">
+          <a href="https://co.linkedin.com/company/ipmoviles"
+            ><Icon name="mdi:linkedin" /></a
+          >
+          <a href="https://www.instagram.com/ip_moviles/"
+            ><Icon name="mdi:instagram" /></a
+          >
+        </div>
       </div>
     </div>
-
-    <p class="fin">{t("gallery.gallery_text02")}</p>
-    <div class="redes">
-      <a href="https://co.linkedin.com/company/ipmoviles" target="_blank"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="48"
-          height="48"
-          viewBox="0 0 48 48"
-          fill="none"
-        >
-          <path
-            d="M42.6667 0C44.0812 0 45.4377 0.561903 46.4379 1.5621C47.4381 2.56229 48 3.91885 48 5.33333V42.6667C48 44.0812 47.4381 45.4377 46.4379 46.4379C45.4377 47.4381 44.0812 48 42.6667 48H5.33333C3.91885 48 2.56229 47.4381 1.5621 46.4379C0.561903 45.4377 0 44.0812 0 42.6667V5.33333C0 3.91885 0.561903 2.56229 1.5621 1.5621C2.56229 0.561903 3.91885 0 5.33333 0H42.6667ZM41.3333 41.3333V27.2C41.3333 24.8944 40.4174 22.6832 38.7871 21.0529C37.1568 19.4226 34.9456 18.5067 32.64 18.5067C30.3733 18.5067 27.7333 19.8933 26.4533 21.9733V19.0133H19.0133V41.3333H26.4533V28.1867C26.4533 26.1333 28.1067 24.4533 30.16 24.4533C31.1501 24.4533 32.0997 24.8467 32.7999 25.5468C33.5 26.2469 33.8933 27.1965 33.8933 28.1867V41.3333H41.3333ZM10.3467 14.8267C11.5348 14.8267 12.6743 14.3547 13.5145 13.5145C14.3547 12.6743 14.8267 11.5348 14.8267 10.3467C14.8267 7.86667 12.8267 5.84 10.3467 5.84C9.15143 5.84 8.00514 6.31481 7.15997 7.15997C6.31481 8.00514 5.84 9.15143 5.84 10.3467C5.84 12.8267 7.86667 14.8267 10.3467 14.8267ZM14.0533 41.3333V19.0133H6.66667V41.3333H14.0533Z"
-            fill="#67CF94"></path>
-        </svg></a
-      >
-      <a href="https://www.instagram.com/ipmoviles/" target="_blank"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="49"
-          height="48"
-          viewBox="0 0 49 48"
-          fill="none"
-        >
-          <path
-            d="M14.5866 0H34.7466C42.4266 0 48.6666 6.24 48.6666 13.92V34.08C48.6666 37.7718 47.2001 41.3124 44.5896 43.9229C41.979 46.5334 38.4384 48 34.7466 48H14.5866C6.90663 48 0.666626 41.76 0.666626 34.08V13.92C0.666626 10.2282 2.13319 6.68758 4.7437 4.07707C7.35421 1.46657 10.8948 0 14.5866 0ZM14.1066 4.8C11.8152 4.8 9.61754 5.71028 7.99722 7.3306C6.37691 8.95091 5.46663 11.1485 5.46663 13.44V34.56C5.46663 39.336 9.33063 43.2 14.1066 43.2H35.2266C37.5181 43.2 39.7157 42.2897 41.336 40.6694C42.9563 39.0491 43.8666 36.8515 43.8666 34.56V13.44C43.8666 8.664 40.0026 4.8 35.2266 4.8H14.1066ZM37.2666 8.4C38.0623 8.4 38.8253 8.71607 39.388 9.27868C39.9506 9.84129 40.2666 10.6044 40.2666 11.4C40.2666 12.1957 39.9506 12.9587 39.388 13.5213C38.8253 14.0839 38.0623 14.4 37.2666 14.4C36.471 14.4 35.7079 14.0839 35.1453 13.5213C34.5827 12.9587 34.2666 12.1957 34.2666 11.4C34.2666 10.6044 34.5827 9.84129 35.1453 9.27868C35.7079 8.71607 36.471 8.4 37.2666 8.4ZM24.6666 12C27.8492 12 30.9015 13.2643 33.1519 15.5147C35.4023 17.7652 36.6666 20.8174 36.6666 24C36.6666 27.1826 35.4023 30.2348 33.1519 32.4853C30.9015 34.7357 27.8492 36 24.6666 36C21.484 36 18.4318 34.7357 16.1813 32.4853C13.9309 30.2348 12.6666 27.1826 12.6666 24C12.6666 20.8174 13.9309 17.7652 16.1813 15.5147C18.4318 13.2643 21.484 12 24.6666 12ZM24.6666 16.8C22.7571 16.8 20.9257 17.5586 19.5755 18.9088C18.2252 20.2591 17.4666 22.0904 17.4666 24C17.4666 25.9096 18.2252 27.7409 19.5755 29.0912C20.9257 30.4414 22.7571 31.2 24.6666 31.2C26.5762 31.2 28.4075 30.4414 29.7578 29.0912C31.1081 27.7409 31.8666 25.9096 31.8666 24C31.8666 22.0904 31.1081 20.2591 29.7578 18.9088C28.4075 17.5586 26.5762 16.8 24.6666 16.8Z"
-            fill="#67CF94"></path>
-        </svg></a
-      >
+    <div class="gallery-container">
+      <div class="grid-container">
+        {
+          gallery.map((img, id) => {
+            return (
+              <div class={`grid-item grid-item-${id + 1}`}>
+                <Image src={img} alt={`Imagen ${id + 1}`} loading={"lazy"} />
+              </div>
+            );
+          })
+        }
+      </div>
     </div>
   </section>
+</Layout>
+<style lang="scss">
+  @use "../assets/scss/base/_breakpoint.scss" as *;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  <style lang="scss">
-    @use "../assets/scss/base/_breakpoint.scss" as *;
-    .container {
+    > .page-title {
       display: flex;
       flex-direction: column;
-      box-sizing: border-box;
-      padding: 30px 65px 30px 65px;
-      @include breakpoint(md) {
-        padding: 30px 190px 30px 190px;
-      }
+      width: 90%;
+      max-width: 1350px;
+      gap: 30px;
+      margin: 40px 0px 20px 0px;
+      > .gallery-title {
+        font-size: 3.6rem;
+        font-weight: 700;
 
+        @include breakpoint(md) {
+          font-size: 4.8rem;
+        }
+
+        @include breakpoint(lg) {
+          font-size: 5.6rem;
+        }
+
+        @include breakpoint(xl) {
+          font-size: 6.4rem;
+        }
+      }
+      > .gallery-description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        > .socials {
+          display: flex;
+          gap: 10px;
+          [astro-icon] {
+            width: 48px;
+            height: 48px;
+            color: #0a77c7;
+          }
+        }
+      }
+    }
+    > .gallery-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin: 20px 0px 40px 0px;
       > .grid-container {
-        margin-top: 30px;
-        margin-bottom: 30px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        gap: 15px;
         max-width: 1350px;
 
         @include breakpoint(md) {
           grid-template-columns: repeat(3, 1fr);
-          max-width: 950px;
+        }
+
+        @include breakpoint(1280px) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        > .grid-item {
+          > img {
+            width: 100%;
+            height: 100%;
+            border-radius: var(--radius-default);
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            transform: scale(1);
+
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+
+        > .grid-item-1 {
+          grid-area: 1/1/2/3;
+          @include breakpoint(md) {
+            grid-area: 1/1/2/4;
+          }
+        }
+
+        > .grid-item-6 {
+          grid-area: 5/1/6/3;
+          @include breakpoint(md) {
+            grid-area: 5/2/6/4;
+          }
+        }
+
+        > .grid-item-10 {
+          grid-area: 6/1/7/3;
+          @include breakpoint(md) {
+            grid-area: 3/3/5/4;
+          }
+        }
+
+        > .grid-item-9 {
+          grid-area: 3/1/4/3;
+          @include breakpoint(md) {
+          }
+        }
+        > .grid-item-8 {
+          @include breakpoint(1280px) {
+            grid-area: 3/4/5/5;
+          }
+        }
+        > .grid-item-16 {
+          grid-area: 8/1/10/2;
+          @include breakpoint(md) {
+            grid-area: 7/2/8/4;
+          }
+          @include breakpoint(1280px) {
+            grid-area: 6/1/7/3;
+          }
+        }
+        > .grid-item-11 {
+          grid-area: 11/1/12/3;
+          @include breakpoint(md) {
+            grid-area: 8/1/9/4;
+          }
+          @include breakpoint(1280px) {
+            grid-area: 6/3/7/5;
+          }
         }
       }
     }
-
-    h1 {
-      text-align: left;
-      font-size: 24px;
-      font-weight: 600;
-      @include breakpoint(md) {
-        font-size: 40px;
-      }
-    }
-
-    .intro {
-      margin-top: 30px;
-      font-size: 16px;
-      font-weight: 500;
-      @include breakpoint(md) {
-        font-size: 24px;
-      }
-    }
-
-    .grid-item-1 {
-      grid-row: 1/2;
-      @include breakpoint(md) {
-        grid-column: 1/2;
-        grid-row: 1/2;
-      }
-    }
-
-    .grid-item-2 {
-      grid-row: 1/3;
-      @include breakpoint(md) {
-        grid-column: 2/3;
-        grid-row: 1/2;
-      }
-    }
-    .grid-item-3 {
-      grid-row: 2/3;
-      @include breakpoint(md) {
-        grid-column: 3/4;
-        grid-row: 1/2;
-      }
-    }
-
-    .grid-item-4 {
-      grid-column: 1/3;
-      @include breakpoint(md) {
-        width: 100%;
-        grid-column: 1/3;
-        grid-row: 2/4;
-      }
-    }
-
-    .grid-item-5 {
-      grid-row: 4/6;
-      @include breakpoint(md) {
-        grid-row: 2/3;
-        grid-column: 3/4;
-      }
-    }
-
-    .grid-item-6 {
-      grid-column: 2/3;
-      @include breakpoint(md) {
-        grid-row: 3/4;
-        grid-column: 3/4;
-      }
-    }
-
-    .grid-item-7 {
-      grid-column: 2/3;
-      @include breakpoint(md) {
-        grid-column: 1/4;
-        width: 100%;
-      }
-    }
-
-    .grid-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1);
-      transition: transform 0.3s ease;
-      @include breakpoint(md) {
-        width: auto;
-        height: auto;
-      }
-    }
-
-    .grid-container img:hover {
-      transform: scale(1.05);
-    }
-
-    .fin {
-      text-align: center;
-      font-size: 16px;
-      font-weight: 500;
-      @include breakpoint(md) {
-        font-size: 32px;
-      }
-    }
-
-    .redes {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-    }
-  </style>
-</Layout>
+  }
+</style>

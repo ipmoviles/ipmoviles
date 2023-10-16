@@ -3,8 +3,7 @@ export const prerender = true;
 import { changeLanguage, t } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import mobileImage from "../../assets/images/obrero.svg";
-import desktopImage from "../../assets/images/desktop-image.png";
+import mobileImage from "../../assets/images/aboutImage.jpg";
 import Icon from "astro-icon";
 import ContactSection from "../../components/Home/ContactSection.astro";
 
@@ -50,12 +49,15 @@ changeLanguage("es");
         </div>
       </div>
     </section>
-    <div class="desktop-image">
-      <Image src={desktopImage} alt="example image" />
-    </div>
-    <div class="mobile-image">
-      <Image src={mobileImage} alt="example image" />
-    </div>
+
+    <section class="image-break">
+      <!-- <div class="desktop-image">
+        <Image src={desktopImage} alt="example image" />
+      </div> -->
+      <div class="mobile-image">
+        <Image src={mobileImage} alt="example image" />
+      </div>
+    </section>
 
     <section class="cards-container">
       <div class="cards">
@@ -191,37 +193,41 @@ changeLanguage("es");
       }
     }
 
-    .desktop-image {
-      display: none;
-      margin: 40px 0px;
-      > img {
-        width: 100%;
+    // .desktop-image {
+    //   display: none;
+    //   margin: 40px 0px;
+    //   > img {
+    //     width: 100%;
 
-        height: auto;
-        @include breakpoint(1350px) {
-          border-radius: var(--radius-default);
-          max-width: 1215px;
-        }
-      }
-      @include breakpoint(md) {
-        display: block;
-      }
-    }
-
-    .mobile-image {
-      display: block;
-      width: 100%;
-      margin: 40px 0px;
+    //     height: auto;
+    //     @include breakpoint(1350px) {
+    //       border-radius: var(--radius-default);
+    //       max-width: 1215px;
+    //     }
+    //   }
+    //   @include breakpoint(md) {
+    //     display: block;
+    //   }
+    // }
+    .image-break {
       display: flex;
-      justify-content: center;
-      > img {
-        width: 80%;
-        max-width: 430px;
-        height: auto;
-      }
-
-      @include breakpoint(md) {
-        display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      > .mobile-image {
+        display: block;
+        width: 90%;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        > img {
+          width: 100%;
+          max-height: 230px;
+          border-radius: 10px;
+          object-fit: cover;
+          object-position: top;
+          height: auto;
+        }
       }
     }
 

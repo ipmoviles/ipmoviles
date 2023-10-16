@@ -9,7 +9,7 @@ import CardService from "../components/Home/CardService.astro";
 import Experience from "../components/Home/Experience.astro";
 import Company from "../components/Home/Company.astro";
 import { Image } from "astro:assets";
-import imageParallax from "../assets/images/ParallaxExpSection.png";
+import imageParallax from "../assets/images/breakImage.jpg";
 import Products from "../components/Home/Products.astro";
 import ContactSection from "../components/Home/ContactSection.astro";
 import sliderImages from "../assets/images/slider/index";
@@ -29,10 +29,10 @@ changeLanguage("en");
 
 <Layout title={t("titles.home")}>
   <HeroSlider client:load>
-    <Image src={slider01} alt="Company" slot="image01" />
-    <Image src={slider02} alt="Company" slot="image02" />
-    <Image src={slider04} alt="Company" slot="image03" />
-    <Image src={slider07} alt="Company" slot="image04" />
+    <Image src={slider02} alt="Company" slot="image01" loading={"eager"}/>
+    <Image src={slider01} alt="Company" slot="image02" loading={"eager"}/>
+    <Image src={slider04} alt="Company" slot="image03" loading={"eager"}/>
+    <Image src={slider07} alt="Company" slot="image04" loading={"eager"}/>
     <Hero slot="content" />
   </HeroSlider>
   <Services>
@@ -88,6 +88,7 @@ changeLanguage("en");
   .break-section-image {
     width: 100%;
     margin: 40px;
+    opacity: 0.8;
     @include breakpoint(530px) {
       display: none;
     }
