@@ -3,7 +3,7 @@ import type { APIRoute } from "astro";
 import sgMail from "@sendgrid/mail";
 
 interface EmailMessage {
-  to: string;
+  to: string | { email: string; name: string }[];
   from: string;
   replyTo: { email: string; name: string };
   subject: string;
@@ -38,7 +38,10 @@ export const POST: APIRoute = async ({ request }) => {
   }
 
   const msg: EmailMessage = {
-    to: "ipmovilesdev@gmail.com",
+    to: [
+      { email: "ipmovilesdev@gmail.com", name: "IP Moviles" },
+      { email: "andres.morales@ipmoviles", name: "Andres" },
+    ],
     from: "ipmovilesdev@gmail.com",
     replyTo: { email, name },
     subject: `Contact form submission from ${name}`,
@@ -49,7 +52,8 @@ export const POST: APIRoute = async ({ request }) => {
     await sendEmail(msg);
     return new Response(
       JSON.stringify({
-        message: "Thank you for getting in touch with us! Your message has been successfully sent. We will be in touch with you soon."
+        message:
+          "Thank you for getting in touch with us! Your message has been successfully sent. We will be in touch with you soon.",
       }),
       { status: 200 }
     );
