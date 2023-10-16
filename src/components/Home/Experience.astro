@@ -21,9 +21,7 @@ const { asecones, claro, ingeant, inspur, movistar, qmc } = logoimages;
           </p>
         </div>
         <div class="experience-images section-circles">
-          <Image src={asecones} alt="ASECONES-LOGO" />
           <Image src={claro} alt="CLARO-LOGO" />
-          <Image src={ingeant} alt="INGEANT-LOGO" />
           <Image src={inspur} alt="INSPUR-LOGO" />
           <Image src={movistar} alt="MOVISTAR-LOGO" />
           <Image src={qmc} alt="QMC-LOGO" />
@@ -61,11 +59,11 @@ const { asecones, claro, ingeant, inspur, movistar, qmc } = logoimages;
       > .content {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 20px;
         > .section-title {
           margin-bottom: 20px;
-          color: var(--font-color);
+          color: var(--color-mint-cream);
         }
 
         > .section-content--flex {
@@ -81,11 +79,11 @@ const { asecones, claro, ingeant, inspur, movistar, qmc } = logoimages;
             display: grid;
             width: 100%;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             place-items: center;
             background-color: var(--color-light-silver);
             border-radius: var(--radius-default);
-            padding: 10px;
+            padding: 20px;
             margin-top: 30px;
 
             gap: 10px;
@@ -95,8 +93,8 @@ const { asecones, claro, ingeant, inspur, movistar, qmc } = logoimages;
               object-fit: contain;
             }
 
-            > img:nth-child(2) {
-              width: 120px;
+            > img:nth-child(1) {
+              width: 80px;
             }
           }
         }
@@ -112,13 +110,11 @@ const { asecones, claro, ingeant, inspur, movistar, qmc } = logoimages;
             flex-direction: row;
             gap: 40px;
             > .section-subtitle {
-              width: 50%;
+              width: 60%;
             }
 
             > .section-circles {
-              width: 50%;
-              grid-template-columns: repeat(3, 1fr);
-              grid-template-rows: repeat(2, 1fr);
+              width: 40%;
               margin: 0px;
             }
           }

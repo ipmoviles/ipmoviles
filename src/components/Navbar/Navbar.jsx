@@ -45,9 +45,8 @@ export default function App(props) {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="md:hidden"
         />
-        <NavbarBrand className="ml-2">
+        <NavbarBrand className="ml-4">
           <IPLogo />
-          <p className="font-bold text-inherit ml-4">ipmoviles</p>
         </NavbarBrand>
       </NavbarContent>
 

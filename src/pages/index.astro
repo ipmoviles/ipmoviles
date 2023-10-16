@@ -14,19 +14,27 @@ import Products from "../components/Home/Products.astro";
 import ContactSection from "../components/Home/ContactSection.astro";
 
 import sliderImages from "../assets/images/slider/index";
-const { image01, image02, image03, image04 } = sliderImages;
+const {
+  slider01,
+  slider02,
+  slider04,
+  slider07,
+  image01,
+  image02,
+  image03,
+  image04,
+} = sliderImages;
 
 changeLanguage("en");
 ---
 
 <Layout title={t("titles.home")}>
   <HeroSlider client:load>
-    <Image src={image01} alt="Company" slot="image01" />
-    <Image src={image02} alt="Company" slot="image02" />
-    <Image src={image03} alt="Company" slot="image03" />
-    <Image src={image04} alt="Company" slot="image04" />
+    <Image src={slider01} alt="Company" slot="image01" />
+    <Image src={slider02} alt="Company" slot="image02" />
+    <Image src={slider04} alt="Company" slot="image03" />
+    <Image src={slider07} alt="Company" slot="image04" />
     <Hero slot="content" />
-    
   </HeroSlider>
   <Services>
     <CardService
@@ -43,22 +51,6 @@ changeLanguage("en");
       title={t("site_home.card03_title")}
       text={t("site_home.card03_body")}
       icon="mdi:map-search-outline"
-    />
-    <div class="break"></div>
-    <CardService
-      title={t("site_home.card04_title")}
-      text={t("site_home.card04_body")}
-      icon="mdi:settings"
-    />
-    <CardService
-      title={t("site_home.card05_title")}
-      text={t("site_home.card05_body")}
-      icon="mdi:clipboard-check"
-    />
-    <CardService
-      title={t("site_home.card06_title")}
-      text={t("site_home.card06_body")}
-      icon="iconoir:antenna"
     />
   </Services>
   <Image src={imageParallax} alt="Company" class={"break-section-image"} />

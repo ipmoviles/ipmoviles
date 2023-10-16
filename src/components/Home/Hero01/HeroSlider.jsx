@@ -21,8 +21,8 @@ export const HeroSlider = (props) => {
           disableOnInteraction: false,
         }}
         navigation={false}
-        spaceBetween={30}
-        slidesPerView={1}
+        spaceBetween={0}
+        slidesPerView={'auto'}
         className="swiper"
       >
         <SwiperSlide>{image01}</SwiperSlide>
