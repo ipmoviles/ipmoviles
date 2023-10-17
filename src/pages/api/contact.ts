@@ -40,7 +40,7 @@ export const POST: APIRoute = async ({ request }) => {
   const msg: EmailMessage = {
     to: [
       { email: "ipmovilesdev@gmail.com", name: "IP Moviles" },
-      { email: "andres.morales@ipmoviles", name: "Andres" },
+      { email: "andres.morales@ipmoviles.net", name: "Andres" },
     ],
     from: "ipmovilesdev@gmail.com",
     replyTo: { email, name },
