@@ -1,13 +1,17 @@
 {
+  "meta": {
+    "description": "Explore IP Mobile services: We provide connectivity and telecommunications solutions tailored to the needs of our clients.",
+    "keywords": "ipmoviles, ipmobiles, ip moviles, ip mobile, connectivity, networks, maintenance, telecom"
+  },
   "header": {
     "contact_button": "Contact Us"
   },
   "titles": {
-    "home":"Home",
-    "services":"Services",
-    "contact":"Contact",
-    "about":"About Us",
-    "gallery":"Gallery"
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "about": "About Us",
+    "gallery": "Gallery"
   },
   "navbar": {
     "home": "Home",
@@ -45,11 +49,11 @@
     "our_company": "Our Company",
     "company_text01": "With over 15 years of experience, at IPMoviles, we're dedicated to excellence in telecommunications and information technology.",
     "company_text02": "Our business ethics are rooted in honesty and a customer-centric approach. We pursue global connectivity and ongoing innovation in an ever-evolving technological landscape.",
-    "CTA_company":"More about us",
+    "CTA_company": "More about us",
     "clients": "We've worked with the best",
     "clients_text01": "In IPMoviles, we've had the privilege of partnering with top companies in the telecommunications and technology industry. Our expertise and dedication to delivering high-quality solutions have allowed us to build strong relationships with these industry leaders.",
     "clients_text02": "Over the years, we've collaborated to drive innovation, connectivity, and business success.",
-    "our_products":"Our Products",
+    "our_products": "Our Products",
     "product_text01": "At IPMoviles, we take pride in partnering with some of the most trusted and renowned brands in the telecommunications and technology industry.",
     "product_text02": "Our collaboration with these industry-leading brands allows us to deliver high-quality solutions and cutting-edge services to our clients."
   },
@@ -67,12 +71,12 @@
     "mission_text01": "We ",
     "mission_text02": "contribute to the technological needs of society",
     "mission_text03": "by providing comprehensive solutions tailored to the requirements presented. This is achieved through the availability, performance, quality, management, and evolution of our company's infrastructure and architecture.",
-    "mission_text04":"We are guided by a culture of processes and projects, keeping our personnel focused on best practices and trends towards the convergence of telecommunications.",
+    "mission_text04": "We are guided by a culture of processes and projects, keeping our personnel focused on best practices and trends towards the convergence of telecommunications.",
     "vision_title": "Our Vision",
     "vision_text01": "By ",
     "vision_text02": "2035",
     "vision_text03": ", our vision is to become a nationally and internationally recognized leading company, firmly established in the provision of high-quality and efficient technological services and solutions.",
-    "vision_text04":"We will adhere to quality standards and comply with current regulations to ensure outstanding performance in our field.",
+    "vision_text04": "We will adhere to quality standards and comply with current regulations to ensure outstanding performance in our field.",
     "values_title": "Our Corporate Values",
     "values01": "Our company's philosophy centers on loyalty, responsibility, honesty, respect, and competitiveness. We emphasize fulfilling individual responsibilities to strengthen our institutional image and carrying out tasks with commitment to quality.",
     "values01_desktop": "At our core, our company is founded upon a philosophy of loyalty, responsibility, honesty, and respect. We believe in fulfilling our individual responsibilities to enhance our institutional image, carrying out tasks with unwavering commitment to established quality policies, and always acting with ethical discernment and respect for the inherent rights of each individual and our organization.",
@@ -81,56 +85,52 @@
   },
   "our_services": {
     "our_services_title": "Our Services",
-    "IP_Moviles":"IP Moviles",
-    "our_services_info":"Offers telecommunications services, including remote Internet equipment installation, network configuration, and LTE/5G expansions, with a 15-year track record emphasizing safety and quality.",
-    "cards":[
-            "installation and maintenance services of cellular base stations in the different network technologies 2g, 3g, 4g, 5g.",
-            "Promote configurationm, administration, and support solutions for the main technologies according to your requirements.",
-            "Preparation of site survey for new LET sites; delivery of reports with plans in sketchups",
-            "Preparation of site survehy for 3G, 4G, 5G network expansions.",
-            "Services of personnel dedicated to preparing reports required by the operator to control the correct installation of the equipment in the quality area.",
-            "Maintenance service for radio bases of the different 2g, 3g, and 4g cellular network technologies as well as Wifi networks, review of microwave and satellite links.",
-            "Disassembly of celluar network equipment and return of these to the warehouse duly invetoried.",
-            "Commisioning, configuration, and probe of cellular services network solutions according to operator parameters.",
-            "Site master tests, PIM master measurement, BER, to guarantee the correct implementation of the network solution.",
-            "Cellular network optimization in different technologies according to specific parameter of the RF area.",
-            "Expansion of the capacity of the different cellular network technologies to improve traffic performance.",
-            "Installation, disassembly, and maintenance of microwave links (NEC, siemens, ericson, among other), Installation of satellite links from brands such as Embratel, HughesNet and optic fiber networks."
-            ],
+    "IP_Moviles": "IP Moviles",
+    "our_services_info": "Offers telecommunications services, including remote Internet equipment installation, network configuration, and LTE/5G expansions, with a 15-year track record emphasizing safety and quality.",
+    "cards": [
+      "installation and maintenance services of cellular base stations in the different network technologies 2g, 3g, 4g, 5g.",
+      "Promote configurationm, administration, and support solutions for the main technologies according to your requirements.",
+      "Preparation of site survey for new LET sites; delivery of reports with plans in sketchups",
+      "Preparation of site survehy for 3G, 4G, 5G network expansions.",
+      "Services of personnel dedicated to preparing reports required by the operator to control the correct installation of the equipment in the quality area.",
+      "Maintenance service for radio bases of the different 2g, 3g, and 4g cellular network technologies as well as Wifi networks, review of microwave and satellite links.",
+      "Disassembly of celluar network equipment and return of these to the warehouse duly invetoried.",
+      "Commisioning, configuration, and probe of cellular services network solutions according to operator parameters.",
+      "Site master tests, PIM master measurement, BER, to guarantee the correct implementation of the network solution.",
+      "Cellular network optimization in different technologies according to specific parameter of the RF area.",
+      "Expansion of the capacity of the different cellular network technologies to improve traffic performance.",
+      "Installation, disassembly, and maintenance of microwave links (NEC, siemens, ericson, among other), Installation of satellite links from brands such as Embratel, HughesNet and optic fiber networks."
+    ],
     "ready_work": "We are ready to work",
-    "readdy_work_text01":"We got everything in order to work and fulfill all your requeriments.",
+    "readdy_work_text01": "We got everything in order to work and fulfill all your requeriments.",
     "readdy_work_text02": "We prioritize safety through certified HSEQ teams and comprehensive training.",
     "readdy_work_text03": "Our technical staff receives advanced training, including safe driving and working at heights.",
     "readdy_work_text04": "We have a fleet for logistics and testing to ensure quality nationwide."
   },
   "contact_us": {
     "contact_us_title": "Contact Us",
-    "form": 
-      {
-        "title": "Contact Form",
-        "contac_text01": "You can contact us using the methods listed below:",
-        "name": "Your name",
-        "place_name": "Name",
-        "email": "Your email",
-        "place_email": "Email",
-        "phone": "Your phone",
-        "place_phone": "Phone",
-        "message": "Your message",
-        "place_message": "Message",
-        "send_button": "Send Request",
-        "message_final":"Lets get in contact, leave your info above and we will email you very fast."
-      }
-    ,
-    "contact_info": 
-      {
-        "contact_info_title": "Contact Information",
-        "USA_phone": "USA",
-        "colombian_phone": "Colombia",
-        "emails": "Emails",
-        "redes": "Social networks"
-      }
-    ,
-    "location_title":"Our Location",
+    "form": {
+      "title": "Contact Form",
+      "contac_text01": "You can contact us using the methods listed below:",
+      "name": "Your name",
+      "place_name": "Name",
+      "email": "Your email",
+      "place_email": "Email",
+      "phone": "Your phone",
+      "place_phone": "Phone",
+      "message": "Your message",
+      "place_message": "Message",
+      "send_button": "Send Request",
+      "message_final": "Lets get in contact, leave your info above and we will email you very fast."
+    },
+    "contact_info": {
+      "contact_info_title": "Contact Information",
+      "USA_phone": "USA",
+      "colombian_phone": "Colombia",
+      "emails": "Emails",
+      "redes": "Social networks"
+    },
+    "location_title": "Our Location",
     "location_sub": "You can find us in Colombia and the United States",
     "florida": "Locate us in Florida, US",
     "colombia": "Locate us in Colombia",

@@ -1,13 +1,17 @@
 {
+  "meta": {
+    "description": "Explora los servicios de IP Moviles: Brindamos soluciones de conectividad y de telecomunicaciones ajustadas a las necesidades de nuestros clientes.",
+    "keywords": "ipmoviles, ipmobiles, ip moviles, ip mobile, conectividad, redes, mantenimiento, telecomunicaciones"
+  },
   "header": {
     "contact_button": "Contáctanos"
   },
   "titles": {
-    "home":"Inicio",
-    "services":"Servicios",
-    "contact":"Contacto",
-    "about":"Acerca de nosotros",
-    "gallery":"Galería"
+    "home": "Inicio",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "about": "Acerca de nosotros",
+    "gallery": "Galería"
   },
   "navbar": {
     "home": "Inicio",
@@ -39,24 +43,24 @@
     "service02": "Tecnología fiable",
     "service03": "Soluciones personalizadas",
     "quality_services": "Servicios de calidad",
-    "quality_subtitle":" Ofrecemos una amplia gama de servicios para satisfacer sus necesidades y requisitos",
+    "quality_subtitle": " Ofrecemos una amplia gama de servicios para satisfacer sus necesidades y requisitos",
     "card01_title": "Conectividad remota",
-    "card01_body":"Instalación de equipos para llevar Internet a zonas remotas.",
+    "card01_body": "Instalación de equipos para llevar Internet a zonas remotas.",
     "card02_title": "Configuración y soporte",
     "card02_body": "Configuración de tecnologías de telecomunicaciones adaptadas a sus necesidades.",
     "card03_title": "Evaluaciones de sitios",
     "card03_body": "Evaluaciones de sitios para nuevas instalaciones y ampliaciones de red, con envíos detallados de reportes.",
     "link_services": "Conoce más sobre nuestros servicios",
-    "our_company":"Nuestra empresa",
+    "our_company": "Nuestra empresa",
     "company_text01": "Con más de 15 años de experiencia, en IPMoviles, nos esforzamos por la excelencia en las telecomunicaciones y la Tecnología de la Información y Comunicación (TIC).",
     "company_text02": "Nuestros valores éticos se basan en honestidad y un enfoque centrado en el cliente. Buscamos la conectividad global y la innovación en un panorama tecnológico en el que evoluciona.",
-    "CTA_company":"Más sobre nosotros",
+    "CTA_company": "Más sobre nosotros",
     "about_us": "IPMoviles es una empresa de telecomunicaciones con más de 15 años de experiencia, aliada con INSPUR para ofrecer soluciones en la nube. Han trabajado en sectores como educación, finanzas y petróleo, y han recibido calificaciones positivas en los últimos 5 años.",
     "ver_Mas": "Más sobre nosotros",
     "clients": "Trabajamos con los mejores",
     "clients_text01": "En IPMoviles, hemos tenido el privilegio de asociarnos con empresas líderes en el sector de las telecomunicaciones y la tecnología. Nuestra experiencia y dedicación a ofrecer soluciones de alta calidad nos han permitido establecer sólidas relaciones con estas empresas.",
     "clients_text02": "En los años transcurridos, hemos colaborado para impulsar la innovación, la conectividad y el éxito empresarial.",
-    "our_products":"Nuestros Productos",
+    "our_products": "Nuestros Productos",
     "product_text01": "En IPMoviles, damos la bienvenida a algunos de los marcas de confianza y renombradas en el sector de las telecomunicaciones y la tecnología.",
     "product_text02": "Nuestra colaboración con estas marcas nos permite ofrecer soluciones de alta calidad y servicios de última generación a nuestros clientes."
   },
@@ -68,13 +72,13 @@
     "text04": "Desde nuestra fundación en 2008, nos hemos ganado su confianza como expertos a los que acudir, abordando una amplia gama de proyectos en múltiples sectores, desde las telecomunicaciones hasta la educación, las finanzas y el petróleo.",
     "text05": "Damos prioridad a",
     "text06": " las necesidades de nuestros clientes siendo estos los más importantes",
-    "text07": ", principalmente enfocados en las soluciones de TIC. Durante los últimos 5 años, hemos obtenido constantemente calificaciones positivas. Estos resultados dan forma a nuestro sistema de calidad, fomentando la mejora continua.",  
+    "text07": ", principalmente enfocados en las soluciones de TIC. Durante los últimos 5 años, hemos obtenido constantemente calificaciones positivas. Estos resultados dan forma a nuestro sistema de calidad, fomentando la mejora continua.",
     "text08": "Nuestro compromiso de mantenernos a la vanguardia de la tecnología de redes nos impulsa a actualizar continuamente a nuestro personal.",
     "mission_title": "Nuestra misión",
     "mission_text01": " ",
     "mission_text02": "Contribuimos a las necesidades tecnológicas de la sociedad",
     "mission_text03": " proporcionando soluciones integrales adaptadas a los requisitos presentados. Esto se consigue mediante la disponibilidad, el rendimiento, la calidad, la gestión y la evolución de la infraestructura y la arquitectura de nuestra empresa.",
-    "mission_text04":"Nos guiamos por una cultura de procesos y proyectos, que mantiene a nuestro personal centrado en las mejores prácticas y tendencias hacia la convergencia de las telecomunicaciones.",
+    "mission_text04": "Nos guiamos por una cultura de procesos y proyectos, que mantiene a nuestro personal centrado en las mejores prácticas y tendencias hacia la convergencia de las telecomunicaciones.",
     "vision_title": "Nuestra visión",
     "vision_text01": "Para ",
     "vision_text02": "2035 ",
@@ -88,8 +92,8 @@
   },
   "our_services": {
     "our_services_title": "Nuestros servicios",
-    "IP_Moviles":"IP Moviles",
-    "our_services_info":"Ofrecemos servicios de telecomunicaciones, incluyendo instalaciones de equipos de red, configuración de red, y ampliaciones LTE/5G, con un historial de éxito enfocado en la seguridad y la calidad.",
+    "IP_Moviles": "IP Moviles",
+    "our_services_info": "Ofrecemos servicios de telecomunicaciones, incluyendo instalaciones de equipos de red, configuración de red, y ampliaciones LTE/5G, con un historial de éxito enfocado en la seguridad y la calidad.",
     "cards": [
       "servicios de instalación y mantenimiento de radiobases celulares en las diferentes tecnologías de redes 2g, 3g, 4g, 5g.",
       "Promover soluciones de configuración, administración y soporte de las principales tecnologías de acuerdo a sus requerimientos.",
@@ -112,30 +116,27 @@
   },
   "contact_us": {
     "contact_us_title": "Contáctanos",
-    "form": 
-      {
-        "title": "Formulario de contacto",
-        "contac_text01": "Puede ponerse en contacto con nosotros por los medios que se indican a continuación",
-        "name": "Tu nombre",
-        "place_name": "Nombre",
-        "email": "Tu correo",
-        "place_email": "Email",
-        "phone": "Tu teléfono",
-        "place_phone": "Teléfono",
-        "message": "Tu mensaje",
-        "place_message": "Mensaje",
-        "send_button": "Enviar solicitud",
-        "message_final":"Pongámonos en contacto, deje su información arriba y le enviaremos un correo electrónico muy pronto."
-      },
-    "contact_info": 
-      {
-        "contact_info_title": "Información de Contacto",
-        "USA_phone": "Estados Unidos",
-        "colombian_phone": "Colombia",
-        "emails": "Correos",
-        "redes":"Redes sociales"
-      }
-    ,
+    "form": {
+      "title": "Formulario de contacto",
+      "contac_text01": "Puede ponerse en contacto con nosotros por los medios que se indican a continuación",
+      "name": "Tu nombre",
+      "place_name": "Nombre",
+      "email": "Tu correo",
+      "place_email": "Email",
+      "phone": "Tu teléfono",
+      "place_phone": "Teléfono",
+      "message": "Tu mensaje",
+      "place_message": "Mensaje",
+      "send_button": "Enviar solicitud",
+      "message_final": "Pongámonos en contacto, deje su información arriba y le enviaremos un correo electrónico muy pronto."
+    },
+    "contact_info": {
+      "contact_info_title": "Información de Contacto",
+      "USA_phone": "Estados Unidos",
+      "colombian_phone": "Colombia",
+      "emails": "Correos",
+      "redes": "Redes sociales"
+    },
     "location_title": "Nuestra Ubicación",
     "location_sub": "Nos puedes encontrar en Colombia y Estados Unidos",
     "florida": "Encuéntranos en Florida, Estados Unidos",
@@ -148,5 +149,4 @@
     "gallery_text01": "Conoce nuestro trabajo a través de imágenes que destacan la innovación en el mundo de la comunicación.",
     "gallery_text02": "Mira más en nuestras redes sociales"
   }
-
 }
