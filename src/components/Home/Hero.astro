@@ -6,9 +6,9 @@ import { t } from "i18next";
 <div class="content-container">
   <div class="content-text">
     <div class="content-subtitles">
-      <h2 class="hero-subtitle">
+      <h1 class="hero-subtitle">
         {t("site_home.header_text01")}
-      </h2>
+      </h1>
       <h3 class="hero-subtitle opacity">
         {t("site_home.header_text02")}
       </h3>
@@ -19,7 +19,9 @@ import { t } from "i18next";
       <Icon name="mdi:access-point-check" /><p>{t("site_home.service01")}</p>
     </div>
     <div>
-      <Icon name="eos-icons:trusted-organization" /><p>{t("site_home.service02")}</p>
+      <Icon name="eos-icons:trusted-organization" /><p>
+        {t("site_home.service02")}
+      </p>
     </div>
     <div>
       <Icon name="gridicons:customize" /><p>{t("site_home.service03")}</p>
@@ -45,9 +47,6 @@ import { t } from "i18next";
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        > h1 {
-          color: var(--action-color);
-        }
       }
       > .content-subtitles {
         display: flex;
@@ -57,7 +56,18 @@ import { t } from "i18next";
         text-align: center;
         padding: 0px 20px;
         color: var(--color-mint-cream);
+        > h1 {
+          font-size: 1.8rem;
+          line-height: normal;
 
+          @include breakpoint("sm") {
+            font-size: 2.4rem;
+          }
+
+          @include breakpoint("md") {
+            font-size: 3.2rem;
+          }
+        }
         > .hero-subtitle.opacity {
           color: var(--grey);
         }
