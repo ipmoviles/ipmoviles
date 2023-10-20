@@ -34,11 +34,9 @@ export default function App(props) {
 
   return (
     <Navbar
-      isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       height="60px"
-      shouldHideOnScroll
       maxWidth="xl"
     >
       <NavbarContent>
@@ -88,10 +86,10 @@ export default function App(props) {
         <NavbarItem>
           <Button
             as={Link}
-            color="secondary"
+            color="primary"
             size="sm"
             href={contactRef}
-            variant="flat"
+            variant="solid"
             className="text-2xl"
           >
             {contact}
