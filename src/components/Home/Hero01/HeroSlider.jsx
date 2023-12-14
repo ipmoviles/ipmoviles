@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "./styles.scss";
 
 export const HeroSlider = (props) => {
-  const { image01, image02, image03, image04, content } = props;
+  const { image01, image02, image04, content } = props;
   return (
     <section className="hero-container">
       <Swiper
@@ -22,12 +22,11 @@ export const HeroSlider = (props) => {
         }}
         navigation={false}
         spaceBetween={0}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         className="swiper"
       >
         <SwiperSlide>{image01}</SwiperSlide>
         <SwiperSlide>{image02}</SwiperSlide>
-        <SwiperSlide>{image03}</SwiperSlide>
         <SwiperSlide>{image04}</SwiperSlide>
       </Swiper>
       <div className="overlay"></div>
