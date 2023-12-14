@@ -1,7 +1,6 @@
 import image01 from "./1.jpg";
 import image05 from "./5.jpg";
 import image06 from "./6.jpg";
-import image08 from "./8.jpg";
 import image09 from "./9.jpg";
 import image10 from "./10.jpg";
 import image11 from "./11.jpg";
@@ -14,7 +13,7 @@ export default [
   image01,
   image05,
   image06,
-  image08,
+  image12,
   image16,
   image09,
   image10,
