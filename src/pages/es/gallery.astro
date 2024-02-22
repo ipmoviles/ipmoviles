@@ -44,7 +44,7 @@ changeLanguage("es");
   </section>
 </Layout>
 <style lang="scss">
-  @use "../../assets/scss/base/_breakpoint.scss" as *;
+  @use "../assets/scss/base/_breakpoint.scss" as *;
   .container {
     display: flex;
     flex-direction: column;
@@ -166,9 +166,9 @@ changeLanguage("es");
           }
         }
         > .grid-item-11 {
-          grid-area: 8/3/10/5;
+          grid-area: 11/1/12/3;
           @include breakpoint(md) {
-            grid-area: 8/1/10/4;
+            grid-area: 8/1/9/4;
           }
           @include breakpoint(1280px) {
             grid-area: 6/3/7/5;
