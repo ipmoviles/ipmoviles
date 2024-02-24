@@ -4,7 +4,7 @@ import logoimages from "../../assets/images/logos/index.js";
 import { Image } from "astro:assets";
 import { t } from "i18next";
 
-const { asecones, claro, ingeant, inspur, movistar, qmc } = logoimages;
+const { asecones, claro, lightspped, ingeant, inspur, movistar, qmc } = logoimages;
 ---
 
 <section class="section-experience">
@@ -22,6 +22,7 @@ const { asecones, claro, ingeant, inspur, movistar, qmc } = logoimages;
         </div>
         <div class="experience-images section-circles">
           <Image src={claro} alt="CLARO-LOGO" />
+          <Image src={lightspped} alt="LIGHTSPEED-LOGO" />
           <Image src={inspur} alt="INSPUR-LOGO" />
           <Image src={movistar} alt="MOVISTAR-LOGO" />
           <Image src={qmc} alt="QMC-LOGO" />
@@ -78,7 +79,7 @@ const { asecones, claro, ingeant, inspur, movistar, qmc } = logoimages;
           > .section-circles {
             display: grid;
             width: 100%;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
             place-items: center;
             background-color: var(--color-light-silver);

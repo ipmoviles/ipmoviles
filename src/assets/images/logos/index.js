@@ -1,5 +1,6 @@
 import asecones from "./asecones-logo.png";
 import claro from "./claro-logo.png";
+import lightspped from "./lightspeed-logo.png";
 import ingeant from "./ingeant-logo.png";
 import inspur from "./inspur-logo.png";
 import movistar from "./movistar-logo.png";
@@ -12,6 +13,7 @@ import ericsson from "./ericcson.png";
 export default {
   asecones,
   claro,
+  lightspped,
   ingeant,
   inspur,
   movistar,
