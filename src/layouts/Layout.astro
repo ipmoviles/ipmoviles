@@ -6,6 +6,8 @@ import i18next, { t } from "i18next";
 import { localizePath } from "astro-i18next";
 import { NextUIProvider } from "@nextui-org/system";
 import { LanguageSelector } from "astro-i18next/components";
+import card from "../assets/images/card.svg";
+import { Image } from "astro:assets";
 interface Props {
   title: string;
 }
@@ -80,6 +82,9 @@ const { title } = Astro.props;
       </main>
       <Footer />
     </NextUIProvider>
+    <a href="https://buy.stripe.com/dR6eYb97f0Vec9y000" target="_blank" class="floating-btn">
+      <Image src={card} alt="QMC-LOGO" />
+    </a>
   </body>
 
   <script is:inline>
@@ -216,6 +221,32 @@ const { title } = Astro.props;
         h1:not(.hero-subtitle) {
           color: var(--title-color);
         }
+      }
+      .floating-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        border-radius: 50%;
+        background-color: var(--button-background-color);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .floating-btn:hover {
+        background-color: var(--button-background-color);
+        background-color: #f0f0f0;
+        transform: scale(1.05);
+      }
+
+      .floating-btn img {
+        width: 40px;
+        height: 40px;
       }
     }
   </style>
