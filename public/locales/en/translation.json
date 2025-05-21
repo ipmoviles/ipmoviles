@@ -25,7 +25,6 @@
     "contactus": "Contact Us",
     "quick_links": "Quick Links",
     "links": ["About Us", "Gallery", "Our Services", "Contact Us"],
-    "title_colombia": "Colombia Office",
     "title_usa": "USA Office",
     "aIng": "Instagram Link",
     "aLinkedIn": "LinkedIn Link",
@@ -126,16 +125,13 @@
     "contact_info": {
       "contact_info_title": "Contact Information",
       "USA_phone": "USA",
-      "colombian_phone": "Colombia",
       "emails": "Emails",
       "redes": "Social networks"
     },
     "location_title": "Our Location",
-    "location_sub": "You can find us in Colombia and the United States",
+    "location_sub": "You can find us in the United States.",
     "florida": "Locate us in Florida, US",
-    "colombia": "Locate us in Colombia",
-    "united_states": "United States",
-    "colombia_": "Colombia"
+    "united_states": "United States"
   },
   "gallery": {
     "gallery_title": "Gallery",

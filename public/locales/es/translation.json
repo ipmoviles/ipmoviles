@@ -30,7 +30,6 @@
       "Nuestros servicios",
       "Contáctanos"
     ],
-    "title_colombia": "Sede en Colombia",
     "title_usa": "Sede en Estados Unidos",
     "a_ig": "Enlace en Instagram",
     "a_linkedIn": "Enlace a LinkedIn",
@@ -133,16 +132,13 @@
     "contact_info": {
       "contact_info_title": "Información de Contacto",
       "USA_phone": "Estados Unidos",
-      "colombian_phone": "Colombia",
       "emails": "Correos",
       "redes": "Redes sociales"
     },
     "location_title": "Nuestra Ubicación",
-    "location_sub": "Nos puedes encontrar en Colombia y Estados Unidos",
+    "location_sub": "Nos puedes encontrar en Estados Unidos.",
     "florida": "Encuéntranos en Florida, Estados Unidos",
-    "colombia": "Encuéntranos en Colombia",
-    "united_states": "Estados Unidos",
-    "colombia_": "Colombia"
+    "united_states": "Estados Unidos"
   },
   "gallery": {
     "gallery_title": "Galería",
